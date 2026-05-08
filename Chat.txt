@@ -1,0 +1,117 @@
+00:02:58	Gara Prem kumar:	good evening
+00:03:35	Jai Prakash:	good evening sir
+00:06:58	ANKIT SRIVASTAVA:	Do we have any whatsapp roup for this batch?
+00:07:11	Mohammad Yaseen Bazaz:	Yes
+00:07:13	Maniyar Muqsith Zameer:	good evening
+00:07:19	Nandani butola:	good evening sir
+00:07:29	shruthi:	Good evening
+00:08:02	Upagna Reddy:	Do we have any whatsapp roup for this batch?
+can you share the whatsapp link ?
+00:08:38	Rounak Das:	use excel web
+00:08:48	Aditya Tiwari:	you can purchase online ms office costing 149 lifetime
+00:08:49	Rounak Das:	works almost same
+00:08:57	Aditya Tiwari:	i have done the same
+00:10:55	Sourzendu Das:	Find and replace
+00:13:34	Harishyam Prasad:	if we have word like Database it will replace
+00:13:45	Harishyam Prasad:	ok
+00:14:05	Anand sharma:	Instead of doing we can do CTRL+H as well
+00:15:06	Rohit Raj:	For this dataset, only one column includes data so not neceessary to select the column..right?
+00:17:58	Mohammad Yaseen Bazaz:	could we please have chat questions instead of asking while in the session?
+00:18:19	Rudra Pratap Singh:	Reacted to "could we please ha..." with 👍
+00:18:48	Rugvedi Wankhade:	Reacted to "could we please ha..." with 👍
+00:18:50	Suyash M Pande:	Guys you have the raise hand option in REACT section
+00:23:21	Rudra Pratap Singh:	May be useful while using Vlookup in multiple sheets
+00:26:57	Yash Yashyap:	sir please explain again transpose
+00:27:44	Kritika:	Row will become columns and vice versa
+00:28:10	Rohit Raj:	Reacted to "could we please ha..." with 👍
+00:28:16	Azeer Moin:	how can we convert row into colum can you expalin it again plz
+00:28:17	Deepshikha Singh:	No sir
+00:28:17	Rugvedi Wankhade:	Clear
+00:28:20	Parth Bahl:	no sir
+00:28:23	VINEET JANGPANGI:	clear
+00:31:18	Upasana choudhary:	yes
+00:31:21	shruthi:	clear
+00:31:21	Rohit Raj:	Do we use this duplicate option only while  working on any complex dataset?
+00:31:21	VINEET JANGPANGI:	yes
+00:31:43	Deepshikha Singh:	Sir, in large datasets, should we select an entire table to remove duplicates or remove them one column at a time?
+00:31:52	VINEET JANGPANGI:	ok
+00:33:43	Sreyashi Mondal:	What is the shortcut of selecting all the dats in a sheet?
+00:33:53	Md Sultan:	my screen look this how to get it back
+00:35:25	Md Sultan:	its not downloading
+00:40:54	Sreyashi Mondal:	Clear
+00:40:54	Tanya:	clr
+00:40:55	Upasana choudhary:	sir can you repeat i got disconnected
+00:40:56	Nandani butola:	CLEAR
+00:40:59	Deepshikha Singh:	Yes
+00:41:36	Kritika:	Can we just arrange it in descending?
+00:44:16	Maniyar Muqsith Zameer:	more rules
+00:44:35	Mohammad Yaseen Bazaz:	less than or equal to 1
+00:44:36	Maniyar Muqsith Zameer:	0
+00:45:30	Kritika:	is it applicable on multiple columns or we have to so for each cell one by one?
+00:49:14	Vishal Bhati:	sir if we want to remove only one rule for ex we APPLY 2 RULES IN INCOME COLUMN BUT WE WANT TO REMOVE ONLY LESS THAN 15000 THAN WHAT WE DO
+00:53:23	Maniyar Muqsith Zameer:	when applying bottom why is blank cell not highlighting?
+00:55:21	Upasana choudhary:	if we want to highlight only blanks?
+00:55:38	Upasana choudhary:	okay
+00:56:08	Mohammad Yaseen Bazaz:	sir my network is not stable, shall i disconnect and watch recording.
+00:57:14	Vishal Bhati:	\sir can we do this text also or only with value ?
+00:57:52	Mayank Kashyap:	how can i understand which conditional format i shoud use?
+00:59:04	Yash Yashyap:	Replying to "how can i understa..."
+
+ok
+00:59:26	Yash Yashyap:	Reacted to "how can i understa..." with 😂
+01:00:36	Harishyam Prasad:	if we want to formate two are more columns
+01:01:13	Rounak Das:	sir is there any case sensitive function that we have to keep in mind?
+01:01:33	Harishyam Prasad:	at a time can u show
+01:02:35	Vishal Bhati:	sir if we want to highlight those who are married and done phd are with green colour can we do this
+01:02:36	Mayank Kashyap:	Reacted to "how can i understa..." with 😂
+01:04:03	Neelkamal Naval:	Sir can we do this in new column?
+01:04:10	Vishal Bhati:	can u repeat this my screen is stuck
+01:04:22	Kritika:	Can you repeat my internet is fluctuating
+01:04:28	pulla sai durga prasad:	sir can you repeat this bar formating.
+01:04:56	Kritika:	Got it
+01:06:41	Upasana choudhary:	sir can we change size of data bars?
+01:07:10	Upasana choudhary:	okay sir
+01:09:50	Deepshikha Singh:	Yes
+01:09:50	Upasana choudhary:	clear
+01:10:43	Coding Ninjas:	10 mins break
+01:10:50	pulla sai durga prasad:	ok sir
+01:12:58	Anand sharma:	You have to right click on the home and  click on collappse the ribbon
+01:13:45	Pratheek Jain:	Click on any of the tabs. Then there's a pin icon on the right corner. Click on it.
+01:14:17	Md Sultan:	Thank you guys
+01:31:30	Sreyashi Mondal:	.yes
+01:31:34	Upasana choudhary:	yes
+01:33:35	Yash Yashyap:	sir please explain colour scale again
+01:42:22	Sarang Kantilal Joshi:	Sir, Color scales of different colors shows only increase and decrease scales right? I tried using Blue-Red and Green shade ones.
+
+Are there any other use of this?
+01:42:35	Yash Yashyap:	sir can we change the colour for the lowest value or number and red for the highest one ?
+01:43:04	Yash Yashyap:	ok sir
+01:43:21	Yash Yashyap:	rgb
+01:43:57	Yash Yashyap:	ok sir
+01:45:47	Upasana choudhary:	sir how to check datatypes ?
+01:50:27	VINEET JANGPANGI:	b2
+01:50:28	Aryan Ghosh:	B2-A2
+01:50:44	Deepshikha Singh:	=B2-A2
+01:51:47	Rounak Das:	=(B2-A2) > "+" cell drag till C9
+01:52:54	Sarang Kantilal Joshi:	Reacted to "=(B2-A2) > "+" cel..." with 👍
+01:53:01	Deepshikha Singh:	no
+01:53:10	Deepshikha Singh:	Reacted to "=(B2-A2) > "+" cel..." with 👍
+01:53:23	Rudra Pratap Singh:	Flash fill
+01:56:59	Deepshikha Singh:	yes
+01:59:53	Neelkamal Naval:	40 willbe absolute
+02:00:09	Uttam:	$
+02:00:45	Deepshikha Singh:	Null Value
+02:03:12	Sourzendu Das:	F4 can also be used
+02:04:34	Rohit Raj:	So until and unless we use $ sign, it canot be absolute referencing..right?
+02:06:38	Anand sharma:	I have a concern
+02:06:43	Upasana choudhary:	yes
+02:08:46	pulla sai durga prasad:	Can i know what is advanced excel?
+02:09:52	Shruthireddy:	sir,for MAC OS ,do i need to take subscription or any alternative sir
+02:11:19	Sourzendu Das:	we can use freeze panes
+02:12:48	Md Shahnawaz:	thank you so much sir
+02:13:11	Aditya Tiwari:	we have the relevent dataset
+02:13:36	Sreyashi Mondal:	There is a dataset mentioned just below the question.
+02:14:16	Chinglensana Sarangthem:	thank you Sir
+02:14:27	VINEET JANGPANGI:	bye
+02:14:29	Sreyashi Mondal:	Thank you
+02:14:36	Jai Prakash:	thankyou sir

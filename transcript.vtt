@@ -1,0 +1,4802 @@
+WEBVTT
+
+1
+00:02:39.600 --> 00:02:41.270
+Azeer Moin: Hi! Good evening!
+
+2
+00:06:59.330 --> 00:07:01.329
+Coding Ninjas: Hello, Hi, guys. Good evening.
+
+3
+00:07:02.090 --> 00:07:03.070
+Azeer Moin: Hi! Good!
+
+4
+00:07:03.140 --> 00:07:06.049
+Jai Prakash: Hello, sir! Good evening, sir!
+
+5
+00:07:06.310 --> 00:07:07.480
+Rudra Pratap Singh: Good evening, good evening.
+
+6
+00:07:07.480 --> 00:07:08.039
+Vishal Bhati: Is, whatever.
+
+7
+00:07:09.230 --> 00:07:10.740
+shruthi: Good evening.
+
+8
+00:07:29.510 --> 00:07:32.300
+Coding Ninjas: Okay, let's start with today's session.
+
+9
+00:07:33.340 --> 00:07:39.139
+Coding Ninjas: Okay? So I'm sharing the same data set which we were doing yesterday. Which we were doing in the last session.
+
+10
+00:07:39.608 --> 00:07:41.699
+Coding Ninjas: You can open the data set.
+
+11
+00:07:41.700 --> 00:07:42.760
+Azeer Moin: Hello!
+
+12
+00:07:43.260 --> 00:07:45.850
+Coding Ninjas: Hello! Sorry for the disturbance.
+
+13
+00:07:46.390 --> 00:07:46.919
+Coding Ninjas: Yes, Azil.
+
+14
+00:07:46.920 --> 00:07:52.999
+Azeer Moin: Actually, I have a problem like like my excel is not opening properly.
+
+15
+00:07:53.260 --> 00:07:56.060
+Azeer Moin: They need a prescription like.
+
+16
+00:07:56.870 --> 00:07:58.050
+Coding Ninjas: Subscription.
+
+17
+00:07:58.960 --> 00:08:01.340
+Azeer Moin: Yeah, subscription and all.
+
+18
+00:08:01.920 --> 00:08:07.270
+Coding Ninjas: So I mean, excel is paid right. So if you do not have a subscription, then you won't be able to open it.
+
+19
+00:08:09.420 --> 00:08:10.220
+Azeer Moin: Okay.
+
+20
+00:08:10.360 --> 00:08:15.639
+Coding Ninjas: Because it is paid right. I mean I don't. I don't think you all. You will have a subscription. That's why.
+
+21
+00:08:17.900 --> 00:08:19.810
+Azeer Moin: Yeah, yeah, I don't have right now.
+
+22
+00:08:19.810 --> 00:08:20.880
+Coding Ninjas: For now, no worries. Use.
+
+23
+00:08:20.880 --> 00:08:21.420
+Azeer Moin: What?
+
+24
+00:08:21.886 --> 00:08:25.330
+Coding Ninjas: For for time being. Use Google sheets till you find any alternate
+
+25
+00:08:27.160 --> 00:08:31.310
+Coding Ninjas: currently what we are doing. You can do in Google sheets for some sessions, still, then find some alternate.
+
+26
+00:08:33.370 --> 00:08:37.669
+Azeer Moin: Okay? But in future we have to buy right?
+
+27
+00:08:37.929 --> 00:08:45.459
+Coding Ninjas: Because all the features won't be available. So see, excel, Web, Ronak is saying, excel web. So any web version, if all the features are there.
+
+28
+00:08:45.569 --> 00:08:47.349
+Coding Ninjas: I don't think all the features would be
+
+29
+00:08:48.019 --> 00:08:52.919
+Coding Ninjas: so I mean, you can either. You can purchase the subscription. Okay, check the price. I don't.
+
+30
+00:08:53.849 --> 00:08:54.369
+Coding Ninjas: Do, you guys.
+
+31
+00:08:54.370 --> 00:08:55.590
+Azeer Moin: Slingo.
+
+32
+00:08:55.820 --> 00:08:58.670
+Coding Ninjas: Yeah, Aditya's purchase this.
+
+33
+00:09:00.970 --> 00:09:23.579
+Coding Ninjas: So let's start with today's session. So in the last session we saw some of the basic features of Excel, such as how to import the data filtering and sorting. How? What are the shortcuts in? Excel? Okay? So some of the features which we saw in the last session. Okay, now, let's continue and see some more features which might be important for you.
+
+34
+00:09:23.900 --> 00:09:27.330
+Coding Ninjas: Okay, so let's say, this is our data.
+
+35
+00:09:27.680 --> 00:09:33.730
+Coding Ninjas: See here, this is our data. Let's say in the job title. I want to replace something.
+
+36
+00:09:33.870 --> 00:09:35.770
+Coding Ninjas: Okay, I want to replace some word.
+
+37
+00:09:36.020 --> 00:09:42.060
+Coding Ninjas: For example, let's say I want to replace a year. In prop writer, we have various words, right data, scientist
+
+38
+00:09:42.160 --> 00:09:52.450
+Coding Ninjas: data, scientist, data science engineer. So all these data analyst data engineer, big data engineer, principal data engineer. So all these texts contain the word data.
+
+39
+00:09:52.810 --> 00:09:58.299
+Coding Ninjas: Okay, for example, let's say, I want to replace the word data with info.
+
+40
+00:09:58.810 --> 00:10:02.120
+Coding Ninjas: This is my requirement. I want to replace all the data word.
+
+41
+00:10:02.430 --> 00:10:05.290
+Coding Ninjas: all the data, what should be replaced with info.
+
+42
+00:10:05.620 --> 00:10:12.309
+Coding Ninjas: Okay, so how to do that, that we will see. Okay, so clear with the requirement, I want to replace the word data
+
+43
+00:10:12.410 --> 00:10:20.260
+Coding Ninjas: with info. So data scientist will become info scientist. Okay, big data engineer will become big info engineer
+
+44
+00:10:20.370 --> 00:10:29.559
+Coding Ninjas: data and data analyst will become info analyst. Okay, this is what I have to do. So for that, we have a feature in excel, which is known as.
+
+45
+00:10:29.560 --> 00:10:33.989
+Neelkamal Naval: Hello, sir! Can you repeat that again.
+
+46
+00:10:35.180 --> 00:10:38.229
+Coding Ninjas: Which part, I want to replace world data here with info.
+
+47
+00:10:38.760 --> 00:10:43.944
+Coding Ninjas: Okay, so this is what I want to do now. What? Exactly we can.
+
+48
+00:10:44.510 --> 00:10:51.510
+Coding Ninjas: we can use one. Yaku. Yeah. Cooper cheers.
+
+49
+00:10:52.220 --> 00:10:59.609
+Md Sultan: Yeah, actually, my excel is showing in a full screen. So the upper part is not showing.
+
+50
+00:10:59.610 --> 00:11:07.190
+Coding Ninjas: Yes, can we? I mean, can we please, you know? Look at outsider, because you know, otherwise it will. If I, if I take all that out, will, you know, disrupt the phone?
+
+51
+00:11:07.450 --> 00:11:07.930
+Coding Ninjas: Thank you.
+
+52
+00:11:07.930 --> 00:11:16.540
+Coding Ninjas: Give you time. Okay, we'll discuss later. I'll give you time in between. Then we can discuss. For now, just focus on the session close every excel which shows
+
+53
+00:11:17.180 --> 00:11:24.510
+Coding Ninjas: here, okay, so for this. We would be using something called as find and replace. So there is a feature called as find
+
+54
+00:11:24.710 --> 00:11:25.940
+Coding Ninjas: and replace
+
+55
+00:11:26.410 --> 00:11:39.569
+Coding Ninjas: together we would be using this particular feature. So now it find and replace there is. So there is a shortcut for that. Okay, for finding something. We have a shortcut control. F. So if you press control, F,
+
+56
+00:11:39.680 --> 00:11:41.579
+Coding Ninjas: this particular window will open
+
+57
+00:11:41.750 --> 00:12:01.219
+Coding Ninjas: trigger. So this is your find and replace. This is what we would be using to replace some word right? And I want to replace the word data with info. Okay? So what I will do first, st I will select this particular row wherever we want to replace. Select the particular row. Now, press control. F,
+
+58
+00:12:01.580 --> 00:12:02.920
+Coding Ninjas: take a control. F.
+
+59
+00:12:03.230 --> 00:12:08.979
+Coding Ninjas: Now, here, we want to find something. Right? So what we want to find, we want to find the word data.
+
+60
+00:12:09.170 --> 00:12:10.600
+Coding Ninjas: So write data again.
+
+61
+00:12:10.720 --> 00:12:16.040
+Coding Ninjas: See the right data here and go to replace. So here I want to find the data word.
+
+62
+00:12:16.190 --> 00:12:19.759
+Coding Ninjas: and I want to replace with what I want to replace with info
+
+63
+00:12:20.090 --> 00:12:32.020
+Coding Ninjas: figure. So find. So in these cells which I have selected, find data work and replace with info. This is what exactly I want to do. Figure so 1st of all, you have to click on, find all
+
+64
+00:12:32.320 --> 00:12:33.550
+Coding Ninjas: take a fine dollar.
+
+65
+00:12:33.670 --> 00:12:48.149
+Coding Ninjas: so what will it do? See? It will find all the, all the cells which contains what data see. So it has found data scientist, which contains what data big data engineer. It also contains data, so it will find all the cells containing the data.
+
+66
+00:12:48.340 --> 00:12:57.039
+Coding Ninjas: Now, what you have to do, you have to replace all these cells right? You have to replace all the data with info. Then click on, replace all
+
+67
+00:12:57.810 --> 00:13:05.650
+Coding Ninjas: you can see. It is showing we have made 7 day replacements. Okay? And here you can see all the what data has been replaced by info.
+
+68
+00:13:05.820 --> 00:13:08.569
+Coding Ninjas: Okay, I'll do it again. So here we have all the data over.
+
+69
+00:13:08.840 --> 00:13:14.809
+Coding Ninjas: I want to replace all the data, what with info, so control, FF means fighting.
+
+70
+00:13:15.070 --> 00:13:19.520
+Coding Ninjas: Okay, yeah, we have find and replace. So I want to find data work.
+
+71
+00:13:19.810 --> 00:13:22.149
+Coding Ninjas: And I want to replace with info
+
+72
+00:13:22.700 --> 00:13:29.609
+Coding Ninjas: trigger. So I want to find data replaced with info click on, find all. So it will find all the words which contains data in it.
+
+73
+00:13:29.710 --> 00:13:31.290
+Coding Ninjas: Then click on replacement.
+
+74
+00:13:31.600 --> 00:13:34.979
+Coding Ninjas: See? So it will replace all the data word with info.
+
+75
+00:13:35.640 --> 00:13:38.530
+Coding Ninjas: Yeah, yeah, it will become in 4 weeks.
+
+76
+00:13:38.780 --> 00:13:40.120
+Coding Ninjas: Yes, it will increase.
+
+77
+00:13:40.650 --> 00:13:43.380
+Coding Ninjas: So you're clear about this. So this is, find a replace to replace them.
+
+78
+00:13:44.220 --> 00:13:48.479
+Azeer Moin: Can you explain it again? Like I'm not saying.
+
+79
+00:13:49.920 --> 00:13:50.910
+Coding Ninjas: You are not.
+
+80
+00:13:52.190 --> 00:13:55.869
+Azeer Moin: I'm not seen proper on that time.
+
+81
+00:13:56.460 --> 00:13:57.009
+Azeer Moin: Can it be.
+
+82
+00:13:57.010 --> 00:14:02.410
+Coding Ninjas: Select select the column press control, F, so this window will open.
+
+83
+00:14:02.560 --> 00:14:05.359
+Coding Ninjas: See, here, in this window we have to find what
+
+84
+00:14:05.680 --> 00:14:18.759
+Coding Ninjas: I want to do. I want to replace. Let's say word data with info. So find what data replace with info, click on, find all. So it will find all the text and click on, replace all
+
+85
+00:14:18.920 --> 00:14:24.830
+Coding Ninjas: because it will replace all the info word with data data. What with info.
+
+86
+00:14:25.110 --> 00:14:27.469
+Azeer Moin: Okay, thank you. I got it.
+
+87
+00:14:29.590 --> 00:14:32.260
+Coding Ninjas: Yeah, you can do control edge as well.
+
+88
+00:14:33.570 --> 00:14:41.609
+Coding Ninjas: Take it. So this is, find and replace. If you want to replace any of the text. From your data. Very basic feature ticket to replace something.
+
+89
+00:14:41.980 --> 00:15:05.930
+Coding Ninjas: Then then we also have some paste options available copy and paste. Right? We have copy and paste. You know what is copy and paste. Right? If I want to copy something and paste it somewhere, we use copy and paste. Okay, that is, 3 copy and paste also. But there are other things also in copy and paste. Okay, which you can use so 2 or 3 options. So I widely use for copy and paste. Okay, let's say, we have our data.
+
+90
+00:15:08.360 --> 00:15:10.509
+Coding Ninjas: Yeah, yeah, it's okay. No need to say.
+
+91
+00:15:12.000 --> 00:15:17.649
+Coding Ninjas: take a, let's say, you have a data called as employee. Here we have employee. Id. We have name of the employee.
+
+92
+00:15:17.790 --> 00:15:20.070
+Coding Ninjas: and we have salary of the employer.
+
+93
+00:15:21.320 --> 00:15:33.089
+Coding Ninjas: Take a employee. Id. Let's say, 1 0 1 name of the employees, let's say Ravi, salary of employees, let's say 15. Takea, that is, employer 1 0 2. Name of the employees. Let's say Simbaran
+
+94
+00:15:33.210 --> 00:15:43.589
+Coding Ninjas: salary is, let's say 20. So this is the details of embra. Let's say I want to add, bonus, let's say bonus is bonus is yes.
+
+95
+00:15:45.130 --> 00:15:47.699
+Md Shahnawaz: Sir, I'm 10 min late. Is that okay?
+
+96
+00:15:50.470 --> 00:16:08.919
+Coding Ninjas: So I want to add a bonus here. Bonus would be, let's say, 20% of the salary, for example. So I'll write a formula, the bonus equal to salary multiplied by 0 point 2. So I'm writing some formula for now ignore the formula that is not our agenda. But I'm writing some formula here.
+
+97
+00:16:09.130 --> 00:16:12.730
+Coding Ninjas: figure so formula. I'm writing some formula in the Formula One.
+
+98
+00:16:12.880 --> 00:16:15.910
+Coding Ninjas: take it so you can see here I've written some formula here.
+
+99
+00:16:16.080 --> 00:16:21.590
+Coding Ninjas: here, I'm doing just 20% of selling. So, for example, this is your data.
+
+100
+00:16:22.284 --> 00:16:26.429
+Coding Ninjas: I'll let's say, add some. I'll make the data bold.
+
+101
+00:16:26.760 --> 00:16:29.630
+Coding Ninjas: I'll add, let's say, borders here.
+
+102
+00:16:29.980 --> 00:16:33.139
+Coding Ninjas: I'll add some colors in my data.
+
+103
+00:16:33.670 --> 00:16:36.170
+Coding Ninjas: Tiga, I read my some colors in the data.
+
+104
+00:16:37.660 --> 00:16:39.379
+Coding Ninjas: Okay, so this is your data
+
+105
+00:16:39.490 --> 00:16:48.379
+Coding Ninjas: check in this data. You can see you have some colors you have formatting. You have made it gold. You also have formulas here. Right? So this is your data.
+
+106
+00:16:48.570 --> 00:16:53.290
+Coding Ninjas: Now let's say, for now let's say, if you want to copy the data and paste it somewhere, what will you do?
+
+107
+00:16:53.640 --> 00:16:57.170
+Coding Ninjas: You will select the data control. C copy
+
+108
+00:16:57.380 --> 00:17:02.779
+Coding Ninjas: and control. V paste, right? If you want to copy the data, you will select it.
+
+109
+00:17:02.880 --> 00:17:12.339
+Coding Ninjas: You will press control. C to copy the data, and let's say you want to paste it here. So you will do control. V. This is your normal copy paste
+
+110
+00:17:13.089 --> 00:17:15.819
+Coding Ninjas: Ginger. This is your normal paste
+
+111
+00:17:15.920 --> 00:17:29.160
+Coding Ninjas: control. V is your normal paste. So normal paste, the data will be as it is. See here, you can see, every data is as it is. You have formulas. Here you have formulas as it is. Take it you have all the colors, you have, all the formatting.
+
+112
+00:17:29.430 --> 00:17:30.180
+Coding Ninjas: Yes, Omar.
+
+113
+00:17:30.495 --> 00:17:35.549
+Soumya Samal: Sir, sorry to interrupt, but can we do the same? Copy? Paste to another, excel sheet.
+
+114
+00:17:35.820 --> 00:17:37.160
+Coding Ninjas: In a different window.
+
+115
+00:17:37.780 --> 00:17:38.729
+Coding Ninjas: Yeah, you can do.
+
+116
+00:17:40.260 --> 00:17:41.159
+Soumya Samal: Thank you, sir.
+
+117
+00:17:42.620 --> 00:17:45.709
+Coding Ninjas: Here. So this is your normal page.
+
+118
+00:17:48.010 --> 00:17:49.190
+Coding Ninjas: Oh, yeah, yes.
+
+119
+00:17:49.380 --> 00:17:50.599
+Arman Malik: Sir, please, repeat.
+
+120
+00:17:52.570 --> 00:17:59.369
+Coding Ninjas: I will you. I will copy this. I will select this data control C copy and control V. Paste.
+
+121
+00:17:59.600 --> 00:18:00.389
+Arman Malik: Okay. Sir. Okay.
+
+122
+00:18:00.390 --> 00:18:01.220
+Coding Ninjas: Stringer data.
+
+123
+00:18:01.770 --> 00:18:02.950
+Arman Malik: Okay, sir, I understand.
+
+124
+00:18:03.620 --> 00:18:15.440
+Coding Ninjas: Yeah, guys, I mean, let's do one thing. Let's keep our mouth shut for some time, stupid cunts you keep on disturbing the session. Can you just raise your heads before asking any question? Here you have raise hand button here, so I will. Once I pause it, I will take your notes here. I don't know where is the raise?
+
+125
+00:18:16.140 --> 00:18:17.429
+Coding Ninjas: Is that we're in a little.
+
+126
+00:18:17.980 --> 00:18:19.580
+Coding Ninjas: Okay, I think it will be visible.
+
+127
+00:18:20.360 --> 00:18:25.519
+Coding Ninjas: Okay, there would be a raise hand button here. Just raise your hand before asking questions. I'll look up to you.
+
+128
+00:18:27.780 --> 00:18:44.399
+Coding Ninjas: So this is your normal copy paste. So it will. The data will be. As it is, the formulas will be there, the colors will be there. The bold will be there, everything will be as it is. So this is your normal copy paste. Okay? But you have many options available for copy paste. Suppose I am selecting the data.
+
+129
+00:18:44.600 --> 00:18:47.000
+Coding Ninjas: I'm copying the data using control C
+
+130
+00:18:47.350 --> 00:18:49.829
+Coding Ninjas: using control. C, I'm copying the data.
+
+131
+00:18:50.650 --> 00:18:51.640
+Coding Ninjas: Gigan.
+
+132
+00:18:53.360 --> 00:19:01.620
+Coding Ninjas: Okay, think I'm copying the data. Now, let's say I want to paste it here. Now, if you see at the top, okay, at the top, you have lots of paste options.
+
+133
+00:19:01.800 --> 00:19:16.820
+Coding Ninjas: Think you have lots of paste options. Normally, I've used 5 or 6 only I have not used everything because everything is not useful for us. I think I've used 5 or 6 from this. So I'll explain you all the important paste options which I generally use. Okay, others might not be very relevant
+
+134
+00:19:17.040 --> 00:19:30.270
+Coding Ninjas: trigger. So all these 6 options might be relevant figures here. There are lots of paste options. 1, st one see, is your normal paste. You can see the 1st option. This is your normal paste. So if you click, if if I select the data.
+
+135
+00:19:30.560 --> 00:19:34.349
+Coding Ninjas: if I copied control C, if I press here
+
+136
+00:19:34.740 --> 00:19:37.520
+Coding Ninjas: and if I select the 1st option, normal paste.
+
+137
+00:19:38.190 --> 00:19:48.480
+Coding Ninjas: Okay, see? So this is your normal pace. See me. So this is your normal paste. Everything will be as it is, all the data will be as it is ticket, all the data will be perfect.
+
+138
+00:19:48.600 --> 00:19:50.630
+Coding Ninjas: So this is your normal basic.
+
+139
+00:19:50.940 --> 00:19:55.420
+Coding Ninjas: Now, let's say, I'll again copy the data control. C,
+
+140
+00:19:55.550 --> 00:19:57.459
+Coding Ninjas: let's say, I want to paste it here.
+
+141
+00:19:57.960 --> 00:19:59.659
+Coding Ninjas: See? I'll click on paste.
+
+142
+00:19:59.780 --> 00:20:07.720
+Coding Ninjas: Second, option figures. Okay, let's see, taste only values. Okay, so yeah, there is an option values
+
+143
+00:20:07.870 --> 00:20:14.740
+Coding Ninjas: ticket. This is known as paste only values. So just values. I'll select this option. Paste values.
+
+144
+00:20:15.390 --> 00:20:26.819
+Coding Ninjas: Okay, so what does it means? Paste values means it will paste only the values. So you can see only the values are visible here. Right? You can see there is no color. There is no formatting.
+
+145
+00:20:27.000 --> 00:20:48.069
+Coding Ninjas: plus if you click on this formula here we had a formula, right? If you click here, you can see there is no formula here. Formula is also gone, so every formatting, every formula will be gone. So this is the name suggests paste values, which means it will paste the values as it is. So in using this option, you will get only the values. So this is known as paste values.
+
+146
+00:20:48.210 --> 00:21:12.689
+Coding Ninjas: Okay, so this is a second option. Let's say, you know, normally, this option I widely use. Why? Because, let's say, you know, this is because I want to copy some data from somewhere into this sheet. I don't care about formatting. I don't care about formulas. I only want the data as it is okay. So I will use paste values because it is also very fast if it is, if the data is very huge, and if there are lots of formattings and formulas.
+
+147
+00:21:12.690 --> 00:21:28.760
+Coding Ninjas: copy paste, and sometimes your laptop might get hanged. If the data is very useful, but if you select paste as values, it will just paste the data, it will ignore the formatting. It will ignore the colors, and it will ignore the formulas again. So it will paste the data as it is, that's why this will also be fast.
+
+148
+00:21:28.960 --> 00:21:32.369
+Coding Ninjas: Okay, so this is your second option paste, only virus.
+
+149
+00:21:32.950 --> 00:21:34.839
+Coding Ninjas: I'll again copy the data.
+
+150
+00:21:36.200 --> 00:21:39.240
+Coding Ninjas: Let me see some other option.
+
+151
+00:21:39.650 --> 00:21:42.269
+Coding Ninjas: Next, option is paste formulas.
+
+152
+00:21:42.690 --> 00:21:51.489
+Coding Ninjas: Okay? Here you can see one option paste formulas, although I don't, I have not used this. My, I don't use this much, but there is also an option of paste formulas.
+
+153
+00:21:51.730 --> 00:21:55.280
+Coding Ninjas: So what will paste formulas do? As the name suggests?
+
+154
+00:21:55.420 --> 00:21:57.929
+Coding Ninjas: As the name suggests, paste formulas.
+
+155
+00:21:58.120 --> 00:22:16.040
+Coding Ninjas: so what will it do? It will paste the formulas. Okay. It will ignore the formatting. It will ignore all the colors, gold, etc. And it will paste the data with formulas. Okay, how click on this click on this. See here, your formula is as it is, right here in paste as values. Formula was gone.
+
+156
+00:22:16.150 --> 00:22:44.299
+Coding Ninjas: But in paste formulas the formula is as it is so, as the name suggests, paste formulas. If you want your formulas to be available whenever you're copy pasting it, you want your formulas to be available at that time you can select paste as formulas, although I mean I have not, I mean, use. This option might be helpful sometime, but although not helpful for me much. It depends on you. Think if you want the formulas or not, if you copy, paste it to some other sheet.
+
+157
+00:22:44.610 --> 00:22:48.260
+Coding Ninjas: see if you want the formula, then you can use paste as formulas
+
+158
+00:22:48.500 --> 00:22:56.780
+Coding Ninjas: thing. So 1st was your normal paste. Normal paste is everything it will taste, it will paste colors formatting formulas. Everything.
+
+159
+00:22:57.330 --> 00:23:04.039
+Coding Ninjas: Second is paste as values. It will just paste the values. As it is, it won't paste anything else.
+
+160
+00:23:04.170 --> 00:23:06.620
+Coding Ninjas: Taken, no formulas, no formatting, nothing.
+
+161
+00:23:07.150 --> 00:23:14.809
+Coding Ninjas: 3rd is paste as formulas, it will paste only the formulas. Your formatting will be gone, your colors and everything will be gone.
+
+162
+00:23:15.160 --> 00:23:17.180
+Coding Ninjas: See again. Now let me select it again.
+
+163
+00:23:18.280 --> 00:23:20.790
+Coding Ninjas: Now let's see what are the other options?
+
+164
+00:23:21.880 --> 00:23:26.939
+Coding Ninjas: Yes, correct. If you look up in multiple sheets. So if you want the formula, then yes, you can do.
+
+165
+00:23:27.130 --> 00:23:29.060
+Coding Ninjas: or if there are some calculations
+
+166
+00:23:30.520 --> 00:23:37.529
+Coding Ninjas: here, the next would be another important would be key formatting 1 min.
+
+167
+00:23:38.210 --> 00:23:43.780
+Coding Ninjas: Okay, see, there is an option of values and formatting figure values and formatting.
+
+168
+00:23:44.160 --> 00:23:46.250
+Coding Ninjas: Yeah, so you can also try this option.
+
+169
+00:23:47.310 --> 00:23:56.309
+Coding Ninjas: If I or or there is, I mean, only formatting here. There is only formatting. See here, there is an option of formatting, so see, it has pasted only the formatting
+
+170
+00:23:56.830 --> 00:24:12.389
+Coding Ninjas: all the data. It has removed, all the formulas it has removed, it has pasted only the formatting. So this is not a spaceless formatting. If you let's say, want the design of this, let's say, you know, if you have created a design, colors and everything, and if you want the same colors and everything in a new table, also
+
+171
+00:24:12.870 --> 00:24:30.529
+Coding Ninjas: ticket, wherein you already have some data. You just want to paste the formatting. Let's say, here you have the data, right? This same formatting I want to apply here in this particular area. So what which option will I use? I'll use paste as formatting. See? So the formatting will be applied here automatically.
+
+172
+00:24:30.680 --> 00:24:59.470
+Coding Ninjas: Okay, so formatting means it is giving you the design. Whatever design you have created. Again and again you will create right. Let's say you have different tables which you have created. Again and again, you will make it bold. Add colors. It will be a very tedious task, right? So you can just select it copy copied. And here, if you want to paste the formatting, then you can select the formatting option, so it will format your data as per what you have copied. So this is this is something which it will be the formatting.
+
+173
+00:24:59.660 --> 00:25:02.149
+Coding Ninjas: Take it so this is paste as formatting
+
+174
+00:25:02.520 --> 00:25:10.140
+Coding Ninjas: sometimes it might be useful. If you want. If you don't want to create design. Again again and again you can just paste your formats.
+
+175
+00:25:10.690 --> 00:25:13.500
+Coding Ninjas: click it again. I'll select the data.
+
+176
+00:25:13.910 --> 00:25:17.390
+Coding Ninjas: Next option is one more is based as transpose
+
+177
+00:25:17.630 --> 00:25:22.939
+Coding Ninjas: figure. Here you can see, this is also option which sometimes you might be using paste transpose.
+
+178
+00:25:23.360 --> 00:25:25.219
+Coding Ninjas: Okay, what do we mean by
+
+179
+00:25:25.510 --> 00:25:31.730
+Coding Ninjas: transpose transpose means the rows will become column column will become roast.
+
+180
+00:25:31.980 --> 00:25:34.420
+Coding Ninjas: Take a rows, would become column
+
+181
+00:25:34.560 --> 00:25:37.490
+Coding Ninjas: column will become rows. So compare the data here.
+
+182
+00:25:37.810 --> 00:25:42.369
+Coding Ninjas: Okay, I'll I'll I'll paste it. Here, take a compare the data
+
+183
+00:25:42.540 --> 00:25:54.040
+Coding Ninjas: here. We had eid name salary bonus as your columns. Right now it it came into a single. It came into a single column. It was. It was as a column name, right eid name, salary bonus.
+
+184
+00:25:54.150 --> 00:26:04.120
+Coding Ninjas: But yet it came here eid name, salary bonus. So the so the sequence. So the it became transposed. Okay, 1st probe became your 1st column.
+
+185
+00:26:04.340 --> 00:26:15.859
+Coding Ninjas: Now see the second row, 1 0 1 Ravi, 15, 3. It is your. It is your second row, right? It also became in one single column, 1 0, 1 ravi. 15, 3.
+
+186
+00:26:16.090 --> 00:26:31.200
+Coding Ninjas: Similarly, see this 1, 0 2, Simran. 24. It came here, 1, 0, 2, simran. 24. So it came in a single column. So this is known as transpose your rows would become columns, it will become opposite.
+
+187
+00:26:31.320 --> 00:26:33.450
+Coding Ninjas: Okay, so it will become transpose.
+
+188
+00:26:34.010 --> 00:26:50.550
+Coding Ninjas: So this is also some of the formatting option. Okay? So you can try with some some of the paste options. These are some of the paste options which you have. I mean, you don't have to remember anything. It just based on the use case, you just have to use it. Okay, whenever you want to paste something.
+
+189
+00:26:50.800 --> 00:26:52.839
+Coding Ninjas: figure. So it was a normal paste
+
+190
+00:26:52.980 --> 00:26:59.730
+Coding Ninjas: wherein everything will be normal paste as values, so it will paste just the values
+
+191
+00:26:59.910 --> 00:27:12.636
+Coding Ninjas: trigger, then paste formatting, so it will just give you the formatting. Then paste formulas. So here, it will give you the formulas. As it is, triggers and paste is transpose. So yeah, transpose means
+
+192
+00:27:13.580 --> 00:27:26.530
+Coding Ninjas: so yes, transpose means your. This row will become columns or column will become row. So you had you had this data like this? Right? The sequence was like this. It became in a vertical format. It came in a single column.
+
+193
+00:27:26.700 --> 00:27:28.809
+Coding Ninjas: So here the sequence was like this.
+
+194
+00:27:28.910 --> 00:27:30.760
+Coding Ninjas: here it came in this manner.
+
+195
+00:27:30.970 --> 00:27:37.920
+Coding Ninjas: here the sequence was like this, okay, in a single row. It came in a single column. So row will become columns.
+
+196
+00:27:38.070 --> 00:27:40.230
+Coding Ninjas: Okay, so this is known as transpose
+
+197
+00:27:41.080 --> 00:27:44.430
+Coding Ninjas: figure. So here it was in row, right? 1 0 2 is Imran. 24.
+
+198
+00:27:44.540 --> 00:27:48.069
+Coding Ninjas: It came in a single column point 0 2 similar 24.
+
+199
+00:27:48.290 --> 00:27:52.380
+Coding Ninjas: So this is transpose. Yes, row will become column, and vice versa.
+
+200
+00:27:52.770 --> 00:28:04.209
+Coding Ninjas: So these are some of the paste options which are available. You don't need to learn or do anything about. So you just have to implement it whenever you want to. Copy paste some data. That's it.
+
+201
+00:28:05.360 --> 00:28:07.869
+Coding Ninjas: See here, clear about this guys, any doubts here.
+
+202
+00:28:12.080 --> 00:28:13.819
+Anand sharma: No, no, only.
+
+203
+00:28:13.820 --> 00:28:15.219
+Rudra Pratap Singh: No sir, no doubt.
+
+204
+00:28:18.160 --> 00:28:22.789
+Coding Ninjas: See this also. Let's say, you have this particular data.
+
+205
+00:28:23.910 --> 00:28:29.410
+Coding Ninjas: Okay, you have this particular data only. So if I go to, let's say, for example.
+
+206
+00:28:36.170 --> 00:28:38.129
+Coding Ninjas: 1 min. Let me find that option
+
+207
+00:28:42.000 --> 00:28:48.330
+Coding Ninjas: trigger. There is an option of remove duplicates, trigger. Let's say your data might contain some duplicate rows.
+
+208
+00:28:48.480 --> 00:28:53.290
+Coding Ninjas: Okay, let's say, your data contains some duplicate rows. For example, this is your data.
+
+209
+00:28:55.930 --> 00:28:57.620
+Coding Ninjas: Okay, this is your data.
+
+210
+00:29:00.610 --> 00:29:19.049
+Coding Ninjas: Okay, this is your data. You can see here, it contains duplicate rows, 1 0, 1 ravi. 15, 3. Here again we have been repeating 1 0, 1 ravi. 15, 3. So these are known as duplicate entries right? The entries are getting repeated. So obviously, it is not a good thing. Right? It is not a good thing.
+
+211
+00:29:19.360 --> 00:29:29.569
+Coding Ninjas: Okay? So what you have to do you have to remove the duplicate entries? Suppose I want to remove 1 0 1 ravi 15, 3, 1, 1 entry I want to remove.
+
+212
+00:29:29.820 --> 00:29:33.639
+Coding Ninjas: So I'll select this data. Here, you have an option of remove duplicates.
+
+213
+00:29:33.890 --> 00:29:35.650
+Coding Ninjas: Okay? And click on. Okay.
+
+214
+00:29:36.120 --> 00:29:39.359
+Coding Ninjas: See? Automatically, one entry got removed. Right?
+
+215
+00:29:39.540 --> 00:29:48.669
+Coding Ninjas: You can see automatically, one entry got removed. So this is how you can remove duplicates from your data. I'll do it again. Okay, you just have to select your data
+
+216
+00:29:48.840 --> 00:30:18.230
+Coding Ninjas: because it. So you know, normally, if if your company is big, and if it is a sorted data, there won't be any duplicates. But let's say, you know, if your company is not stable, it has just started out all the data process. So there would be lots of issues. So obviously, there might be some duplicates in my data set in my company. I mean, there are no duplicate entries. Okay, but in some companies there might be issues of duplicate entries due to any errors due to any mistaken data entry due to any technical or Api issue. There might be duplicate entries.
+
+217
+00:30:18.250 --> 00:30:23.190
+Coding Ninjas: Okay? And it is very harmful because each Ravi is limiting 2 times
+
+218
+00:30:23.220 --> 00:30:28.999
+Coding Ninjas: right. Ravi is a single employee. How can we repeat the entry of Ravi 2 times? That's why it is not a good thing.
+
+219
+00:30:29.240 --> 00:30:34.059
+Coding Ninjas: So select the data. Click on, remove duplicates and click on. Okay.
+
+220
+00:30:34.550 --> 00:30:36.980
+Coding Ninjas: see? Automatically, one entry will be removed.
+
+221
+00:30:37.240 --> 00:30:42.989
+Coding Ninjas: Now, there is only one Ravi left in this particular table.
+
+222
+00:30:43.180 --> 00:30:53.569
+Coding Ninjas: Okay, so this is also one of the useful option, because it will make your analysis better, right? It will improve the accuracy of your data, because earlier, your data was not accurate.
+
+223
+00:30:53.890 --> 00:30:57.979
+Coding Ninjas: Right? It contain duplicate entries. So now it will make your data more accurate.
+
+224
+00:30:58.280 --> 00:31:02.109
+Coding Ninjas: Yeah, so this is also one of the options that
+
+225
+00:31:02.260 --> 00:31:04.740
+Coding Ninjas: you can use, and it might be helpful for you.
+
+226
+00:31:05.430 --> 00:31:07.779
+Coding Ninjas: Take it clear right? This option guys.
+
+227
+00:31:09.940 --> 00:31:11.120
+Pankaj Sharma: Yes, sir.
+
+228
+00:31:12.110 --> 00:31:12.950
+Anand sharma: Yeah.
+
+229
+00:31:12.950 --> 00:31:20.070
+Coding Ninjas: These are, you know, some of the very basic options. It is not something which you have to practice very extensively. Yes, but.
+
+230
+00:31:22.300 --> 00:31:28.180
+Jaya Bharti: Sir, can you just repeat, with quick, just thinking how to do this duplicate? Voila!
+
+231
+00:31:29.416 --> 00:31:36.570
+Coding Ninjas: Just select select color data. Select the data. Once you have selected the data, what you will do. Just click on, remove duplicates. That's it.
+
+232
+00:31:39.470 --> 00:31:41.990
+Coding Ninjas: Remove duplicates will be available in data. Tab
+
+233
+00:31:46.440 --> 00:31:51.549
+Coding Ninjas: no deep secret. You have to select the entire data. If you have a very used data set, select the entire data.
+
+234
+00:31:55.330 --> 00:31:56.370
+Coding Ninjas: Okay, that's why I did.
+
+235
+00:31:56.370 --> 00:32:01.200
+Pankaj Sharma: So for selecting the entire data if the data is too long. So what is the shortcut key.
+
+236
+00:32:01.560 --> 00:32:02.750
+Coding Ninjas: Controlling.
+
+237
+00:32:02.870 --> 00:32:03.390
+pulla sai durga prasad: Okay.
+
+238
+00:32:04.250 --> 00:32:08.270
+Coding Ninjas: Oh, okay.
+
+239
+00:32:08.560 --> 00:32:19.349
+Coding Ninjas: so yes, these are some of the very basic options. This is not something which, you have to practice it or not, or think a lot. These are the suit oriented things. You have to do it one time. That's it.
+
+240
+00:32:20.460 --> 00:32:24.550
+Coding Ninjas: Okay, I'll share you another data set also.
+
+241
+00:32:25.760 --> 00:32:28.249
+Coding Ninjas: Now we will come to some important point.
+
+242
+00:32:28.460 --> 00:32:34.380
+Coding Ninjas: Okay? Which 1 min, 1 min.
+
+243
+00:32:57.460 --> 00:33:01.009
+Coding Ninjas: Okay, let me find. I am finding a data cluster.
+
+244
+00:33:33.420 --> 00:33:36.309
+Coding Ninjas: 1 min. I'm finding a particular details. So
+
+245
+00:33:40.720 --> 00:33:45.499
+Coding Ninjas: okay, let's use this data set. Only control agents control a.
+
+246
+00:34:10.580 --> 00:34:14.240
+Coding Ninjas: okay, let's select any of the data set.
+
+247
+00:34:14.900 --> 00:34:18.260
+Coding Ninjas: Let me open. I guess this one registration file.
+
+248
+00:34:19.030 --> 00:34:27.449
+Coding Ninjas: Okay, let's select this data set. This will be used later in the session. But still, you know, we will perform it. Using this data set conditional formatting.
+
+249
+00:34:31.190 --> 00:34:33.260
+Coding Ninjas: Okay, open this particular data set.
+
+250
+00:34:34.719 --> 00:34:42.769
+Coding Ninjas: I've shared it in the chat box, for now, you know, ignore the 2 tabs. We will focus on only one tab here, we will focus only on this particular tab.
+
+251
+00:34:43.469 --> 00:34:47.539
+Coding Ninjas: Okay, so let's say, you have this particular data set.
+
+252
+00:34:47.670 --> 00:34:57.390
+Coding Ninjas: Okay, now there is a very important feature in excel, which I use very often very daily, and it is a simple feature only, but it will be very useful for you.
+
+253
+00:34:57.550 --> 00:35:02.519
+Coding Ninjas: Okay, and that particular feature is known as conditional formatting.
+
+254
+00:35:03.200 --> 00:35:06.460
+Coding Ninjas: which I use very often in my room in my work.
+
+255
+00:35:07.600 --> 00:35:11.430
+Coding Ninjas: and some of you might be aware of it, and you might already have used it.
+
+256
+00:35:12.020 --> 00:35:21.250
+Coding Ninjas: Conditional formatting here. So here you can see, we have. We have a term conditional.
+
+257
+00:35:21.400 --> 00:35:23.159
+Coding Ninjas: and we have a dumb formatting.
+
+258
+00:35:23.470 --> 00:35:43.330
+Coding Ninjas: Okay, so what does? What does formatting means formatting means you are applying some colors or format to your data. Okay? I mean, consider it colors only formatting means. You are applying some colors or something to your data. So this is known as formatting. And what do we mean by conditional.
+
+259
+00:35:43.880 --> 00:35:49.919
+Coding Ninjas: Okay, conditional conditional means that this formatting is based on some condition.
+
+260
+00:35:50.090 --> 00:35:54.639
+Coding Ninjas: There is a condition during which we have to apply the formatting
+
+261
+00:35:55.110 --> 00:35:59.789
+Coding Ninjas: figure. So this is known as conditional formatting. So I'll tell you an example.
+
+262
+00:35:59.940 --> 00:36:02.579
+Coding Ninjas: For for example, let's say you have a
+
+263
+00:36:04.590 --> 00:36:09.060
+Coding Ninjas: for example, let's say you have a income column here. Right? You have income column here.
+
+264
+00:36:09.270 --> 00:36:12.790
+Coding Ninjas: for example, let's say you want to highlight all the people
+
+265
+00:36:12.940 --> 00:36:23.169
+Coding Ninjas: who's in you want to make it green. Okay, so what can be your conditional formatting? Let's say you want to make the color green of all the people whose income.
+
+266
+00:36:24.240 --> 00:36:27.629
+Coding Ninjas: whose income is greater than, let's say, one lakh.
+
+267
+00:36:28.140 --> 00:36:35.280
+Coding Ninjas: Okay, this is your. This is known as a conditional formatting. So what is your formatting formatting? Is that your color will be green.
+
+268
+00:36:35.400 --> 00:36:38.489
+Coding Ninjas: This is your formatting, and what is the condition?
+
+269
+00:36:38.620 --> 00:36:41.680
+Coding Ninjas: Condition is that income should be greater than one lakh.
+
+270
+00:36:41.840 --> 00:36:45.700
+Coding Ninjas: Okay, so it will apply the green color only when the
+
+271
+00:36:46.100 --> 00:36:48.129
+Coding Ninjas: income is greater than one lakh.
+
+272
+00:36:48.740 --> 00:36:52.629
+Coding Ninjas: okay? Or let's say you want to make some make it as red.
+
+273
+00:36:53.460 --> 00:37:05.480
+Coding Ninjas: Okay, you want to make it as red when do you want to make it as red when let's say, what will be the condition when, for example, let's say the income is less than 15,000,
+
+274
+00:37:05.700 --> 00:37:06.859
+Coding Ninjas: for example.
+
+275
+00:37:07.070 --> 00:37:11.460
+Coding Ninjas: Okay, so so what is the formatting? Is formatting? Is the text should be read.
+
+276
+00:37:11.700 --> 00:37:17.710
+Coding Ninjas: and what is the condition? The condition is that income should be less than 15,000.
+
+277
+00:37:18.050 --> 00:37:26.010
+Coding Ninjas: Okay, so here, this part becomes your condition, and this part becomes your
+
+278
+00:37:26.870 --> 00:37:34.279
+Coding Ninjas: formatting. Okay, so, in short, this is known as conditional formatting. Let us see in excel how to do that we will see practically in excel.
+
+279
+00:37:34.440 --> 00:37:36.030
+Coding Ninjas: So open this data set.
+
+280
+00:37:36.340 --> 00:37:39.499
+Coding Ninjas: What will I do? I will select this particular column.
+
+281
+00:37:39.830 --> 00:37:42.049
+Coding Ninjas: Okay, I will select this particular column.
+
+282
+00:37:42.640 --> 00:37:47.180
+Coding Ninjas: and let's say, I want to apply conditional formatting at the top. You can see the option here.
+
+283
+00:37:47.340 --> 00:37:50.560
+Coding Ninjas: Okay, at top. Only you can see the option conditional formatting.
+
+284
+00:37:50.760 --> 00:37:53.480
+Coding Ninjas: There are lots of things here. Okay, we will see everything one by one.
+
+285
+00:37:53.680 --> 00:37:57.770
+Coding Ninjas: There are lots of things. First, st let us focus on highlight sale rule.
+
+286
+00:37:58.110 --> 00:38:15.019
+Coding Ninjas: Okay, highlight say rule. So we have to write some rule rule means condition. We have to write some condition. So what is our 1st condition? My 1st condition is, I want to make it green. If income is greater than, let's say, 70,000. Okay, let's say 70,000.
+
+287
+00:38:15.180 --> 00:38:20.759
+Coding Ninjas: Okay, I want to make it. I want to make the cell green. If the income is greater than 70,000.
+
+288
+00:38:21.030 --> 00:38:22.450
+Coding Ninjas: So I'll select this.
+
+289
+00:38:22.680 --> 00:38:27.550
+Coding Ninjas: I'll click on conditional formatting highlight cell rules. So I want to highlight the cells.
+
+290
+00:38:27.730 --> 00:38:32.979
+Coding Ninjas: So, guys, which option will I select here if I want to fulfill the the condition which was given.
+
+291
+00:38:33.420 --> 00:38:34.170
+Rudra Pratap Singh: Greater than.
+
+292
+00:38:36.280 --> 00:38:45.909
+Coding Ninjas: Greater than right. So my condition is, income should be greater than 70,000. So I'll select greater than. And you have to select this group. Okay, that is important.
+
+293
+00:38:46.400 --> 00:38:48.420
+Coding Ninjas: Okay, so here, what we have to do
+
+294
+00:38:48.600 --> 00:38:54.550
+Coding Ninjas: here, we have to write our condition that it should be greater than 17,000.
+
+295
+00:38:54.960 --> 00:38:57.579
+Coding Ninjas: Okay, it should be greater than 70,000.
+
+296
+00:38:57.790 --> 00:39:01.209
+Coding Ninjas: And what color you want to put here, you have to select the color.
+
+297
+00:39:01.380 --> 00:39:03.359
+Coding Ninjas: Let's say, I want to put green color.
+
+298
+00:39:03.730 --> 00:39:14.640
+Coding Ninjas: Okay? So I have to select green color. So both your conditions are fulfilled. That cell should be greater than 17,000. Make it as green
+
+299
+00:39:14.840 --> 00:39:21.240
+Coding Ninjas: and click on. Okay, figure. So you can see all the cells which are above 70,000 are highlighted.
+
+300
+00:39:21.480 --> 00:39:26.090
+Coding Ninjas: Okay, so what can be the use of this. This is used to identify some pattern or trend.
+
+301
+00:39:26.210 --> 00:39:39.360
+Coding Ninjas: or you are some anomaly you want. You are identifying something right? If you let's say, don't have the formatting. Here you can see all the cells greater than 70,000 are highlighted. Right? You can see all the income greater than 70,000 are green.
+
+302
+00:39:39.500 --> 00:39:51.049
+Coding Ninjas: Let's say, if you don't have this formatting, and if I tell you to identify all the income greater than 70,000, so obviously you will check one by one. Right, you will check one by one. Okay, this is greater than 70,000.
+
+303
+00:39:51.190 --> 00:39:52.510
+Coding Ninjas: This is.
+
+304
+00:39:52.510 --> 00:39:53.210
+Aditya Tiwari: Hello!
+
+305
+00:39:54.310 --> 00:39:58.980
+Coding Ninjas: Yeah, you can just filter. But here, I don't want to filter. I want all the data to be displayed on the screen.
+
+306
+00:40:00.110 --> 00:40:13.399
+Coding Ninjas: Okay, these are big data. Normally, conditional formatting will be used in a small data. Okay, not this big data. But you don't want to filter. It is a small summarized data. I will show you an example, also that where do I use? Where do I use it? I'll show you that also.
+
+307
+00:40:13.690 --> 00:40:14.550
+Coding Ninjas: Keegan.
+
+308
+00:40:14.730 --> 00:40:15.300
+Coding Ninjas: Okay.
+
+309
+00:40:15.300 --> 00:40:15.730
+Azeer Moin: But this.
+
+310
+00:40:15.730 --> 00:40:23.799
+Coding Ninjas: This is an example that. Let's say you want to identify the cells which are greater than 70,000
+
+311
+00:40:24.050 --> 00:40:32.270
+Coding Ninjas: tickets. So you can select this click on conditional formatting highlight cell rules greater than optional
+
+312
+00:40:32.630 --> 00:40:34.630
+Coding Ninjas: chicken so greater than what?
+
+313
+00:40:34.830 --> 00:40:36.440
+Coding Ninjas: 70,000.
+
+314
+00:40:36.750 --> 00:40:41.260
+Coding Ninjas: And you want to apply a green color layer and click on. Okay?
+
+315
+00:40:41.600 --> 00:40:47.680
+Coding Ninjas: So the data has been highlighted till your clearance any doubt. Still, here.
+
+316
+00:40:48.160 --> 00:40:48.800
+Mayank Kashyap: Yes.
+
+317
+00:40:50.410 --> 00:40:52.309
+Coding Ninjas: Anyone. Yasin, you had some doubt.
+
+318
+00:40:56.500 --> 00:40:59.919
+Coding Ninjas: Yeah, yeah. Open us. Now, I'll take some other example. Good, for other example.
+
+319
+00:41:01.380 --> 00:41:09.530
+Coding Ninjas: Okay. Now, let's take second condition. Okay, let's say, my second condition is, I want to highlight all the income in red, which are less than something
+
+320
+00:41:09.810 --> 00:41:16.919
+Coding Ninjas: okay, which are less than certain value. For example, let's say, I want to highlight all the income which are less than 15,000.
+
+321
+00:41:17.340 --> 00:41:23.520
+Coding Ninjas: Okay, so this is my condition. I want to highlight all the income which is less than 15,000.
+
+322
+00:41:24.110 --> 00:41:28.180
+Coding Ninjas: Okay? So same, I'll select the cell. You can apply multiple formats and not an issue.
+
+323
+00:41:28.300 --> 00:41:31.590
+Coding Ninjas: So I'll select the cell conditional, formatting
+
+324
+00:41:31.920 --> 00:41:34.849
+Coding Ninjas: high net sales, which often will assyllect.
+
+325
+00:41:37.720 --> 00:41:38.330
+pulla sai durga prasad: Let's listen.
+
+326
+00:41:40.630 --> 00:41:42.550
+Coding Ninjas: Less than so select less than
+
+327
+00:41:42.770 --> 00:41:46.369
+Coding Ninjas: so, less than what? Less than 15,000.
+
+328
+00:41:46.730 --> 00:41:50.130
+Coding Ninjas: Okay. And the color is red, which is by default.
+
+329
+00:41:50.240 --> 00:41:55.269
+Coding Ninjas: Okay? So you can see, okay, I want to highlight sales, which are less than 15,000.
+
+330
+00:41:56.430 --> 00:42:01.859
+Coding Ninjas: So I mean, Kritika, that you can sort sort. You can do sorting. We have done sorting right in the last session.
+
+331
+00:42:02.020 --> 00:42:03.529
+Coding Ninjas: You have to do sorting here.
+
+332
+00:42:05.010 --> 00:42:11.760
+Coding Ninjas: but that is not my! I don't want to use filter and sorting. I'll show you an example, filter and sorting I don't want to use. That is why I'm doing that.
+
+333
+00:42:13.800 --> 00:42:25.470
+Coding Ninjas: Okay. So I want to. I want to filter out less than 15,000 with red. Okay, I want to allocate less than 15,000 with red. So less than 15,000 will be highlighted with red
+
+334
+00:42:26.050 --> 00:42:27.340
+Coding Ninjas: and click on. Okay.
+
+335
+00:42:27.600 --> 00:42:34.039
+Coding Ninjas: figure. So you can see all the income less than 15,000. You can see blank also getting highlighted. So blank is considered less, only
+
+336
+00:42:34.390 --> 00:42:39.410
+Coding Ninjas: trigger. So you can see all the sales which are less than 3,000 has been highlighted.
+
+337
+00:42:40.390 --> 00:42:46.320
+Coding Ninjas: Okay, so this is how you can apply the conditional formatting, using colors.
+
+338
+00:42:46.610 --> 00:42:49.890
+Coding Ninjas: Chicken. One more thing, let's say, kids at home.
+
+339
+00:42:50.070 --> 00:43:00.170
+Coding Ninjas: Okay, yeah. They have 1 0 1 0, right? So this pattern is very confusing to see. I am not able to, you know. See, with my where is one and where is 0? It it get. It looks very mixed up right? 0. And one
+
+340
+00:43:00.370 --> 00:43:10.279
+Coding Ninjas: okay, because normally, when you have a flag 0, 1 0 1 then sometimes, you know, eyes eyes could get confused. It won't be able to detect one very easily.
+
+341
+00:43:10.500 --> 00:43:18.749
+Coding Ninjas: So what I need to do I need to apply conditional formatting here what I want to do. I want to highlight all the cells where there are kids at home.
+
+342
+00:43:19.470 --> 00:43:24.810
+Coding Ninjas: Okay, where there are one kids at home where there are. However, there are at least one kids at home.
+
+343
+00:43:24.950 --> 00:43:32.470
+Coding Ninjas: Okay, there can be 0 kids, one kids, 2 kids, 3 kids. I want to highlight all the cells where there are at least one kids.
+
+344
+00:43:32.930 --> 00:43:35.570
+Coding Ninjas: Okay, so let us do that. I want to make it green.
+
+345
+00:43:36.050 --> 00:43:39.249
+Coding Ninjas: What do? What do I want to make it green? At least
+
+346
+00:43:39.920 --> 00:43:41.719
+Coding Ninjas: one kid should be there at home.
+
+347
+00:43:43.200 --> 00:43:46.139
+Coding Ninjas: Okay? Which means it can be greater. Equal to one.
+
+348
+00:43:46.400 --> 00:43:49.440
+Coding Ninjas: Okay, at least one hits meant greater equal to one.
+
+349
+00:43:49.720 --> 00:43:53.759
+Coding Ninjas: Okay, so these these particular cells. I want to highlight.
+
+350
+00:43:54.160 --> 00:43:58.020
+Coding Ninjas: So I'll select this particular cell conditional, formatting
+
+351
+00:43:58.390 --> 00:44:01.220
+Coding Ninjas: highlight sales, which option will I select grace.
+
+352
+00:44:05.740 --> 00:44:06.769
+Coding Ninjas: We talk soon.
+
+353
+00:44:08.410 --> 00:44:09.469
+Rudra Pratap Singh: Equal, to.
+
+354
+00:44:11.030 --> 00:44:12.080
+Coding Ninjas: Equal, to what?
+
+355
+00:44:14.370 --> 00:44:15.719
+Rohit Raj: We will go to more rules.
+
+356
+00:44:15.720 --> 00:44:17.120
+Rudra Pratap Singh: Equal to one.
+
+357
+00:44:17.460 --> 00:44:20.690
+Coding Ninjas: But it can be 2 kids also, right? There can be great gotcha.
+
+358
+00:44:20.690 --> 00:44:22.370
+pulla sai durga prasad: Greater than greater than.
+
+359
+00:44:23.060 --> 00:44:24.429
+Coding Ninjas: Okay, greater than what?
+
+360
+00:44:25.130 --> 00:44:26.870
+pulla sai durga prasad: Greater than one.
+
+361
+00:44:26.870 --> 00:44:28.299
+Rugvedi Wankhade: No, Angie is great to be.
+
+362
+00:44:28.660 --> 00:44:29.310
+Rohit Raj: No, no, no.
+
+363
+00:44:29.310 --> 00:44:30.120
+Aditya Tiwari: That's the goal.
+
+364
+00:44:31.180 --> 00:44:32.370
+Anand sharma: It is.
+
+365
+00:44:32.550 --> 00:44:33.380
+Rudra Pratap Singh: 0 0.
+
+366
+00:44:35.080 --> 00:44:42.000
+Coding Ninjas: Correct, greater than 0. If you select greater than one, then one won't get highlighted right? Greater than one means starting from 2
+
+367
+00:44:42.200 --> 00:44:45.160
+Coding Ninjas: bigger, so right? Greater than 0,
+
+368
+00:44:45.320 --> 00:44:48.639
+Coding Ninjas: which means all the values greater than 0 or 1, 2, 3, 4, 5.
+
+369
+00:44:48.820 --> 00:44:57.649
+Coding Ninjas: Okay, these values are greater than 0. Right? Okay? So I highlight all the cells which are greater than 0 with the green.
+
+370
+00:44:58.120 --> 00:45:01.880
+Coding Ninjas: Okay? So you can see all the cells which are greater than 0 will be highlighted
+
+371
+00:45:02.190 --> 00:45:03.570
+Coding Ninjas: and click on. Okay.
+
+372
+00:45:04.100 --> 00:45:11.069
+Coding Ninjas: see, guys. So here you can see all the cells which has greater than 0 children, which means one children, 2 children
+
+373
+00:45:11.190 --> 00:45:25.770
+Coding Ninjas: she can. 3 children will also be there. Thing is all these are getting highlighted. Now you can spot it easily. That okay, this particular customer has one children. This customer has one children, you can highlight it easily. Okay, so yeah, you can apply the conditional formatting.
+
+374
+00:45:25.980 --> 00:45:29.820
+Coding Ninjas: Now let me tell you, where? Where do I use conditional formatting?
+
+375
+00:45:31.210 --> 00:45:40.886
+Coding Ninjas: Yeah, yeah, it is applied applicable to multiple columns. If you have, let's say, I'll show you multiple columns also. So normally, where do I use it? For example, let's say I have.
+
+376
+00:45:41.600 --> 00:45:49.489
+Coding Ninjas: see, here we have highlight silver. Okay, let me show you. With that example. I will show you with that that way. Do I use it because it requires some other thing?
+
+377
+00:45:49.740 --> 00:45:53.410
+Coding Ninjas: Okay, so this one, you can highlight some of the some of the data.
+
+378
+00:45:53.540 --> 00:45:55.370
+Coding Ninjas: Okay, some of the data you can highlight
+
+379
+00:45:55.660 --> 00:46:15.790
+Coding Ninjas: using highlight solution here, you can write your condition. Okay, that I want to highlight greater than some value less than some value equal to some value. So here we highlighted income, greater than 70,000 income, less than 15,000. Here we highlighted kids at home which have, which has at least one kid at home.
+
+380
+00:46:15.900 --> 00:46:19.660
+Coding Ninjas: It can be one kids, 2 kids, 3 kids. Everything has been highlighted
+
+381
+00:46:20.010 --> 00:46:24.850
+Coding Ninjas: chicken. So this is highlight cell rooms now coming to the
+
+382
+00:46:25.190 --> 00:46:36.110
+Coding Ninjas: now I will, I will. You can remove the formatting from me. There is option of clear, clear rules. If you want to remove the conditional formatting, you can come to clear rules.
+
+383
+00:46:36.250 --> 00:46:39.590
+Coding Ninjas: Okay, I will clear all the formatting from the entire sheet.
+
+384
+00:46:40.100 --> 00:46:46.750
+Coding Ninjas: thinking so entire set, I will remove the formatting. So high. Conditional formatting, clear rules.
+
+385
+00:46:46.860 --> 00:46:48.909
+Coding Ninjas: clear rules from entire shield.
+
+386
+00:46:49.430 --> 00:46:53.369
+Coding Ninjas: Okay? So you can see from the entire sheet all the formatting will be removed.
+
+387
+00:46:53.700 --> 00:46:56.479
+Coding Ninjas: Trigger. So this is a quick way to remove all the formatting.
+
+388
+00:46:56.620 --> 00:46:57.569
+Coding Ninjas: If you want.
+
+389
+00:46:58.490 --> 00:47:04.729
+Coding Ninjas: Now coming to the next thing. Okay, let's say I would. Now, how? How other other ways you can highlight it.
+
+390
+00:47:04.910 --> 00:47:10.390
+Coding Ninjas: So let's say, you want to highlight or or highlight top 3 income.
+
+391
+00:47:11.440 --> 00:47:13.290
+Coding Ninjas: Okay or top 5.
+
+392
+00:47:13.450 --> 00:47:16.609
+Coding Ninjas: Let's say you want to highlight top fine come.
+
+393
+00:47:18.740 --> 00:47:28.829
+Coding Ninjas: which means highest for income, which are the employees which has highest for income that you want to highlight. Okay, so let's see which employees has the top 5 income best income.
+
+394
+00:47:28.960 --> 00:47:32.309
+Coding Ninjas: So again, you will select income conditional formatting
+
+395
+00:47:32.560 --> 00:47:34.330
+Coding Ninjas: guys. Which option should I select.
+
+396
+00:47:36.070 --> 00:47:37.930
+Rudra Pratap Singh: Top and bottom rules.
+
+397
+00:47:38.360 --> 00:47:43.980
+Coding Ninjas: Correct top and bottom rooms, right? So I want to select top items. But top, which option will I select in top.
+
+398
+00:47:44.490 --> 00:47:45.180
+Pankaj Sharma: Don't! You can.
+
+399
+00:47:45.180 --> 00:47:48.160
+Rudra Pratap Singh: Select top 10, and then you can change it to top 10.
+
+400
+00:47:48.160 --> 00:47:48.710
+pulla sai durga prasad: Done.
+
+401
+00:47:49.110 --> 00:47:57.840
+Coding Ninjas: Correct. So I'll select top 10 items because I want to select the top items. 10. I can change later. So don't worry about it is written, top 10 items, but 10, you can change.
+
+402
+00:47:58.080 --> 00:48:02.149
+Coding Ninjas: So I want to select top items. So select top items.
+
+403
+00:48:02.360 --> 00:48:06.790
+Coding Ninjas: How many top items you want to select. You want to select top 5 items.
+
+404
+00:48:06.970 --> 00:48:08.639
+Coding Ninjas: Okay, so right there, file.
+
+405
+00:48:08.970 --> 00:48:10.970
+Coding Ninjas: And I want to make it as green.
+
+406
+00:48:11.570 --> 00:48:16.470
+Coding Ninjas: Okay, so I'll do it again. Select it. Conditional formatting top items.
+
+407
+00:48:16.640 --> 00:48:20.690
+Coding Ninjas: Okay, then, I want top 5 items. Right? So I'll select top items.
+
+408
+00:48:21.340 --> 00:48:26.929
+Coding Ninjas: Okay, so how many top items I want to select top 5 incomes I want to select. So I'll write 5.
+
+409
+00:48:27.270 --> 00:48:32.669
+Coding Ninjas: And what is the color that I want to put? Let's say I want to highlight them with green color.
+
+410
+00:48:32.820 --> 00:48:40.270
+Coding Ninjas: So I'll select green. So the top 5 income will be highlighted with green color and click on. Okay.
+
+411
+00:48:40.860 --> 00:48:51.119
+Coding Ninjas: figure, if you scroll below, you will see 5 items getting highlighted is the highest income. See, this one is getting highlighted one lakh 57,001 of the highest income.
+
+412
+00:48:51.970 --> 00:49:03.959
+Coding Ninjas: If you scroll below, you will see more options. Okay, the data is very useful. That's why I mean, this is not a use case. This is just an example, I'll show you practical use case also. Where do we use this? This is not a practical use case where we use the conditional format.
+
+413
+00:49:04.120 --> 00:49:07.419
+Coding Ninjas: Okay, but this is just an example. I'll show you the practical use case also.
+
+414
+00:49:07.590 --> 00:49:12.940
+Coding Ninjas: So here you can see this is getting highlighted. Another top income so total 5 sales will be highlighted.
+
+415
+00:49:13.460 --> 00:49:16.160
+Coding Ninjas: Okay, all the the file income will be valid.
+
+416
+00:49:21.690 --> 00:49:31.520
+Coding Ninjas: No, that that is not possible. I mean, okay, that one. I mean, you can. You can do using your clear rules or manage rules. There is option of manage rules.
+
+417
+00:49:32.110 --> 00:49:43.229
+Coding Ninjas: Okay, manage rules. You will see all your rules. Let's say I want to delete this particular rule. So select this rule and click on Delete. Okay, you're in. I'll I'll apply one more rule. And then see
+
+418
+00:49:43.830 --> 00:49:49.640
+Coding Ninjas: see here. Let's say, I want to apply one more. I want to select bottom, 10 items, bottom, 10 income.
+
+419
+00:49:50.210 --> 00:49:52.300
+Coding Ninjas: Okay? I've selected software income.
+
+420
+00:49:52.520 --> 00:49:56.869
+Coding Ninjas: Now, I want to select bottom 10 incomes, least in top.
+
+421
+00:49:58.010 --> 00:50:01.180
+Coding Ninjas: 10 people with the least income that I want to select.
+
+422
+00:50:01.820 --> 00:50:05.700
+Coding Ninjas: Okay, so what you will do again, select it. Conditional formatting
+
+423
+00:50:06.150 --> 00:50:09.689
+Coding Ninjas: top bottom rules here. Which option will I select? Guys.
+
+424
+00:50:12.090 --> 00:50:13.410
+Anand sharma: Bottom 10 and Sir your camera is off
+
+425
+00:50:16.840 --> 00:50:24.920
+Coding Ninjas: From there. And I will keep with 10, because I want to highlight 10 items. So bottom 10 items. I want to highlight with red color.
+
+426
+00:50:25.180 --> 00:50:28.409
+Coding Ninjas: Okay, so bottom, 10 items with red color and click on local.
+
+427
+00:50:28.710 --> 00:50:31.720
+Coding Ninjas: So you can see, this is the bottom. Most, item 5, 6, 4, 8.
+
+428
+00:50:32.020 --> 00:50:35.190
+Coding Ninjas: Okay, then, 2, 4, 4, 7, very full, very less.
+
+429
+00:50:35.320 --> 00:50:44.999
+Coding Ninjas: Okay. So like this, 10 items will be highlighted. If you scroll below, you can see here. 6, 8, 3, 5. So like this bottom, most 10 income will be highlighted.
+
+430
+00:50:45.250 --> 00:50:51.980
+Coding Ninjas: Okay, so this is how you can apply your rules. Top 10, bottom 10, top 100 bottom 100. Whatever you want to. Highlight.
+
+431
+00:50:52.150 --> 00:50:57.089
+Coding Ninjas: Let's say you want to delete any rule, any specific rule. There is an option of manage rules.
+
+432
+00:50:57.220 --> 00:50:58.349
+Coding Ninjas: Click on this.
+
+433
+00:50:58.880 --> 00:51:05.890
+Coding Ninjas: Okay? So here you will see all your rules. 1st rule that you applied is top 5, right? Then you apply bottom 10.
+
+434
+00:51:06.070 --> 00:51:10.699
+Coding Ninjas: So you will see the rules. Let's say you want to delete this specific rule of top 5.
+
+435
+00:51:11.040 --> 00:51:20.569
+Coding Ninjas: Okay, top file. You want to delete. So here you can select it and click on delete rule, so that particular top 5 rule will be deleted and click on. Okay.
+
+436
+00:51:20.770 --> 00:51:33.050
+Coding Ninjas: so the top 5 rule will be deleted and the top. 5 items won't be highlighted. So if you want to remove, if you don't, if you want to remove from entire worksheet, then clear rules from entire worksheet, but it will remove from entire worksheet all the rules.
+
+437
+00:51:33.180 --> 00:51:37.140
+Coding Ninjas: But if you want to remove any specific room, then manage list.
+
+438
+00:51:37.580 --> 00:51:47.900
+Coding Ninjas: And here you can delete a specific room. Okay, I haven't selected show formatting for entire schedule. This is the room. Let's say this is highlighted. Right? If I delete the room
+
+439
+00:51:48.200 --> 00:51:51.040
+Coding Ninjas: and click on. Okay, you can see highlighting is gone.
+
+440
+00:51:51.300 --> 00:51:53.760
+Coding Ninjas: So this is how you can remove a specific room.
+
+441
+00:51:54.600 --> 00:51:55.850
+Coding Ninjas: Okay.
+
+442
+00:51:55.850 --> 00:51:57.000
+Mayank Kashyap: Edit. Also.
+
+443
+00:51:57.650 --> 00:51:59.499
+Coding Ninjas: Sorry you can add into the meeting.
+
+444
+00:51:59.500 --> 00:51:59.920
+Mayank Kashyap: Ridiculous.
+
+445
+00:52:00.760 --> 00:52:02.530
+Coding Ninjas: You know I did also manually.
+
+446
+00:52:04.220 --> 00:52:06.449
+Md Sultan: Sir, could you please repeat the relation part? Sir?
+
+447
+00:52:06.450 --> 00:52:08.530
+Md Shahnawaz: Can you do it? Once once more, sir?
+
+448
+00:52:09.010 --> 00:52:10.110
+Md Sultan: Deletion, part.
+
+449
+00:52:10.710 --> 00:52:15.460
+Coding Ninjas: Hmm, so selected conditional formatting manage rules.
+
+450
+00:52:15.900 --> 00:52:27.009
+Coding Ninjas: Okay, manage rules. I mean, yeah, here you have delete rule, edit rule. Whatever else you want to edit whatever you want to delete, you can do it from here. Suppose this I want to delete, so select it, delete it.
+
+451
+00:52:27.180 --> 00:52:28.520
+Coding Ninjas: so it will be deleted.
+
+452
+00:52:29.120 --> 00:52:32.329
+Coding Ninjas: Okay, I suppose this you want to edit. So click on edit.
+
+453
+00:52:32.810 --> 00:52:36.880
+Coding Ninjas: Okay? So yeah, you can edit. Let's say, I want bottom 50 ids.
+
+454
+00:52:37.160 --> 00:52:46.449
+Coding Ninjas: Then click on. Okay, so it will be applied. So it will be edited. So you can edit and delete rule from here. Let's say, I want to delete. And okay. So the rule will be deleted.
+
+455
+00:52:46.910 --> 00:52:47.919
+Coding Ninjas: Okay, what about.
+
+456
+00:52:47.920 --> 00:52:48.900
+Mayank Kashyap: 10 rooms, sir.
+
+457
+00:52:49.860 --> 00:52:57.420
+Coding Ninjas: So you can create a new rule. So new rule is same here also, you can create right? So no need of going to new here. Only you can create right whatever you want you can create from here.
+
+458
+00:52:57.680 --> 00:52:59.819
+Coding Ninjas: So no need of going to do.
+
+459
+00:53:01.600 --> 00:53:04.320
+Coding Ninjas: Yeah, that you can do just to edit or delete them.
+
+460
+00:53:05.800 --> 00:53:08.410
+Soumya Samal: Sir, what about the icon sets and color scales.
+
+461
+00:53:09.010 --> 00:53:10.510
+Coding Ninjas: Then we will come later.
+
+462
+00:53:11.700 --> 00:53:15.269
+Coding Ninjas: Okay, then, till you're in everything. Clear, guys.
+
+463
+00:53:15.820 --> 00:53:16.860
+Pankaj Sharma: Yes, sir.
+
+464
+00:53:17.810 --> 00:53:18.540
+pulla sai durga prasad: Yes, it will.
+
+465
+00:53:18.540 --> 00:53:21.269
+Coding Ninjas: Now, okay, now, let's say you have.
+
+466
+00:53:21.590 --> 00:53:26.930
+Coding Ninjas: Okay, yeah. Blenzel will not highlight here?
+
+467
+00:53:27.900 --> 00:53:43.360
+Coding Ninjas: Okay? So I mean, it's good. Right? That blank cell is not getting high anyways. We have to. If you want to highlight blank, it should be highlighted differently, because blank is not under lowest income. It can be considered as null. Blank is not lowest income. It is something called as null.
+
+468
+00:53:43.540 --> 00:53:49.089
+Coding Ninjas: Okay? So that's why it won't get highlighted here. But if you select less than 15,000 or something, then it will get highlighted
+
+469
+00:53:49.330 --> 00:53:54.890
+Coding Ninjas: for bottom groups only the numbers are considered. That's why it is, considering only the numbers call.
+
+470
+00:53:56.960 --> 00:53:58.609
+Coding Ninjas: That's why Brian wrote it.
+
+471
+00:53:59.340 --> 00:54:02.102
+Coding Ninjas: Okay. Then there is also some option of top
+
+472
+00:54:03.045 --> 00:54:06.600
+Coding Ninjas: above everything, there is an option of above everything.
+
+473
+00:54:06.800 --> 00:54:16.140
+Coding Ninjas: Let's say I want to say, this can be used in schools, right? You want to highlight all the students whose scores are above average. Okay, highlight. All the students whose scores are above average.
+
+474
+00:54:16.520 --> 00:54:21.030
+Coding Ninjas: Take care or highlight. All the students whose scores are below average score.
+
+475
+00:54:21.380 --> 00:54:24.080
+Coding Ninjas: Take, let's say, average score of a class is 16.
+
+476
+00:54:24.200 --> 00:54:27.890
+Coding Ninjas: So I want to highlight all the students whose score is above 60,
+
+477
+00:54:28.190 --> 00:54:36.130
+Coding Ninjas: okay or below average means, if the average is 60, I want to highlight scores of all the students whose scores are less than 60.
+
+478
+00:54:36.570 --> 00:54:39.680
+Coding Ninjas: Okay, so for that, you can use above and below average.
+
+479
+00:54:39.890 --> 00:54:52.280
+Coding Ninjas: Let's say, I want to highlight all the people who have above average income above average income, so average automatically, it will calculate we don't need to do it automatically. It will calculate the average, and it will highlight it. We don't need to do anything.
+
+480
+00:54:52.900 --> 00:54:56.500
+Coding Ninjas: Okay, so selected, conditional formatting
+
+481
+00:54:56.630 --> 00:55:07.790
+Coding Ninjas: top bottom rules. Here you have option of above average and below average. Let's say you want to highlight all the income which is above average income. So click on above average.
+
+482
+00:55:08.650 --> 00:55:13.850
+Coding Ninjas: And I want to highlight above average with green. So select green and click on. Okay?
+
+483
+00:55:14.190 --> 00:55:20.880
+Coding Ninjas: So here you can see all the income with above average all, the income with above average has been highlighted.
+
+484
+00:55:21.020 --> 00:55:27.129
+Coding Ninjas: So these incomes, 58,000. 71,000. Okay, so, Pasta, you can use equal to
+
+485
+00:55:27.460 --> 00:55:32.900
+Coding Ninjas: highlight cell rules equal to blank, simple, right explorer, equal to blank
+
+486
+00:55:34.680 --> 00:55:39.609
+Coding Ninjas: figure. So you can see all the income above average has been highlighted.
+
+487
+00:55:39.770 --> 00:55:43.630
+Coding Ninjas: Now, let's say I want to highlight all the income which are below average.
+
+488
+00:55:43.850 --> 00:55:48.260
+Coding Ninjas: So selected, conditional formatting below average.
+
+489
+00:55:48.480 --> 00:55:51.950
+Coding Ninjas: And I want to highlight with red and click on. Okay.
+
+490
+00:55:52.130 --> 00:55:56.130
+Coding Ninjas: so you can see all the income which are below, the average income has been highlighted.
+
+491
+00:55:56.340 --> 00:56:05.079
+Coding Ninjas: Okay, so like that, you can highlight above average income income which are above average and red is incomes which are below average, which means very less income.
+
+492
+00:56:05.470 --> 00:56:08.070
+Coding Ninjas: Okay, so this is how you can highlight above and do that.
+
+493
+00:56:09.320 --> 00:56:10.330
+Coding Ninjas: Yes, mobile.
+
+494
+00:56:12.240 --> 00:56:16.420
+Coding Ninjas: See, you're clear about this guys. It is simple, nothing much complicated.
+
+495
+00:56:19.160 --> 00:56:20.149
+Pankaj Sharma: Yes, sir.
+
+496
+00:56:21.560 --> 00:56:29.250
+Coding Ninjas: There are. There are some other rules also. there are other rules equal to. Let's say someone was asking right that they want to highlight blank cells
+
+497
+00:56:29.380 --> 00:56:37.269
+Coding Ninjas: bigger. There are blank cells. Right? Let's say, I want to highlight this blank cells. So selected, conditional formatting equal.
+
+498
+00:56:37.620 --> 00:56:43.040
+Coding Ninjas: So the data should be equal to blank. Okay, I guess it will be highlighted by this or not.
+
+499
+00:56:43.660 --> 00:56:46.879
+Coding Ninjas: Okay, glen cannot be highlighted from here over there.
+
+500
+00:56:48.540 --> 00:56:51.499
+Coding Ninjas: and it should be highlighted or you can see it.
+
+501
+00:56:53.160 --> 00:56:56.010
+Coding Ninjas: Conditional, formatting highlight cell rules.
+
+502
+00:56:56.440 --> 00:56:57.820
+Coding Ninjas: It will do.
+
+503
+00:57:03.340 --> 00:57:04.740
+Coding Ninjas: It's just.
+
+504
+00:57:06.075 --> 00:57:10.250
+Rudra Pratap Singh: Sir, I don't think so. It will work, because here we have to give the cell reference.
+
+505
+00:57:12.470 --> 00:57:13.260
+Coding Ninjas: Yeah.
+
+506
+00:57:15.850 --> 00:57:33.580
+Coding Ninjas: yeah, okay. Anyways, Blank, you will fill the missing one. You don't need to highlight the blanks I was just checking on my own. So you have to, anyways remove the blank colors before, so you won't highlight it. Anyways, I was just checking, because I've also not highlighted blank. Anyways.
+
+507
+00:57:34.270 --> 00:57:36.619
+Coding Ninjas: Yeah, I will show you for text. Also, Michelle.
+
+508
+00:57:37.920 --> 00:57:45.000
+Coding Ninjas: Now let's also see something for text in highlight cell rules. There are some options right? Regarding text.
+
+509
+00:57:45.320 --> 00:57:48.670
+Coding Ninjas: Okay. So let's say, you want to highlight some text.
+
+510
+00:57:48.790 --> 00:57:53.410
+Coding Ninjas: Let's say you want to highlight all the marital status.
+
+511
+00:57:53.730 --> 00:58:02.869
+Coding Ninjas: So Mayak, I mean, it is it is common sense, right? I mean, there is no fixed whatever amount is, you can use it. It is common sense, right? I mean, if you want to highlight, all the income greater than something.
+
+512
+00:58:03.340 --> 00:58:04.870
+Coding Ninjas: then you will select greater than
+
+513
+00:58:04.990 --> 00:58:08.139
+Coding Ninjas: so it's pretty much based on analysis.
+
+514
+00:58:11.040 --> 00:58:16.200
+Coding Ninjas: Okay, whatever is the problem statement, whatever you want to highlight that you can choose.
+
+515
+00:58:16.790 --> 00:58:20.359
+Coding Ninjas: Let's say I want to highlight all the married people.
+
+516
+00:58:20.690 --> 00:58:21.640
+Coding Ninjas: Can you go?
+
+517
+00:58:22.500 --> 00:58:26.980
+Coding Ninjas: I want to highlight all the merit people, so I'll select this conditional, formatting
+
+518
+00:58:27.270 --> 00:58:36.850
+Coding Ninjas: text that contain equal to here. I can use equal to a text that contains anything I'll use equal to. Let's say I want to highlight marital status which are meritable.
+
+519
+00:58:37.130 --> 00:58:40.880
+Coding Ninjas: and I want to make it as green, or I want to make it as yellow
+
+520
+00:58:41.280 --> 00:58:44.090
+Coding Ninjas: thing is, all the valid people will be highlighted as yellow.
+
+521
+00:58:44.720 --> 00:58:52.180
+Coding Ninjas: Okay, let's say you want to highlight all the Phd people so conditional formatting highlight cell rules equal to
+
+522
+00:58:52.290 --> 00:58:55.510
+Coding Ninjas: so education should be equal to Phd.
+
+523
+00:58:56.110 --> 00:58:59.409
+Coding Ninjas: okay. And I want to make it as green.
+
+524
+00:58:59.750 --> 00:59:04.310
+Coding Ninjas: So all the Phd people will be highlighted as green. So you can use with text also
+
+525
+00:59:05.040 --> 00:59:05.860
+Coding Ninjas: to you. Good.
+
+526
+00:59:07.680 --> 00:59:10.379
+Coding Ninjas: So you can use your text also.
+
+527
+00:59:10.681 --> 00:59:12.489
+Aditya Tiwari: Sir, can I ask a question?
+
+528
+00:59:12.490 --> 00:59:13.370
+Coding Ninjas: Oh yes!
+
+529
+00:59:13.990 --> 00:59:22.489
+Aditya Tiwari: Sir, if we are going to highlight the marital status as a married, and also we want to make the same color for the together also.
+
+530
+00:59:22.770 --> 00:59:25.351
+Aditya Tiwari: So do we need to like
+
+531
+00:59:26.574 --> 00:59:31.460
+Aditya Tiwari: do you need to give the another like rules.
+
+532
+00:59:31.460 --> 00:59:32.120
+Coding Ninjas: Yes.
+
+533
+00:59:32.120 --> 00:59:34.239
+Aditya Tiwari: Or in the same rule. We can do that.
+
+534
+00:59:35.550 --> 00:59:40.280
+Coding Ninjas: Yeah. Another room. Obviously, yeah, I mean.
+
+535
+00:59:41.220 --> 00:59:43.070
+Azeer Moin: Hello! Oh, oh.
+
+536
+00:59:44.810 --> 00:59:45.380
+Coding Ninjas: Yes, Nazi.
+
+537
+00:59:45.940 --> 00:59:48.770
+Azeer Moin: So I have a question. Hello!
+
+538
+00:59:49.730 --> 00:59:51.230
+Azeer Moin: Am I audible?
+
+539
+00:59:51.230 --> 00:59:51.900
+Coding Ninjas: 5 years yes.
+
+540
+00:59:55.148 --> 01:00:19.740
+Azeer Moin: Sir, like there is a question in like assignment. In excel sheet. Like see school.
+
+541
+01:00:19.740 --> 01:00:21.710
+Coding Ninjas: The assignment you have to do conditional, formatting.
+
+542
+01:00:21.710 --> 01:00:22.550
+Azeer Moin: Thank you for calling.
+
+543
+01:00:22.980 --> 01:00:23.930
+Azeer Moin: Sorry.
+
+544
+01:00:24.240 --> 01:00:25.640
+Coding Ninjas: Is it based on conditional format.
+
+545
+01:00:26.680 --> 01:00:28.990
+Rudra Pratap Singh: It was based on sorting and filtering.
+
+546
+01:00:32.520 --> 01:00:39.930
+Azeer Moin: Location, a ABC. Coffee, Sari locations.
+
+547
+01:00:39.930 --> 01:00:43.720
+Coding Ninjas: Because it is a different object. Let's not.
+
+548
+01:00:45.920 --> 01:00:47.059
+Azeer Moin: Thank you.
+
+549
+01:00:48.980 --> 01:00:53.750
+Coding Ninjas: You want to forward 2 or more columns so you can do understand the multiple. You know, it's not an issue
+
+550
+01:00:56.490 --> 01:00:57.390
+Coding Ninjas: to, you know.
+
+551
+01:00:57.860 --> 01:01:02.740
+Md Sultan: Sir, but going to the excel sheet, sir, can we know which formatting has been used on this particular excel sheet.
+
+552
+01:01:04.990 --> 01:01:08.440
+Coding Ninjas: Managements. That's what I showed you, right managements. You will see all the call.
+
+553
+01:01:09.593 --> 01:01:11.260
+Coding Ninjas: You guys
+
+554
+01:01:18.270 --> 01:01:21.690
+Coding Ninjas: case sensitive function here in helping you send it.
+
+555
+01:01:24.530 --> 01:01:29.450
+Coding Ninjas: Yeah, obviously, it is case sensitive. I mean here, if you let's say I want to select single.
+
+556
+01:01:30.122 --> 01:01:33.080
+Coding Ninjas: Let's give us kind of conditional format.
+
+557
+01:01:37.750 --> 01:01:38.560
+Rounak Das: Hello!
+
+558
+01:01:39.230 --> 01:01:40.170
+Coding Ninjas: Yes.
+
+559
+01:01:40.831 --> 01:01:52.059
+Rounak Das: Sir, when I am trying. So if I am giving the Phd. The string in normal, like all in lower case, nothing is a problem. Actually, so is.
+
+560
+01:01:52.060 --> 01:01:52.640
+Coding Ninjas: And.
+
+561
+01:01:52.640 --> 01:01:55.520
+Rounak Das: That we have to keep in mind, which are case sensitive.
+
+562
+01:01:57.510 --> 01:02:02.970
+Coding Ninjas: I mean. Here, here you are saying right, let's say I'm selecting equal. And I'm selecting, let's say, small master.
+
+563
+01:02:03.150 --> 01:02:06.219
+Coding Ninjas: right? So this is on the year end. It does not matter right.
+
+564
+01:02:06.855 --> 01:02:08.989
+Rounak Das: Does not matter. Actually, that's the thing.
+
+565
+01:02:08.990 --> 01:02:11.630
+Coding Ninjas: You don't have to remember anything. I mean, it's just practical.
+
+566
+01:02:12.050 --> 01:02:18.480
+Coding Ninjas: I mean, you don't have to remember anything. I also don't know which is, I also don't know. This is considered or not. You can just try it once and see.
+
+567
+01:02:18.670 --> 01:02:36.289
+Coding Ninjas: I mean, these are not something which you have to remember or keep in mind. These are just. I mean, you should remember the logical things. These are not logical things. These are just tools, right? So tools you can explore, even if you don't know that is not an issue, you can just click on it and see like I don't. I didn't know whether it was case, sensitive or not.
+
+568
+01:02:36.570 --> 01:02:37.560
+Coding Ninjas: switch over.
+
+569
+01:02:39.740 --> 01:02:47.899
+Coding Ninjas: Yes, we yes, we shall. You can create one more thing and highlight, not an issue, or in banalo create and highlight masters. Also, that is fine.
+
+570
+01:02:48.800 --> 01:02:54.800
+Coding Ninjas: Okay, think there are other options also, such as Beta. One
+
+571
+01:02:55.040 --> 01:02:58.280
+Coding Ninjas: take, I'll clear the rules. Clear rules from entire sheet.
+
+572
+01:02:58.740 --> 01:03:01.750
+Coding Ninjas: There are other things also, such as data bars.
+
+573
+01:03:01.950 --> 01:03:06.859
+Coding Ninjas: Keegan. So in data bars, let's say you don't want to add color or anything, let's say this is income.
+
+574
+01:03:07.430 --> 01:03:20.060
+Coding Ninjas: Take a conditional formatting. I am adding a data. And you anything you can edit. These are just colors, any color. Whatever color you write you like, you can add, let's say, I want to add this color blue color. So I'll click on this blue data.
+
+575
+01:03:20.690 --> 01:03:22.220
+Coding Ninjas: Take a see? The data mark.
+
+576
+01:03:23.000 --> 01:03:33.740
+Coding Ninjas: Okay, so data bars. So yeah, you can see the size of each data bar is different. Right? So how is the size? Determined size is determined through the numbers
+
+577
+01:03:34.210 --> 01:03:39.969
+Coding Ninjas: ticket if your income is very low. So here you can see this 5, 6, 4, 8 income is very low. Right?
+
+578
+01:03:40.070 --> 01:03:42.739
+Coding Ninjas: So that's why the size of data is very small.
+
+579
+01:03:43.360 --> 01:03:50.309
+Coding Ninjas: There is income 58,607, which is a little bit higher. So here the size of data bar is little bit bigger.
+
+580
+01:03:51.310 --> 01:03:52.459
+Coding Ninjas: We'll give one break.
+
+581
+01:03:58.620 --> 01:04:03.479
+Coding Ninjas: Okay, there was one very big value. That's why I understood. Take a year. There is option 4, 55.
+
+582
+01:04:04.730 --> 01:04:06.479
+Coding Ninjas: Yeah, you can do this anymore.
+
+583
+01:04:07.960 --> 01:04:13.600
+Coding Ninjas: Oh, there is an option of 4, 55. The value is very small. Right? That's why there is. You cannot see the data.
+
+584
+01:04:13.740 --> 01:04:22.129
+Coding Ninjas: This value 63,000 is a little bit big value. So the data bar is also big, 75,000. Again, bigger value. The size of data bar is also big.
+
+585
+01:04:22.400 --> 01:04:32.469
+Coding Ninjas: Okay, so here. So here, so here, what what does it mean? It? It represents the size of the data bar. If the income is high, the size of the data bar will be bigger.
+
+586
+01:04:32.580 --> 01:04:35.140
+Coding Ninjas: because, similarly, you can apply it in recency
+
+587
+01:04:35.360 --> 01:04:41.010
+Coding Ninjas: taken. If I if I click, I click on recency. Let's say, I want to apply conditional formatting here.
+
+588
+01:04:41.250 --> 01:04:46.120
+Coding Ninjas: I'll click on data bars. And let's say, I'm putting a green color
+
+589
+01:04:47.000 --> 01:04:49.810
+Coding Ninjas: thing is, yeah, yeah, what? That's what I'm showing data was.
+
+590
+01:04:51.340 --> 01:04:53.550
+Coding Ninjas: let's say, I'll I'll remove this forwarding.
+
+591
+01:04:56.420 --> 01:05:04.480
+Coding Ninjas: Okay, so data bar is not as simple the size of data bars represent the income. If the bar is bigger, that means, then an income is high
+
+592
+01:05:04.720 --> 01:05:16.120
+Coding Ninjas: chicken. If the bar is bigger, the income is high. You can do 71,000 bar is bigger. That means the income is high. 55,648 income is low. So you can see, data bar is also low.
+
+593
+01:05:16.230 --> 01:05:29.850
+Coding Ninjas: 82,000. The bar is bigger. That means income is bigger taken. Normally, I don't use data bars, but still, if you want to try. You can try it the size of the bar will represent your income thing. Size of the bar.
+
+594
+01:05:30.520 --> 01:05:39.149
+Coding Ninjas: Take care. So that was data was now color scales like. First, st let us see, I can send you a color scale is something which I use very often. So I will explain that at the end.
+
+595
+01:05:39.310 --> 01:05:40.629
+Coding Ninjas: Then I can set.
+
+596
+01:05:40.880 --> 01:05:44.219
+Coding Ninjas: Take a let's say you want to represent your data using icons
+
+597
+01:05:44.530 --> 01:05:47.090
+Coding Ninjas: trigger. Let's say I have a data recency.
+
+598
+01:05:47.720 --> 01:05:49.800
+Coding Ninjas: Or let's say, let's do it in income one.
+
+599
+01:05:50.584 --> 01:05:52.599
+Coding Ninjas: Clearly clear the rules.
+
+600
+01:05:53.380 --> 01:06:04.299
+Coding Ninjas: Let's say I'll apply some icon sets. So these are just icons. Also. This is not useful. I don't use this, but you can just try it. Let's say I'm selecting this shape. 3 traffic lines.
+
+601
+01:06:04.700 --> 01:06:13.000
+Coding Ninjas: City got 3 traffic lights. So obviously there will be 3 colors right? There will be red, yellow, and green. You can see a red, yellow, and green.
+
+602
+01:06:13.550 --> 01:06:22.420
+Coding Ninjas: If the if the color is green. That means the income is very high. You can see one lakh 57,000. So green color means income is very high
+
+603
+01:06:22.710 --> 01:06:28.329
+Coding Ninjas: ticket. The yellow color means income is middle. Okay, medium income, 74,000.
+
+604
+01:06:28.490 --> 01:06:33.009
+Coding Ninjas: If the color is red, 43,000. That means the income is very low.
+
+605
+01:06:33.230 --> 01:06:38.619
+Coding Ninjas: Okay, guys. So I mean color of the boxes, the color of the circles represent your income.
+
+606
+01:06:39.930 --> 01:06:42.859
+Coding Ninjas: Yeah, so you can use, Icon said. I mean, I don't use it.
+
+607
+01:06:43.070 --> 01:06:52.380
+Coding Ninjas: And I don't think this is a good thing, also 86,000 medium income. So we are low, one lakh 60,000 high income, so green, 50,000 less so it is red.
+
+608
+01:06:53.760 --> 01:06:56.250
+Coding Ninjas: No, no, of course, now you cannot change this or not.
+
+609
+01:06:58.450 --> 01:06:59.800
+Coding Ninjas: Excel will design
+
+610
+01:07:01.520 --> 01:07:07.940
+Coding Ninjas: 3 years, so you can add, icon sets also. But, moreover, Icon sets and data body or something which I normally don't use much.
+
+611
+01:07:08.420 --> 01:07:09.479
+Coding Ninjas: So you can. What?
+
+612
+01:07:09.480 --> 01:07:10.080
+Coding Ninjas: That's great.
+
+613
+01:07:11.960 --> 01:07:17.699
+Soumya Samal: Sir, can we have control over the icon bars like which income should be high, which income should be low.
+
+614
+01:07:18.800 --> 01:07:25.030
+Coding Ninjas: 1 min, so I can search. I mean, there is here. There is a fixed color, right red. Obviously, you want to keep it as low, right? But there.
+
+615
+01:07:25.530 --> 01:07:30.289
+Coding Ninjas: twisted here, you can see that click on more rules. Here, you can change the level.
+
+616
+01:07:31.800 --> 01:07:34.759
+Coding Ninjas: Okay, let's say you want to put something else.
+
+617
+01:07:36.240 --> 01:07:37.760
+Coding Ninjas: Okay, then you can decide that.
+
+618
+01:07:38.630 --> 01:07:40.569
+Soumya Samal: The range. Also, we can decide right.
+
+619
+01:07:40.570 --> 01:07:42.060
+Coding Ninjas: Our range. Also, you can change.
+
+620
+01:07:44.140 --> 01:07:45.080
+Soumya Samal: Thank you, sir.
+
+621
+01:07:46.830 --> 01:07:54.240
+Coding Ninjas: So, yeah, guys, I mean, you can explore this conditional formatting. I will. I will be as much I can search. There is option of more rooms.
+
+622
+01:07:54.340 --> 01:08:02.550
+Coding Ninjas: So here you can. Here you can change the colors of icons again, or change the values that all you can explore. Once
+
+623
+01:08:03.630 --> 01:08:24.129
+Coding Ninjas: think about majorly. These are important highlight sales groups. If you want to highlight some income just to revise it. If you want to. Highlight income, let's say greater than 70,000, so you can select greater than if you want to select income, let's say less than 15,000, so you can select less than if you want, let's say you want to. Highlight marital status is equal to single.
+
+624
+01:08:24.279 --> 01:08:26.349
+Coding Ninjas: then you can select equal to option.
+
+625
+01:08:26.870 --> 01:08:42.469
+Coding Ninjas: Let's say you want to highlight top 10 incomes. Then you can select top 10 items if you want to. Highlight bottom 10 incomes, then bottom 10 bottom 10 items. If you want to select above average income, then above average. So whatever is your use case, you can do that.
+
+626
+01:08:42.750 --> 01:08:59.269
+Coding Ninjas: Then data bars. The size of the bars will represent the number. If the size of the bar is bigger, that means the number is bigger. That means the income is used. If the size of the data bar is small. That means the income is less than so. There are some icons which represents your data.
+
+627
+01:08:59.490 --> 01:09:07.029
+Coding Ninjas: Okay, so here you can select fire icon set. Okay? Or these colors or traffic signal or network, or whatever you can select.
+
+628
+01:09:07.140 --> 01:09:31.599
+Coding Ninjas: I mean, these are one of the less important things which normally we don't use. Data wise are also some of the less important things which we don't use majorly. We use color schemes, and I will show you this. This is one of the most important which I personally use very often. So I'll tell you the scenario where I use this other than that, if you want to highlight specific values. If you know specific values greater than 70,000, less than 15,000, then you can use this option.
+
+629
+01:09:31.899 --> 01:09:33.910
+Coding Ninjas: Think of these 2 options might be important
+
+630
+01:09:34.050 --> 01:09:38.439
+Coding Ninjas: and color scales. Obviously, color scale is also one of the most important which I usually
+
+631
+01:09:39.080 --> 01:09:42.709
+Coding Ninjas: that I will show after the clear, clear guys read out clear.
+
+632
+01:09:44.439 --> 01:09:45.169
+Pankaj Sharma: Yes, sir.
+
+633
+01:09:45.170 --> 01:09:46.399
+Soumya Samal: That's not clear.
+
+634
+01:09:47.170 --> 01:09:58.840
+Coding Ninjas: There is nothing logical here. Okay, you just need to explore it. There is nothing thinking about here. You don't need to think, only thinking part will come later. This is just a tool and application
+
+635
+01:09:59.230 --> 01:10:02.280
+Coding Ninjas: that you know, if you click this, this would be done.
+
+636
+01:10:02.390 --> 01:10:05.609
+Coding Ninjas: Okay, so it it is simple, only just export it one time. That's it.
+
+637
+01:10:07.950 --> 01:10:08.760
+Coding Ninjas: Take it.
+
+638
+01:10:09.040 --> 01:10:15.060
+Coding Ninjas: Okay, let's do one thing. Let's take some break before that. I guess, Momba, you had any issue
+
+639
+01:10:15.410 --> 01:10:18.450
+Coding Ninjas: with your excel or organization.
+
+640
+01:10:19.090 --> 01:10:24.529
+Md Sultan: Sir. Actually, my excel is showing in full screen the way your excel is showing. It's not showing mine.
+
+641
+01:10:24.800 --> 01:10:26.410
+Md Sultan: so I just send you one.
+
+642
+01:10:26.410 --> 01:10:27.430
+Coding Ninjas: That's gonna talk.
+
+643
+01:10:27.890 --> 01:10:30.960
+Md Sultan: It's actually it's shared, but it's not going.
+
+644
+01:10:32.420 --> 01:10:33.760
+Md Sultan: Let me send.
+
+645
+01:10:34.122 --> 01:10:35.210
+Coding Ninjas: One more time.
+
+646
+01:10:35.895 --> 01:10:36.460
+Md Sultan: Yeah.
+
+647
+01:10:36.460 --> 01:10:38.849
+Coding Ninjas: Before proceeding forward I want to share a news with you guys I have started a new Personal course name Succeed and its only 99 rupees, hope you guys will join it. You can take a break of 10 min.
+
+648
+01:10:40.090 --> 01:10:41.000
+Pankaj Sharma: Sure.
+
+649
+01:10:41.000 --> 01:10:41.759
+Coding Ninjas: See you good.
+
+650
+01:11:01.860 --> 01:11:03.279
+Md Sultan: Is it visible, sir?
+
+651
+01:11:06.220 --> 01:11:06.949
+Coding Ninjas: There it is!
+
+652
+01:11:12.600 --> 01:11:14.210
+Md Sultan: So, whatever the shit, I'm.
+
+653
+01:11:14.210 --> 01:11:14.550
+Coding Ninjas: No.
+
+654
+01:11:14.550 --> 01:11:18.599
+Md Sultan: Showing the similar in the same manner.
+
+655
+01:11:18.600 --> 01:11:26.186
+Coding Ninjas: Some from some settings it might be disabled. Can you check on Internet? I'm also not aware, where is the settings? Just check on Internet?
+
+656
+01:11:26.490 --> 01:11:27.840
+Aaditya Tiwari: Steps, steps.
+
+657
+01:11:27.840 --> 01:11:28.240
+Md Sultan: Alright!
+
+658
+01:11:28.640 --> 01:11:29.519
+Uttam: Where just now.
+
+659
+01:11:31.450 --> 01:11:33.440
+Aaditya Tiwari: Actually is unable to see the ribbon.
+
+660
+01:11:34.220 --> 01:11:35.379
+Coding Ninjas: Yeah. Raymond, Raymond.
+
+661
+01:11:36.740 --> 01:11:39.919
+Anand sharma: So it you have to click on the file with the
+
+662
+01:11:40.200 --> 01:11:43.699
+Anand sharma: right click. Then you can have the ribbon right.
+
+663
+01:11:43.760 --> 01:11:49.659
+Aaditya Tiwari: There are 3 dots on the top right corner.
+
+664
+01:11:50.230 --> 01:11:53.650
+Anand sharma: 3 dots, and you can click on the like home, or for the like. The.
+
+665
+01:11:53.910 --> 01:11:56.199
+Aaditya Tiwari: Yes, and there you have to show.
+
+666
+01:11:56.540 --> 01:11:59.600
+Harishyam Prasad: Go to View view you can get go to view.
+
+667
+01:12:00.570 --> 01:12:04.430
+Anand sharma: No, no, no! You can click on the like home with a.
+
+668
+01:12:07.190 --> 01:12:08.539
+Md Sultan: Yeah, I just went to the view of.
+
+669
+01:12:08.540 --> 01:12:11.689
+Uttam: Just just click on the top
+
+670
+01:12:12.434 --> 01:12:20.450
+Uttam: right click, and then, you know, uncollapse the ribbon. You will get it right. Click
+
+671
+01:12:24.480 --> 01:12:26.219
+Uttam: upper pajaki, right click, karo.
+
+672
+01:12:26.720 --> 01:12:27.290
+Md Sultan: Yes.
+
+673
+01:12:27.970 --> 01:12:29.590
+Uttam: Some super pajaki.
+
+674
+01:12:30.906 --> 01:12:32.340
+Md Sultan: Menu, bargain.
+
+675
+01:12:36.040 --> 01:12:40.599
+Md Sultan: restore, move, size, minimize, maximize, and close.
+
+676
+01:12:44.870 --> 01:12:48.540
+Coding Ninjas: Collapse again. I'll right click!
+
+677
+01:12:48.540 --> 01:12:50.539
+Uttam: Uncollapsed, corrogate the fixed value layer.
+
+678
+01:12:52.060 --> 01:12:53.240
+Coding Ninjas: As I'm going ups.
+
+679
+01:12:53.530 --> 01:12:57.220
+Md Sultan: Where I'm getting. I'm not getting collapse. Option I'm getting restore.
+
+680
+01:12:57.570 --> 01:13:01.079
+Md Sultan: minimize close. That is the only 3 option I'm getting.
+
+681
+01:13:07.400 --> 01:13:10.820
+Md Shahnawaz: Click on restore. Maybe it can restore the settings.
+
+682
+01:13:11.480 --> 01:13:13.180
+Md Sultan: No, it's not coming.
+
+683
+01:13:13.570 --> 01:13:21.419
+Md Sultan: So actually it was showing before. But I was doing some work with the excel sheet. And suddenly it is
+
+684
+01:13:21.420 --> 01:13:23.460
+Md Sultan: so just you can.
+
+685
+01:13:24.480 --> 01:13:29.620
+Anand sharma: Clinic the own home, or like File or Macros with a right click.
+
+686
+01:13:30.750 --> 01:13:31.799
+Anand sharma: Berkeley. Yes.
+
+687
+01:13:32.330 --> 01:13:33.530
+Md Sultan: On the actual sheet.
+
+688
+01:13:33.700 --> 01:13:39.500
+Anand sharma: No, no, on the home or macros, or inside you can, wherever yes.
+
+689
+01:13:39.500 --> 01:13:44.439
+Coding Ninjas: Yeah. Yeah. Over anywhere. Anywhere here on formulas. Right? Click.
+
+690
+01:13:44.440 --> 01:13:47.200
+Anand sharma: Yeah, correct. Yeah.
+
+691
+01:13:47.200 --> 01:13:48.940
+Md Sultan: Yeah, collapsed. Even, yeah, yeah.
+
+692
+01:13:48.940 --> 01:13:49.600
+Anand sharma: Happening.
+
+693
+01:13:50.120 --> 01:13:53.119
+Anand sharma: Yes, thank you so much. You know what he's going.
+
+694
+01:21:57.490 --> 01:21:59.550
+Coding Ninjas: Okay, let's continue, guys.
+
+695
+01:21:59.820 --> 01:22:06.629
+Coding Ninjas: Now, the last option and might be very important. Let's say, where do I use it? I just show you
+
+696
+01:22:08.570 --> 01:22:15.080
+Coding Ninjas: So I'll I'll open a new tab. So first, st I'll show you the concept. What is the color scales. Suppose I select income.
+
+697
+01:22:15.410 --> 01:22:27.509
+Coding Ninjas: Take a conditional formatting color skills. So the data will be provided as per the color schemes. So here you can see, you have 3 skills. Okay, this 1st one, green, yellow and red.
+
+698
+01:22:28.050 --> 01:22:33.699
+Coding Ninjas: Take it like that. There are different color skills. You can choose anything. Support this color. Skill is green, yellow, and red.
+
+699
+01:22:33.860 --> 01:22:36.840
+Coding Ninjas: So I'll select this green, yellow, and red sake.
+
+700
+01:22:37.390 --> 01:22:40.819
+Coding Ninjas: Okay? So you can see, there are various shades of green, yellow, and red.
+
+701
+01:22:41.030 --> 01:22:42.489
+Coding Ninjas: Take a various hits.
+
+702
+01:22:42.830 --> 01:22:45.430
+Coding Ninjas: Okay, you can see this one is dark red.
+
+703
+01:22:45.600 --> 01:22:48.569
+Coding Ninjas: Why? It is dark red. Because the income is very small.
+
+704
+01:22:48.770 --> 01:22:58.730
+Coding Ninjas: Okay, 5,000. 607,500. Okay, 19,000. 18,000. These are these are dark red, which means the income is very less.
+
+705
+01:22:58.830 --> 01:23:06.490
+Coding Ninjas: Yellow means the income is medium. Okay, 41,000. 76,000. 58,000. This income is little bit above average.
+
+706
+01:23:06.680 --> 01:23:21.110
+Coding Ninjas: Okay, but if you see purely green, you can see 81,000 is, you know, good green. 75,000 are green, 79,000 are green. See, one lakh is more green, 90,000 is more green. Okay, so more, the greener, higher the income
+
+707
+01:23:21.350 --> 01:23:26.489
+Coding Ninjas: more the red lower the income yellow means it is somewhere in between.
+
+708
+01:23:26.600 --> 01:23:33.830
+Coding Ninjas: Take it. So color skills will help you to identify some anomalies. Take care. There are other color skills. Also, if you want, let's say pure green.
+
+709
+01:23:33.950 --> 01:23:35.670
+Coding Ninjas: then you can select the orgy.
+
+710
+01:23:35.860 --> 01:23:39.069
+Coding Ninjas: Okay, so it will just show you green, which means white and green.
+
+711
+01:23:39.310 --> 01:23:41.560
+Coding Ninjas: Okay, so there is a color scale, white and green.
+
+712
+01:23:41.740 --> 01:23:45.640
+Coding Ninjas: So if it is near to wide, that means the income is less.
+
+713
+01:23:45.760 --> 01:24:04.219
+Coding Ninjas: If it is near to more green, that means the income is higher. You can see 5, 6, 4, 8, 7,000 517,000 are near to white. That means these are low income. This 82,000 is green, 76,000 is darker green. That means these are high income. Okay, so these are just color scales you use to identify.
+
+714
+01:24:04.640 --> 01:24:09.800
+Coding Ninjas: So where do we use it? Generally, let's say, we have. For example, months.
+
+715
+01:24:10.020 --> 01:24:19.190
+Coding Ninjas: Okay, we have month, for example, month is for example, December, January, February.
+
+716
+01:24:20.710 --> 01:24:22.800
+Coding Ninjas: Months, April.
+
+717
+01:24:23.070 --> 01:24:29.779
+Coding Ninjas: Okay, currently, April is going on. So I'll renew April. So it is. Let's say, December, January, February, March. These are your months.
+
+718
+01:24:30.190 --> 01:24:33.150
+Coding Ninjas: Okay? Jen, yeah.
+
+719
+01:24:34.080 --> 01:24:37.689
+Coding Ninjas: Mods, okay, sorry. This is December.
+
+720
+01:24:40.110 --> 01:24:48.599
+Coding Ninjas: Okay, December, January. So these are your ones. Let's say, here I am writing my city. Let's say the city is Mumbai.
+
+721
+01:24:49.910 --> 01:24:53.069
+Coding Ninjas: Okay, cities, Mumbai. So let's say, this is my data.
+
+722
+01:24:55.821 --> 01:25:03.910
+Coding Ninjas: Here, apply a year. I'll apply borders. Okay? So let's say, here I am writing orders. What were the total orders in each month in Mumbai.
+
+723
+01:25:04.270 --> 01:25:16.460
+Coding Ninjas: Think of what were the total orders I'm writing total orders, let's say, in Mumbai in December. Total orders, let's say in blink it it is blanket, let's say in in December. Let's say orders in Mumbai were, for example.
+
+724
+01:25:16.680 --> 01:25:19.660
+Coding Ninjas: 2 letters ticket. The orders were 2 lakh.
+
+725
+01:25:19.800 --> 01:25:27.179
+Coding Ninjas: let's say in January it were it was around one lakh sorry. Let's say 2 lakh 2030,000,
+
+726
+01:25:28.130 --> 01:25:31.009
+Coding Ninjas: let's say, in February, decreased. It became one lakh
+
+727
+01:25:31.130 --> 01:25:36.900
+Coding Ninjas: 80,000, let's say, in March again it increased. It became 2 lakh 60,000.
+
+728
+01:25:37.590 --> 01:25:38.590
+Coding Ninjas: Okay.
+
+729
+01:25:38.870 --> 01:25:59.560
+Coding Ninjas: suppose these are your orders. Now, you you can set it just numbers. Okay, these are just plain numbers. But let's say, if I apply here. I cannot see a trend or anything. Okay, I want to. Let's say, give some trend idea in this data set. I want to give some trend idea whether the orders are decreasing or increasing, or what exactly, is going on. Okay, by just looking at the number. It is not very good, right? It is very bland.
+
+730
+01:25:59.660 --> 01:26:11.270
+Coding Ninjas: Okay, you have to check. Okay, it is 2 lakh, 2, lakh 30,000, which means increase one lakh 80,000. It means decrease. Again increase. Okay, I mean, this is not a good way. Right? Instead, what you can do, you can select the data
+
+731
+01:26:11.420 --> 01:26:17.309
+Coding Ninjas: conditional formatting, apply any color scale whatever you feel. Suppose I'm applying green and red.
+
+732
+01:26:17.480 --> 01:26:19.859
+Coding Ninjas: See? Green, yellow, and red. I'll select this
+
+733
+01:26:20.130 --> 01:26:32.610
+Coding Ninjas: now. You can easily see. Okay, it is more greener. 2, Lakh 60,000 is the greenest, which means March had the highest orders. You can see Fab is red, which means in Feb. The order decreased.
+
+734
+01:26:32.750 --> 01:26:55.470
+Coding Ninjas: then December is also a little bit red, not pure red, but little bit towards the red. It means it is also less compared to January and March. January is also a little bit green. That means orders are more okay. So here you can identify some pattern or some anomaly. So here you can easily see that. Okay, march is the greenest. Orders are very high. February is very red. That means order work
+
+735
+01:26:55.470 --> 01:27:09.000
+Coding Ninjas: very less. Okay. Suppose here. So here we would have you know orders from various cities. Suppose let's say I'll remove this. You can add various cities also. For example, let's say Pune Pune is, let's say, 50,000. Pune does, let's say, for example, less orders.
+
+736
+01:27:09.610 --> 01:27:15.250
+Coding Ninjas: One leg then here, let's say, in web, we have 60,000.
+
+737
+01:27:15.640 --> 01:27:21.779
+Coding Ninjas: Then in March we have, let's say, one like 20,000. So this is Pune, let's say building one more city
+
+738
+01:27:22.130 --> 01:27:23.100
+Coding Ninjas: penguin.
+
+739
+01:27:23.340 --> 01:27:31.000
+Coding Ninjas: Take a Bangalore, let's say does 2 lakh let's say one Lakh 40,000 in December.
+
+740
+01:27:31.180 --> 01:27:40.489
+Coding Ninjas: in January. It was one lakh 16,000 in February. It was, let's say, one lakh 20,000, and in March, let's say it was one lakh 80,000.
+
+741
+01:27:40.900 --> 01:27:49.110
+Coding Ninjas: Okay, suppose these are your orders of 3 cities. Okay. Now, look at the numbers. You cannot identify any trends. Right? These are just plain numbers
+
+742
+01:27:49.330 --> 01:27:52.990
+Coding Ninjas: correct. These are just plain numbers. You cannot identify anything.
+
+743
+01:27:53.290 --> 01:27:56.590
+Coding Ninjas: Let me, you know how with symptoms.
+
+744
+01:27:57.810 --> 01:28:12.180
+Coding Ninjas: because these are number of orders. Okay, by looking at this normally. If I if I present this data to my team, they won't identify anything right, they will have to check one number each by each. Okay, and it is very confusing. How can I identify any partnering? So what I'll select? I'll select the data
+
+745
+01:28:12.380 --> 01:28:26.880
+Coding Ninjas: conditional formatting color scale. And I'll put. Normally, I use this color scale, green, yellow, and red. Normally, I prefer this color scale. You can explore other colors. Also, it depends what color you like. Normally, this color is good so that I can see red and green and yellow.
+
+746
+01:28:27.050 --> 01:28:28.610
+Coding Ninjas: So I'll select this color scheme.
+
+747
+01:28:29.450 --> 01:28:36.540
+Coding Ninjas: Okay, now, see, Pune is mostly red. Right? That means Pune is obviously doing least order compared to Mumbai and Delhi.
+
+748
+01:28:36.890 --> 01:28:51.860
+Coding Ninjas: Mumbai, you can see, is only green everywhere, right? Mostly that means Mumbai is doing most orders. Bangalore is somewhere yellow. That means Bangalore is doing medium media bottom. So here we can easily see that overall Pune is doing least order compared to other cities.
+
+749
+01:28:51.990 --> 01:28:55.589
+Coding Ninjas: and Mumbai is doing most orders compared to other cities. Right?
+
+750
+01:28:55.940 --> 01:29:06.039
+Coding Ninjas: Plus you can also see the color change. Okay, see only Bangalore in only Bangalore you can see this is little bit more red, only 20,000. That means here the orders were less
+
+751
+01:29:06.180 --> 01:29:08.069
+Coding Ninjas: compared to other Bangalore ones.
+
+752
+01:29:08.170 --> 01:29:09.580
+Coding Ninjas: Similarly, Pune.
+
+753
+01:29:09.730 --> 01:29:15.470
+Coding Ninjas: Here you can see 60,000 80,000 is purely red. That means these orders are also less.
+
+754
+01:29:15.610 --> 01:29:31.659
+Coding Ninjas: Similarly, Mumbai. In Mumbai you can see this is very light green, other is a little bit darker green. This one it, one like 80,000, is light green. That means here also the order is less compared to other ones. So like that, you can easily spot pattern. So if I remove this conditional formatting.
+
+755
+01:29:31.860 --> 01:29:34.420
+Coding Ninjas: okay, let's say, if I remove this condition formatting.
+
+756
+01:29:35.850 --> 01:29:41.820
+Coding Ninjas: Okay, now, if you want to identify, you will have to check. Okay, this is 2 lakh, 60,000 80,000. You will have to check the numbers.
+
+757
+01:29:41.920 --> 01:29:57.330
+Coding Ninjas: Okay, but if I give you the colors, you can easily check the colors. Okay, this is the greenest. That means this has the highest orders. Mumbai, march. This is very rare. 80,000 60,000. That means here we have the least orders. Mumbai is overall green, so Mumbai has the highest orders.
+
+758
+01:29:57.500 --> 01:30:04.889
+Coding Ninjas: Pune is overall everything red. That means Pune is the least order. Okay? And you can see, February generally has that red.
+
+759
+01:30:05.050 --> 01:30:20.370
+Coding Ninjas: So February has less orders. Okay? So like that. You can easily identify some trends or patterns. So here, normally, I use conditional formatting in this scenario, if I'm you know, presenting if I'm if I want to identify some patterns or some anomalies. So normally, I do this.
+
+760
+01:30:20.500 --> 01:30:23.059
+Coding Ninjas: Okay, yeah, you can also put some capping.
+
+761
+01:30:23.210 --> 01:30:29.620
+Coding Ninjas: Let's say you want to highlight orders which are less than one lap. Then you can put some capping here. Highlight cell rules
+
+762
+01:30:29.720 --> 01:30:33.970
+Coding Ninjas: less than one leg. Okay, first, st select this.
+
+763
+01:30:34.790 --> 01:30:39.269
+Coding Ninjas: Select this highlight cell rules. Let's say you want less than one layer.
+
+764
+01:30:40.160 --> 01:30:43.990
+Coding Ninjas: Okay, so less than one lakh orders will be highlighted which is only of cool.
+
+765
+01:30:44.600 --> 01:30:51.810
+Coding Ninjas: Let's say you want highlight orders which are greater than so highlight sales orders which are greater than
+
+766
+01:30:53.150 --> 01:30:54.140
+Coding Ninjas: 2. Letter.
+
+767
+01:30:54.270 --> 01:30:55.989
+Coding Ninjas: Okay, that you can highlight on 3.
+
+768
+01:30:56.540 --> 01:31:01.209
+Coding Ninjas: Okay, so you're greater than like. I've highlighted with green. So which is only of gold.
+
+769
+01:31:01.500 --> 01:31:20.300
+Coding Ninjas: okay, and red only of full capping. Also, you can put and highlight it. But normally, I mean, this is not very useful the most useful here is the color skills, so that you can easily identify some anomaly which is very high orders, or very less orders or some video orders. Okay, so here, you can identify the patterns very easily.
+
+770
+01:31:21.020 --> 01:31:25.940
+Coding Ninjas: Clear with it, guys that where exactly can we use this conditional. For now in real scenario.
+
+771
+01:31:25.940 --> 01:31:26.430
+Anand sharma: Yes.
+
+772
+01:31:26.430 --> 01:31:26.870
+Pankaj Sharma: Yes.
+
+773
+01:31:29.660 --> 01:31:38.480
+Coding Ninjas: So it depends which company you're working in in, that you can if you are creating some table, if you have lots of numbers which you want to present. Just apply conditional formatting
+
+774
+01:31:39.130 --> 01:31:48.049
+Coding Ninjas: normally, cuisines also, which cuisine is growing. So here I can add some cuisines, let's say pizza burger ice cream. Then you can check the trend which cuisine is growing.
+
+775
+01:31:48.200 --> 01:31:54.609
+Coding Ninjas: Okay, let's say, here, I'm adding, I am adding cuisine. Let's say currently summers are going on right. So let's say I'm adding shakes.
+
+776
+01:31:54.970 --> 01:32:00.410
+Coding Ninjas: Okay, then let's say, pizza Burger.
+
+777
+01:32:00.680 --> 01:32:17.890
+Coding Ninjas: Okay, so shakes order let's say, would be obviously a little bit going towards the green side. Okay, increase would go a little bit on the green side side. So normally, we did this analysis of cuisine. And we we added some percentage change. Okay? And obviously, shakes had the highest percentage change.
+
+778
+01:32:18.050 --> 01:32:30.150
+Coding Ninjas: Okay, so here, I mean, you can identify which is easily which cuisine is growing faster. If that cuisine is purely green, that means that cuisine is growing faster. If something is red, that means that cuisine is not growing faster. Okay.
+
+779
+01:32:30.270 --> 01:32:35.720
+Coding Ninjas: so let's say, let's let me do that. So suppose here we are. December, January, February. March.
+
+780
+01:32:36.160 --> 01:32:39.259
+Coding Ninjas: Right? Let's say I'm adding some cuisine here.
+
+781
+01:32:39.540 --> 01:32:42.119
+Coding Ninjas: So let's say, cuisine is ice cream.
+
+782
+01:32:43.380 --> 01:32:46.079
+Coding Ninjas: Okay? Then we have. Let's say, visa here.
+
+783
+01:32:47.590 --> 01:32:49.770
+Coding Ninjas: Okay, then, let's say I'm ready.
+
+784
+01:32:50.030 --> 01:33:15.700
+Coding Ninjas: Think in December, let's say I am checking the growth percent. Here I am writing the percentage. What is the percentage growth, let's say, in December, ice cream by minus 5%. Obviously, it is December, right? So it will be grow. So minus 5% in January decreased by minus 3% in February, minus 1%. And let's say, in March, it grew by around 1 20%.
+
+785
+01:33:16.860 --> 01:33:31.710
+Coding Ninjas: Okay, then, let's say, pizza pizza in December grew by 12% in January grew by 15%. February D grew by between 3% only. And march, it grew by only 6%.
+
+786
+01:33:31.990 --> 01:33:39.500
+Coding Ninjas: Same number grew by 15%. Let's say, 18% grew by 12%. March grew by only 4%.
+
+787
+01:33:39.670 --> 01:33:44.290
+Coding Ninjas: Okay. Now you can see if I tell you which cuisine is growing very fast in March
+
+788
+01:33:44.590 --> 01:33:52.729
+Coding Ninjas: ticket. So the which cuisine is growing very fast in Mars. Okay, let's say you don't have any color scale for now. Okay, suppose if you remove the color scale.
+
+789
+01:33:52.850 --> 01:33:54.120
+Coding Ninjas: Oh.
+
+790
+01:33:55.000 --> 01:34:08.470
+Coding Ninjas: if you remember the color score. Okay, let's say there are 50 quizzes, 5 0 50 quizzes. And everywhere you have plotted this percentage growth. Then, if you look at the numbers. It will be difficult for you to analyze. So what you can do, you can just copy it
+
+791
+01:34:08.680 --> 01:34:10.749
+Coding Ninjas: and add a color scaling
+
+792
+01:34:11.240 --> 01:34:24.519
+Coding Ninjas: cheek, and you can check, which is the red. So here it is red, right? That means ice cream was regrowing in January, February, and December, because obviously it was winter season. Right? So obviously, it will be a decrease in decrease.
+
+793
+01:34:24.610 --> 01:34:48.379
+Coding Ninjas: Okay? But in March instantly it grew by 120%, because summers are coming right in March, summers are coming. So obviously, ice cream will increase. Okay, so yeah, we can easily identify that. Okay, ice creams are growing in March. That's why we have to focus more on ice creams. So this is where also, we can use conditional formatting plot specific cuisines which are growing faster than other cuisines.
+
+794
+01:34:48.760 --> 01:34:50.050
+Coding Ninjas: Okay? Yes, ma'am.
+
+795
+01:34:53.860 --> 01:34:55.109
+Coding Ninjas: Yes, sir, you have any doubt.
+
+796
+01:34:55.110 --> 01:35:05.809
+Soumya Samal: Hello! Yes, sir, this is not exactly related to the collaborating, but, as you said once earlier, that we should all always compare a Monday with a Monday
+
+797
+01:35:06.220 --> 01:35:16.440
+Soumya Samal: like that. So is it not like? Is it appropriate that we are comparing a 28 days month with a 31 days month, or it doesn't affect like that.
+
+798
+01:35:17.470 --> 01:35:23.279
+Coding Ninjas: So you can. You have to normalize the numbers right? 28. You have to normalize it. Divide by 28, multiply by 21,
+
+799
+01:35:23.550 --> 01:35:35.220
+Coding Ninjas: so you can check the average. So February is 28 days. How will you normalize to 31 days? So divide the orders by 28, so it will give you per day per day. How many orders then, multiply by 31.
+
+800
+01:35:37.130 --> 01:35:39.670
+Soumya Samal: In average, we have to like. Compare them.
+
+801
+01:35:40.596 --> 01:35:46.110
+Coding Ninjas: Per room per day, or multiplied by 31 to get overall so like that you can organize.
+
+802
+01:35:46.900 --> 01:35:48.270
+Soumya Samal: Okay, sir. Thank you, sir.
+
+803
+01:35:53.110 --> 01:36:13.470
+Coding Ninjas: Okay? So normally, I mean, this is one of the use case where we can, you know, use conditional format to identify the cuisines faster. So normally, if you have 50 quizzes, and obviously, if you see the numbers, it will be very, you can obviously sort it. Also, you also have to sort it. Once you have this conditional formatting, you can also, add of add, let's say, a filter.
+
+804
+01:36:13.590 --> 01:36:17.900
+Coding Ninjas: and let's say I want to sort it in ascending, descending order, largest to smallest.
+
+805
+01:36:17.950 --> 01:36:44.509
+Coding Ninjas: or I want to sort it, let's say, smallest to largest. So this also you can do so conditional formatting with sorting, so that it will give you better view. The view will be very good. All the greens will be above, and all the yellows and reds will be below, so it will give you a good view. If you have 15 cuisines, all the top cuisines which are in green will be above, then yellow, which are medium, then red, which are very least growing. Okay. So colors plus descending order sort will give you better.
+
+806
+01:36:44.910 --> 01:36:47.400
+Coding Ninjas: So this is also something which you can sort.
+
+807
+01:36:47.680 --> 01:36:51.420
+Coding Ninjas: Okay? So obviously, you know how to do sorting right? You just get to select select it
+
+808
+01:36:51.560 --> 01:36:53.669
+Coding Ninjas: herein you can click on filter.
+
+809
+01:36:53.790 --> 01:37:00.000
+Coding Ninjas: So filter would appear in our session, only we saw it then. You can sort it in as largest to smallest or smallest to largest.
+
+810
+01:37:00.230 --> 01:37:04.520
+Coding Ninjas: so you can combine it. Normally, I use this method to identify someone
+
+811
+01:37:05.960 --> 01:37:09.770
+Coding Ninjas: clear about this guys conditional form any doubts. And
+
+812
+01:37:12.680 --> 01:37:38.860
+Coding Ninjas: okay, so just use any data set and try to do it. Use. You have lots of data set right in the last session. Also, we had some data set of salaries Olympics, so that you can use here. You can try to use. Okay, create some view. Later, it will be more clear later when you are doing the project. So in the project, if you are creating such a view, and you want to add it. If there are lots of numbers, and you want to plot some patterns, then obviously, at that time you can try conditional format.
+
+813
+01:37:40.120 --> 01:37:40.759
+Coding Ninjas: See, you guys.
+
+814
+01:37:40.760 --> 01:37:45.233
+Md Sultan: Can we apply a conditional formatting for 2 columns simultaneously, like
+
+815
+01:37:45.850 --> 01:37:49.319
+Md Sultan: make it green, as who is a graduate and divorce.
+
+816
+01:37:49.930 --> 01:37:50.590
+Coding Ninjas: So it's great.
+
+817
+01:37:50.590 --> 01:37:52.960
+Coding Ninjas: This is what I didn't get it. 2 columns.
+
+818
+01:37:52.960 --> 01:37:55.780
+Coding Ninjas: Can you apply it? In every formatting?
+
+819
+01:37:56.980 --> 01:37:58.590
+Coding Ninjas: They are applied for 4 column related.
+
+820
+01:37:59.230 --> 01:38:09.589
+Md Sultan: No, no, I'm asking, sir. Can we apply conditional formatting for 2 columns like the person who is a graduate and divorced? Make it as a green something like that.
+
+821
+01:38:09.590 --> 01:38:11.310
+Coding Ninjas: My charger was in the No.
+
+822
+01:38:12.660 --> 01:38:15.560
+Md Sultan: I can. We cannot make him right.
+
+823
+01:38:15.990 --> 01:38:16.790
+Coding Ninjas: No.
+
+824
+01:38:21.250 --> 01:38:37.769
+Coding Ninjas: but normally, I mean, in that scenario you don't use conditional formatting. And in that scenario you normally filter out the data. This is the real scenario where we use conditional formatting. Your scenario is good for learning purpose, but not for practical purpose. You can just filter out the data. Right? Let's say, I message your customer.
+
+825
+01:38:37.970 --> 01:38:39.830
+Md Sultan: I'll apply some.
+
+826
+01:38:40.250 --> 01:38:41.480
+Coding Ninjas: Filter here.
+
+827
+01:38:41.650 --> 01:38:49.150
+Coding Ninjas: Okay, let's say, I want to see all the graduates who are single. So here I'll select all the graduates.
+
+828
+01:38:49.620 --> 01:38:57.010
+Coding Ninjas: So all the graduation will come here who are doing graduation right? Then all the singles. So I'll apply rendition formatting. I'll get all the single.
+
+829
+01:38:57.170 --> 01:39:00.209
+Coding Ninjas: Okay. So this data. I can copy it somewhere, or I can study it.
+
+830
+01:39:00.320 --> 01:39:02.279
+Coding Ninjas: So filtering is good for this item.
+
+831
+01:39:02.490 --> 01:39:05.490
+Coding Ninjas: But for this scenario, I mean, you have to give a proper view
+
+832
+01:39:05.600 --> 01:39:28.149
+Coding Ninjas: to a stakeholder. Here you are not giving any view or something. You are just doing it for your purpose, then you will do the analysis. But here you have to give a view to your stakeholders. You have to show this data to the stakeholders, right? That which cuisines are going faster. So in this particular scenario, you have to apply conditional formatting so that your stakeholders would get a good view. Your team would get a good view visually, also
+
+833
+01:39:28.150 --> 01:39:34.529
+Coding Ninjas: that, okay, greens are my tops. Okay? So it would be better. And applying condition format. Okay.
+
+834
+01:39:34.530 --> 01:39:35.489
+Md Sultan: Okay, sir. Thank you.
+
+835
+01:39:37.900 --> 01:39:39.571
+Coding Ninjas: Okay. So by eventually you will learn.
+
+836
+01:39:39.810 --> 01:39:41.600
+Md Shahnawaz: I have a question.
+
+837
+01:39:42.310 --> 01:39:42.970
+Coding Ninjas: Hmm.
+
+838
+01:39:42.970 --> 01:39:54.070
+Md Shahnawaz: I don't know. It is relatable or not. Like, sir. There are different different colors in different different er columns, right like red, light, red.
+
+839
+01:39:54.280 --> 01:40:00.840
+Md Shahnawaz: green. So in report, we need to, we need to mention the colors right? You know what color indicates, what.
+
+840
+01:40:01.840 --> 01:40:27.859
+Coding Ninjas: But you are no need to mention, because here it is pretty basic right. If you are using a different color, then you can mention. But green, red, and yellow are self explanatory. If you are using, let's say, some different color, blue, yellow, red, sorry blue, or, let's say, violet, purple. Then you can mention, then blue means high. Violet means less. At that time you can mention it. That is not universal. These are universal colors, so you can ignore.
+
+841
+01:40:28.830 --> 01:40:29.830
+Md Shahnawaz: Okay.
+
+842
+01:40:33.470 --> 01:40:34.940
+Coding Ninjas: So you get it. Okay.
+
+843
+01:40:38.850 --> 01:40:43.189
+Coding Ninjas: okay, let's take a pause of 2 min. If you want to explore, explore this.
+
+844
+01:40:43.310 --> 01:40:46.050
+Coding Ninjas: Okay, let's take up all the moment. Let's explore this on a
+
+845
+01:40:46.650 --> 01:40:50.140
+Coding Ninjas: okay, no need to do nothing logical. Just explore and see.
+
+846
+01:42:29.450 --> 01:42:32.290
+Coding Ninjas: No. Sorry. I mean it. Just show engagement increase. There is no.
+
+847
+01:42:36.010 --> 01:42:37.449
+Coding Ninjas: Yes, yes, you've been here.
+
+848
+01:42:39.540 --> 01:42:42.459
+Coding Ninjas: So I mean, here you have it right in conditional formatting.
+
+849
+01:42:42.750 --> 01:42:47.910
+Coding Ninjas: If you go to color scales, there are. There is a opposite also. This is green, yellow, red.
+
+850
+01:42:48.190 --> 01:42:51.310
+Coding Ninjas: Here we have reverse also radial degree.
+
+851
+01:42:51.510 --> 01:42:55.760
+Coding Ninjas: so your red will mean the highest yellow will be the middle green was the bluest.
+
+852
+01:42:56.400 --> 01:43:05.910
+Coding Ninjas: Okay? Or else, if you want to add your own colors, you can go to more rules. Click on more rules. Here you can add your own colors. Let's say I want to add this color
+
+853
+01:43:06.250 --> 01:43:23.520
+Coding Ninjas: and black. So this would become your color scale, so you can add your own colors. But generally I use the universal color, which is better. This this color is obviously the best red, yellow, and green, but you can explore other colors also because colors play a very significant yes.
+
+854
+01:43:24.980 --> 01:43:31.850
+Coding Ninjas: yeah. Red, no, not a red and green. This is ready, indo and 3.
+
+855
+01:43:33.570 --> 01:43:41.649
+Coding Ninjas: But you can try. I've explored some of the colors, but other colors don't give good patterns and visually not very identified.
+
+856
+01:43:41.840 --> 01:43:44.710
+Coding Ninjas: So this works best. That's why I generally use disconnect.
+
+857
+01:43:44.940 --> 01:43:47.990
+Coding Ninjas: or else. If I want 2 color scale, then I use
+
+858
+01:43:48.190 --> 01:43:52.329
+Coding Ninjas: green and white or red and white, something like that.
+
+859
+01:43:57.320 --> 01:44:02.030
+Coding Ninjas: See? Now, coming on to the next topic, let me share you the data set for that.
+
+860
+01:44:11.770 --> 01:44:14.050
+Coding Ninjas: So I'll just share your data set
+
+861
+01:44:21.180 --> 01:44:22.610
+Coding Ninjas: in the chat box.
+
+862
+01:44:31.620 --> 01:44:52.169
+Coding Ninjas: Okay, your 1st homework would be to understand whatever concepts we use. Right? We saw lots of concepts, right? So your homework would be to look at all the concepts in this data set exam score. Here you can apply all the conditional formatting. Take all the conditional formatting we saw filtering, sorting on this exam score data set.
+
+863
+01:44:52.340 --> 01:44:56.969
+Coding Ninjas: So this would be your 1 1st over. So you can say, let's say, I want to highlight those students
+
+864
+01:44:57.633 --> 01:45:01.710
+Coding Ninjas: remove the filtering from here. There is a filtering here. Remove the filtering.
+
+865
+01:45:03.590 --> 01:45:27.339
+Coding Ninjas: Okay, let's say, let's say you want to highlight all the students who have completed the test preparation score. There is a test preparation score completed, not completed. So highlight. Everyone who has completed it in green. Okay, that you can do. Okay. Here you can apply some conditional formatting on math score highlight, everyone greater than 80 or in green highlight. Everyone who has failed in mathematics so that you can do
+
+866
+01:45:27.550 --> 01:45:32.400
+Coding Ninjas: figure so. I mean that those are the things that you can try. Here.
+
+867
+01:45:33.930 --> 01:45:36.729
+Coding Ninjas: figure, open the relative cell referencing.
+
+868
+01:45:37.150 --> 01:45:43.810
+Coding Ninjas: This particular tables are reference and delete it. Everything is done in this table, so delete it, delete this, we will do it again.
+
+869
+01:45:44.170 --> 01:45:48.779
+Coding Ninjas: So delete this column, so we have. So here let us understand now cell referencing
+
+870
+01:45:56.190 --> 01:46:00.470
+Coding Ninjas: so personally. Here you have ready to talk this way under your lips.
+
+871
+01:46:05.620 --> 01:46:16.539
+Coding Ninjas: Okay, now, let's understand another more very important concept cell referencing. So this is also one of the most important concepts. So you should understand this concept in a very better manner. Okay.
+
+872
+01:46:17.140 --> 01:46:22.889
+Coding Ninjas: because this particular thing will be used in formulas and everything in formulas. We will be using all the cell referencing.
+
+873
+01:46:23.070 --> 01:46:27.740
+Coding Ninjas: Okay? So the concept is sell referencing.
+
+874
+01:46:28.840 --> 01:46:32.400
+Coding Ninjas: So there are 2 types of cell referencing that we will understand.
+
+875
+01:46:32.670 --> 01:46:35.439
+Coding Ninjas: 1, st one is relative cell referencing.
+
+876
+01:46:40.950 --> 01:46:43.699
+Coding Ninjas: Second, one is absolute cell referencing.
+
+877
+01:46:49.730 --> 01:47:11.149
+Coding Ninjas: Okay, relative and absolute. So be clear with this, because this, this is the base of excel in formulas in everything we look up xlookup everything. This particular concept will be used ticket. So first, st so there are 2 types of self referencing, relative and absolute. So first, st we'll understand about relative cell referencing, then later, we can check absolute cell reference.
+
+878
+01:47:11.410 --> 01:47:12.310
+Coding Ninjas: Do you go?
+
+879
+01:47:12.570 --> 01:47:22.670
+Coding Ninjas: So in relative cell referencing. Okay, 1 min. Let me open the sheet. So here in this sheet you can open the tab of relative cell referencing this one.
+
+880
+01:47:23.380 --> 01:47:28.299
+Coding Ninjas: See here, so relative cell referencing is simple. The for the the meaning is
+
+881
+01:47:28.430 --> 01:47:31.389
+Coding Ninjas: the meaning is relative. Right here we have a term relative.
+
+882
+01:47:31.670 --> 01:47:40.710
+Coding Ninjas: So in relative cell referencing in simple terms, it is that cell reference change relative to each other, sell
+
+883
+01:47:42.120 --> 01:47:43.370
+Coding Ninjas: reference.
+
+884
+01:47:43.850 --> 01:47:55.090
+Coding Ninjas: Shane's the relative 2, each other. Okay, so first, st let us understand this. Suppose this is your data set.
+
+885
+01:47:55.480 --> 01:47:59.490
+Coding Ninjas: Okay, this is your data set. Okay, this is your data. Here we have year of birth.
+
+886
+01:48:00.170 --> 01:48:01.980
+Coding Ninjas: And we have present here.
+
+887
+01:48:02.530 --> 01:48:10.009
+Coding Ninjas: Okay, let's say, present year. I will. I will change it a little bit, let's say year of birth, and let's say, here we have
+
+888
+01:48:10.140 --> 01:48:17.719
+Coding Ninjas: joining you ticket joining of company. So it is joining here, let's say joining year is 2022.
+
+889
+01:48:17.900 --> 01:48:22.579
+Coding Ninjas: Let's say it is 2020, let's say 2020.
+
+890
+01:48:23.150 --> 01:48:26.399
+Coding Ninjas: One it is, let's say, 2018,
+
+891
+01:48:26.500 --> 01:48:33.500
+Coding Ninjas: 2016, 2020, 2320, 22. Okay, so we have year of birth
+
+892
+01:48:33.750 --> 01:48:35.419
+Coding Ninjas: and the joining years.
+
+893
+01:48:35.640 --> 01:48:41.239
+Coding Ninjas: Okay, so guys, if I ask you a question. Suppose this is the particular employee, this one.
+
+894
+01:48:41.340 --> 01:48:49.040
+Coding Ninjas: So what is the age of employee at the time of joining? What was the age of employee the type of joining. So what will be your answer? Guys.
+
+895
+01:48:49.150 --> 01:48:52.029
+Anand sharma: 2,002, 2, minus 1, 9, 5, 7.
+
+896
+01:48:53.110 --> 01:48:58.460
+Coding Ninjas: Correct. So 2022, minus 1957 got it
+
+897
+01:48:58.960 --> 01:49:02.379
+Coding Ninjas: clear. So here the age would be 2022,
+
+898
+01:49:02.500 --> 01:49:12.240
+Coding Ninjas: minus 1957. So at the time of joining, what will be the age of this employee? 2020 minus 1978. So this will be the age of this employee? Right?
+
+899
+01:49:12.460 --> 01:49:21.089
+Coding Ninjas: Okay? So now, obviously, I want to get the answer of all I want age of all the employees, all these employees. So it will be joining here minus year over.
+
+900
+01:49:21.350 --> 01:49:32.369
+Coding Ninjas: Okay, so first, st let me show you how to write a formula. We will create a formula for this formulas. Obviously, we are going to see later. Currently, we are seeing the relative and absolute cell referencing. But it is important to write a formula.
+
+901
+01:49:32.860 --> 01:49:34.740
+Coding Ninjas: Okay, suppose this is the same.
+
+902
+01:49:34.940 --> 01:49:44.689
+Coding Ninjas: I want to create a formula that age should be equal to joining year, which is 2022 minus year of birth, which is 1957. So this I want to write it here.
+
+903
+01:49:44.970 --> 01:49:49.729
+Coding Ninjas: So, guys, whenever you are writing a formula, you have to start with equal to symbol.
+
+904
+01:49:50.230 --> 01:49:52.210
+Coding Ninjas: 3 days. So this is your Formula One.
+
+905
+01:49:52.760 --> 01:49:57.289
+Coding Ninjas: Okay, this is your formula, one at the top. Suppose I have selected this cell.
+
+906
+01:49:57.760 --> 01:50:01.609
+Coding Ninjas: and I want to write the formula in this cell. So I'll write equal to
+
+907
+01:50:01.720 --> 01:50:06.129
+Coding Ninjas: formula always starts with equal to symbol. So you have to write equal to.
+
+908
+01:50:06.700 --> 01:50:11.369
+Coding Ninjas: Then your formula will be joining here minus this year over.
+
+909
+01:50:11.570 --> 01:50:16.809
+Coding Ninjas: So, guys, can you tell me what is the sale of the joining here? What is the cell address of joining here this.
+
+910
+01:50:16.810 --> 01:50:17.170
+Rudra Pratap Singh: Beta!
+
+911
+01:50:17.170 --> 01:50:17.960
+Aditya Tiwari: Later.
+
+912
+01:50:19.420 --> 01:50:23.619
+Coding Ninjas: P. 2. Right. This particular cell is p. 2. Here also you can see p. 2.
+
+913
+01:50:24.180 --> 01:50:27.120
+Coding Ninjas: Minus year of birth. So what is the address of year.
+
+914
+01:50:27.120 --> 01:50:27.820
+Rudra Pratap Singh: Good, one.
+
+915
+01:50:27.920 --> 01:50:28.809
+Nandani butola: You too.
+
+916
+01:50:29.660 --> 01:50:31.360
+Coding Ninjas: Got it a tool.
+
+917
+01:50:31.660 --> 01:50:41.800
+Coding Ninjas: see? So answer would be obviously B 2 minus 0. You don't have to write 2022, minus ₹19. 7. You have to write the address of the same, so it will be equal to
+
+918
+01:50:42.140 --> 01:50:44.990
+Coding Ninjas: T. 2 t. 2 means this, 2022,
+
+919
+01:50:45.100 --> 01:50:50.070
+Coding Ninjas: see 2022 got highlighted right? If I write into here 2022 gets highlighted.
+
+920
+01:50:50.220 --> 01:50:56.140
+Coding Ninjas: which means p. 2 is referring to 2022 minus this, 1957 is year 2.
+
+921
+01:50:56.280 --> 01:51:06.039
+Coding Ninjas: So minus a 2. See 1957. Got highlighted. So it is. E, 2 minus a 2. No need to give space or anything. It is okay. If you give space or don't give space, it is same.
+
+922
+01:51:06.150 --> 01:51:08.379
+Coding Ninjas: So space does not matter.
+
+923
+01:51:08.690 --> 01:51:13.710
+Coding Ninjas: Okay, so spacing does not matter. I just want to make it more readable. That's why I'm giving a space.
+
+924
+01:51:13.810 --> 01:51:16.530
+Coding Ninjas: So it should always start with equal to symbol.
+
+925
+01:51:16.750 --> 01:51:25.949
+Coding Ninjas: so equal to b 2 b 2 represents 2022, minus a 2, which represents 1957. So this is your formula. B, 2, minus a 2.
+
+926
+01:51:26.160 --> 01:51:27.530
+Coding Ninjas: Now, press, enter.
+
+927
+01:51:27.750 --> 01:51:38.570
+Coding Ninjas: see automatically, you are getting 65. What is 65, 2022 minus ₹19. 7 is 65. That's why it is giving you 65. Okay, so like this, you can write your formula
+
+928
+01:51:39.070 --> 01:51:49.160
+Coding Ninjas: similarly, I mean, now, you don't have to write T. 2 a. 2 manually what you can do instead of writing manually what you can do. Just write equal to.
+
+929
+01:51:49.640 --> 01:52:00.590
+Coding Ninjas: Okay, just write equal to, then select the cell, select this B 2 automatically. B 2 will appear. So you also, you don't need to write anything manually. You can just select it automatically. B 2 will appear
+
+930
+01:52:00.740 --> 01:52:08.170
+Coding Ninjas: ticket so equal to select this automatically. V. 2 will appear minus 1957.
+
+931
+01:52:08.900 --> 01:52:16.149
+Coding Ninjas: Okay, so automatically, a 2 will appear so automatically, the cell cell address will appear. So it is a 2 minus a 2, which is 65.
+
+932
+01:52:16.320 --> 01:52:18.800
+Coding Ninjas: Similarly, if I want to calculate for this.
+
+933
+01:52:19.000 --> 01:52:23.049
+Coding Ninjas: so it will be equal to 2020, which is p. 3,
+
+934
+01:52:23.500 --> 01:52:30.090
+Coding Ninjas: minus 1978, which is a 3. So b, 3, minus a 3, and press enter.
+
+935
+01:52:30.240 --> 01:52:34.870
+Coding Ninjas: So year 42 will appear right. So 2020, minus 1978 is 42.
+
+936
+01:52:35.150 --> 01:52:36.920
+Coding Ninjas: Similarly, for this employer
+
+937
+01:52:37.080 --> 01:52:43.580
+Coding Ninjas: it will be equal to 2021. So select. So it is. V. 4, right? 2021 is v, 4,
+
+938
+01:52:43.810 --> 01:52:52.679
+Coding Ninjas: minus 1988, which is a 4. So B, 4, minus a 4 and press enter. So it is 33 years
+
+939
+01:52:52.940 --> 01:52:56.810
+Coding Ninjas: in here. Everything clear guys, any doubt. Still, here, anyone.
+
+940
+01:52:56.810 --> 01:52:57.440
+Anand sharma: No, sir. Your voice broke pls repeat
+
+941
+01:52:57.440 --> 01:52:57.990
+Pankaj Sharma: No, no.
+
+942
+01:52:57.990 --> 01:52:58.370
+pulla sai durga prasad: Yeah.
+
+943
+01:53:00.100 --> 01:53:00.600
+Ayush Bohra: Knows it.
+
+944
+01:53:00.600 --> 01:53:10.159
+Coding Ninjas: Okay. But, guys here, the issue is that I am doing it manually every time. Right? If let's say there are 100 employees or 1,000 employees. Right? So obviously, it will be a.
+
+945
+01:53:10.160 --> 01:53:11.090
+Anand sharma: We can.
+
+946
+01:53:11.678 --> 01:53:12.719
+Coding Ninjas: Yeah. So we can drive.
+
+947
+01:53:12.720 --> 01:53:14.140
+Anand sharma: Regretta yes.
+
+948
+01:53:14.745 --> 01:53:15.350
+pulla sai durga prasad: Well.
+
+949
+01:53:18.490 --> 01:53:23.729
+Coding Ninjas: Okay. So guys, if you want to apply this formula to every other cell, then we can drag it
+
+950
+01:53:23.990 --> 01:53:36.059
+Coding Ninjas: figure. So I'll so how to. So this formula I want to apply to every cell below, take every cell below. So this is what a. 2, my e, 2 minus a 2 right, I'll write it here. So this should be B 2 minus a 2, right?
+
+951
+01:53:36.210 --> 01:53:53.019
+Coding Ninjas: So B 2 minus a 2, so it would give you the result. Here it would be what? Here it would be. B, 3, minus a 2, right? So B, 3, minus a 3 would come in the formula, right? So this, this was our B 2 minus b, 3, minus a 3. Here it would be B 4, minus a 4
+
+952
+01:53:53.230 --> 01:53:55.800
+Coding Ninjas: thicker. So here it would be B, 4, minus a 4.
+
+953
+01:53:56.210 --> 01:54:01.599
+Coding Ninjas: Similarly, here it would be B, 5, minus a 5. So B, 5, minus a 5.
+
+954
+01:54:01.960 --> 01:54:04.660
+Coding Ninjas: Okay, so this would be the formula right in every set.
+
+955
+01:54:04.880 --> 01:54:09.130
+Coding Ninjas: Okay, so you don't need to write manually what you can do. I have written formula in one sec.
+
+956
+01:54:09.280 --> 01:54:15.889
+Coding Ninjas: You can just drag it down how to drag it here, you can. You have to just place your mouse at the bottom. Right?
+
+957
+01:54:16.170 --> 01:54:20.589
+Coding Ninjas: Okay? Bottom, right? You can see the symbols in a see, currently see the mouse symbol.
+
+958
+01:54:20.790 --> 01:54:24.930
+Coding Ninjas: If you go to bottom, right of this cell, you can see the symbol change to plus.
+
+959
+01:54:25.410 --> 01:54:30.749
+Coding Ninjas: Okay, when the symbol changes to plus here, you just need to double click. Okay, you can either drag it.
+
+960
+01:54:30.900 --> 01:54:33.760
+Coding Ninjas: You can drag it below. This is one way.
+
+961
+01:54:33.890 --> 01:54:36.729
+Coding Ninjas: or you can just double click, also, just double click
+
+962
+01:54:36.930 --> 01:54:42.090
+Coding Ninjas: automatically, it will be applied so both you can double click so it will automatically be applied to every cell below
+
+963
+01:54:42.220 --> 01:54:43.480
+Coding Ninjas: or else regular.
+
+964
+01:54:43.590 --> 01:54:44.629
+Coding Ninjas: Both are fine.
+
+965
+01:54:44.970 --> 01:54:48.990
+Coding Ninjas: Think I see automatically, you got results for every cell.
+
+966
+01:54:49.150 --> 01:54:51.270
+Coding Ninjas: Okay, you got result for everything.
+
+967
+01:54:51.680 --> 01:54:56.209
+Coding Ninjas: Right? So here, what exactly is happening here. Your formula is changing.
+
+968
+01:54:56.320 --> 01:54:58.920
+Coding Ninjas: Okay, you have written here, p. 2, minus here.
+
+969
+01:54:59.350 --> 01:55:03.260
+Coding Ninjas: but when you drag it down it will become p. 3, minus 0
+
+970
+01:55:03.460 --> 01:55:05.260
+Coding Ninjas: when you drag it again down
+
+971
+01:55:05.380 --> 01:55:07.850
+Coding Ninjas: it will become B 4, minus a 4.
+
+972
+01:55:08.090 --> 01:55:09.840
+Coding Ninjas: If you drag it again down.
+
+973
+01:55:09.980 --> 01:55:12.189
+Coding Ninjas: it will become B 4, minus a 5
+
+974
+01:55:12.410 --> 01:55:20.670
+Coding Ninjas: again down p. 6, minus a 6. Right? So you can see the position of the cell is changing. The reference of the cell is changing
+
+975
+01:55:20.780 --> 01:55:29.520
+Coding Ninjas: right? So here it should be P. 2, minus a 2. See if you go down the row, number will change this P. And a will not change. P. And a is your column name
+
+976
+01:55:29.680 --> 01:55:40.659
+Coding Ninjas: any anytime. If you drag it down the row number will change because row is changing right earlier. Currently, you are at second row, so it will be p. 2, minus 8. If you go one step down.
+
+977
+01:55:41.140 --> 01:55:44.610
+Coding Ninjas: 2 will become 3, so it will become B 3 minus a 0.
+
+978
+01:55:44.770 --> 01:55:49.350
+Coding Ninjas: If you go one more down, so 3 will become 4. So before minus a 4.
+
+979
+01:55:49.460 --> 01:56:11.369
+Coding Ninjas: If you go one more down, it will become B 5 minus a 5. So see, you can see only the row number are changing. So here, row number was 2. That's why. Here it was, 2 in formula. Here it became 3. So it was 3. So anytime here in the formula CP. 2, minus a 2, go down. P. 3, minus a 3. Go down before minus a 4, so it changes as per your row formula, row number.
+
+980
+01:56:11.870 --> 01:56:32.310
+Coding Ninjas: So your excel is very smart, right? You don't need to write the formula again and again. You just drag it down, so row number will change. So remember, if you drag it down, row number will change, because if you go down. What is changing right column is not changing, columns are stagnant. So here, if I'm going down the row, numbers are changing right? So in the formula, also the row number will change.
+
+981
+01:56:32.430 --> 01:56:35.630
+Coding Ninjas: So this is known as our relative cell, referencing
+
+982
+01:56:35.760 --> 01:56:38.899
+Coding Ninjas: the referencing of the cell changes relative
+
+983
+01:56:39.060 --> 01:56:44.040
+Coding Ninjas: right? So it is changing right, the cell referencing. So this is known as relative cell referencing.
+
+984
+01:56:44.310 --> 01:56:49.280
+Coding Ninjas: Okay? So this formula has been applied to every other set. And we are getting the correct result.
+
+985
+01:56:50.540 --> 01:56:53.450
+Coding Ninjas: Okay, till you're clear guys, what, exactly is happening here.
+
+986
+01:56:56.310 --> 01:56:56.950
+Anand sharma: Yeah.
+
+987
+01:56:56.950 --> 01:56:57.860
+Aditya Tiwari: Yes, sir.
+
+988
+01:56:57.860 --> 01:56:58.580
+pulla sai durga prasad: That's.
+
+989
+01:56:58.580 --> 01:56:59.290
+Md Shahnawaz: It is cool.
+
+990
+01:56:59.980 --> 01:57:01.520
+Coding Ninjas: If, for example, if.
+
+991
+01:57:01.520 --> 01:57:02.040
+Sarang Kantilal Joshi: For example.
+
+992
+01:57:02.040 --> 01:57:10.759
+Coding Ninjas: For example, this particular thing is not changing, then it will show 65, right? If, let's say, this address does not change so obviously everywhere, it will show 65,
+
+993
+01:57:10.870 --> 01:57:24.360
+Coding Ninjas: because it will automatically do this. 2022, minus 1957. If the address is not changing, right? So everywhere. It will show 65 only, which is not a correct thing, right in every cell I want to do difference of joining year and year of work.
+
+994
+01:57:24.510 --> 01:57:27.240
+Coding Ninjas: So that's why the self change is changing relatively.
+
+995
+01:57:27.380 --> 01:57:30.049
+Coding Ninjas: So, this is known as relative cell referencing.
+
+996
+01:57:35.080 --> 01:57:48.009
+Coding Ninjas: Okay, so remember, if you drag down, it will change the row number. If you drag right, it will change the column. See if I'm dragging right, although we will not get the result in dragging right. See, it is G, 2 minus 0.
+
+997
+01:57:48.300 --> 01:57:50.160
+Coding Ninjas: If I drag it right, let's see
+
+998
+01:57:50.610 --> 01:57:53.240
+Coding Ninjas: if I drag it right. It becomes C, 2 minus b, 2,
+
+999
+01:57:53.340 --> 01:57:59.029
+Coding Ninjas: so a, B will become C, what is next of BCA will become B,
+
+1000
+01:57:59.180 --> 01:58:07.880
+Coding Ninjas: right, so column number will change if you drag right. CC, 2 minus c, 2. Now, if you drag one more right, C will become DD will become CC
+
+1001
+01:58:08.449 --> 01:58:12.730
+Coding Ninjas: d, and C, right. So if you drag right, the column number changes
+
+1002
+01:58:12.910 --> 01:58:18.620
+Coding Ninjas: right, and if you drag down the row number changes. This is known as relative cell referencing.
+
+1003
+01:58:19.700 --> 01:58:29.960
+Coding Ninjas: Okay, so remember this thing. If you go down row number changes. Obviously, if you, if you go right, the column number changes, so you just have to drag it so your formula will be applied to every other set.
+
+1004
+01:58:31.770 --> 01:58:33.099
+Coding Ninjas: So you get the part of it.
+
+1005
+01:58:34.270 --> 01:58:36.570
+Coding Ninjas: Okay, so this is known as radio cell referencing.
+
+1006
+01:58:37.290 --> 01:58:44.159
+Coding Ninjas: Second, one is absolute cell referencing. Here, remove the total sales. Okay, remove total sales, because here we will be calculating.
+
+1007
+01:58:44.270 --> 01:58:50.430
+Coding Ninjas: Now this is absolute cell referencing in absolute self referencing. We don't want
+
+1008
+01:58:50.640 --> 01:59:00.130
+Coding Ninjas: the row number or column number to change. We don't want it. We don't want it to change. Okay, let me give an example. Here. We have total sales right here we have total sales.
+
+1009
+01:59:00.250 --> 01:59:05.970
+Coding Ninjas: So here what we have here, we have product, id per unit price. What is the price of one unit of product
+
+1010
+01:59:06.280 --> 01:59:09.020
+Coding Ninjas: quantity sold, how much quantity was sold.
+
+1011
+01:59:09.130 --> 01:59:11.140
+Coding Ninjas: So, guys, what will be the total sales.
+
+1012
+01:59:14.440 --> 01:59:18.230
+Md Shahnawaz: What will be the 14 to 3, 140.
+
+1013
+01:59:18.990 --> 01:59:24.900
+Coding Ninjas: Correct, so 14 to 3, which is 1 20, right? So per unit price multiplied by quantity.
+
+1014
+01:59:25.000 --> 01:59:34.540
+Coding Ninjas: So which is what? 1? 20 right? So it will be 40 per unit, multiplied by total quantity, which will be the total sales. So I'll write the formula equal to
+
+1015
+01:59:34.890 --> 01:59:37.059
+Coding Ninjas: my per unit price.
+
+1016
+01:59:37.060 --> 01:59:38.240
+Pankaj Sharma: Into, which is for.
+
+1017
+01:59:39.030 --> 01:59:42.929
+Coding Ninjas: Multiplied. But I don't need to. Yeah, I don't need to check that. You can just select it also.
+
+1018
+01:59:43.090 --> 01:59:46.689
+Coding Ninjas: Okay, so you can select it automatically, it will be viewed.
+
+1019
+01:59:46.870 --> 01:59:54.029
+Coding Ninjas: multiplied by 3. So 40 multiplied by 3, which is v. 2, multiplied by C.
+
+1020
+01:59:54.640 --> 01:59:55.520
+Coding Ninjas: Tiger.
+
+1021
+01:59:56.020 --> 02:00:00.359
+Coding Ninjas: Yes, what you're mentioning is so it is, it is automatically showing you 1, 20,
+
+1022
+02:00:00.520 --> 02:00:03.530
+Coding Ninjas: 3 years. So 1, 20 is the total sales.
+
+1023
+02:00:04.020 --> 02:00:06.269
+Coding Ninjas: So 1, 20 is your total sales.
+
+1024
+02:00:06.730 --> 02:00:09.699
+Coding Ninjas: See? Now, if you if I drag it if I drag it down.
+
+1025
+02:00:10.290 --> 02:00:12.669
+Coding Ninjas: Okay, if I drag this particular thing down.
+
+1026
+02:00:14.320 --> 02:00:19.600
+Coding Ninjas: So obviously, it is showing me 0 guys, why, it is showing me 0 if I write it down.
+
+1027
+02:00:20.760 --> 02:00:21.700
+Md Shahnawaz: There's no price.
+
+1028
+02:00:23.370 --> 02:00:36.950
+Coding Ninjas: Correct. So here there is no price mentioned. Right? So this is what relatives are referencing here it is. P. 2 into c. 2. Right. If I drag it down here it will become p. 3 into c. 3. But here it is, blank blank into 4 will be 0
+
+1029
+02:00:37.480 --> 02:00:57.380
+Coding Ninjas: here before into C 4. Here also it is blank. Blank into 6 is 0 here B, 5 into C, 5. Again, it is a blank, so blank into 2 is 0 figure. So this so this is this is obviously an issue. Right? So here here per unit price is fixed. Okay, we don't need to change the per unit price per unit price is fixed for it.
+
+1030
+02:00:57.470 --> 02:01:16.939
+Coding Ninjas: Okay, so this particular thing, we have to fix it. If you drag it down, it will change. Obviously it will change because row number is changing. So in the formula, also, the row number will change. 2 will become 3, 3 will become 4, 4 will become 5 to drag it down right. But this per unit price should not should be fixed, which is this? V. 2.
+
+1031
+02:01:17.120 --> 02:01:18.920
+Coding Ninjas: Right, which is this? B 2.
+
+1032
+02:01:19.240 --> 02:01:27.070
+Coding Ninjas: So yeah, someone mentioned that we have to fix it using the dollar symbol. So if you want to fix something, so you have to use the dollar symbol.
+
+1033
+02:01:27.230 --> 02:01:29.840
+Coding Ninjas: So let's say this. P. 2. You want to fix it
+
+1034
+02:01:30.130 --> 02:01:38.369
+Coding Ninjas: so you will. So let's say B and 2 both. You want to fix B is column and 2 is your row number both you want to fix. So write dollar B
+
+1035
+02:01:38.670 --> 02:01:39.710
+Coding Ninjas: dollar 2.
+
+1036
+02:01:39.970 --> 02:01:43.780
+Coding Ninjas: So what will happen now, this d, 2 cell will become fixed.
+
+1037
+02:01:44.010 --> 02:01:50.099
+Coding Ninjas: Okay, your B 2 cell, this B 2 cell will become fixed. So write dollar B dollar, 2.
+
+1038
+02:01:50.240 --> 02:01:59.729
+Coding Ninjas: Okay. Whenever there is dollar. That means that row or column will be fixed. So here I'm fixing B also, and 2 also. That's why dollar B dollar 2.
+
+1039
+02:01:59.890 --> 02:02:01.720
+Coding Ninjas: See? Even if you drag it right
+
+1040
+02:02:02.840 --> 02:02:05.570
+Coding Ninjas: you will. You are getting the answer now. Okay, let's see the form.
+
+1041
+02:02:05.680 --> 02:02:07.720
+Coding Ninjas: Here it is. Feed to into C room.
+
+1042
+02:02:07.890 --> 02:02:10.570
+Mayank Kashyap: If you go below, P. 2 won't change also. Now.
+
+1043
+02:02:11.270 --> 02:02:11.780
+Coding Ninjas: Sorry.
+
+1044
+02:02:12.190 --> 02:02:13.380
+Pankaj Sharma: Sir, can you please repeat.
+
+1045
+02:02:13.380 --> 02:02:15.349
+Mayank Kashyap: You can drive rupees also. Now.
+
+1046
+02:02:16.040 --> 02:02:17.880
+Coding Ninjas: No things doesn't make it
+
+1047
+02:02:18.780 --> 02:02:20.579
+Pankaj Sharma: So can you please, you guys will put that.
+
+1048
+02:02:21.171 --> 02:02:37.510
+Coding Ninjas: Yes. So Pankaj so here, you know, if you want to make something fixed. Okay, you got the answer. You you got the reason right why we want this to be fixed, because if you drag down, this will also change right. But period price should not change, it will. It should be fixed. So what is the address of period? Price b. 2.
+
+1049
+02:02:37.750 --> 02:02:44.119
+Coding Ninjas: So in our formula it was what in our formula formula, it was v. 2 into C, 2, right. G, 2, multiplied by C, 2,
+
+1050
+02:02:44.220 --> 02:02:45.580
+Coding Ninjas: which is 1, 20.
+
+1051
+02:02:45.690 --> 02:02:55.860
+Coding Ninjas: So now what you have to do, you have to make this B 2 fix. If you drag it down. This B 2 should not become B 3 or B 4 or anything. Okay, it should remain fixed. B, 2 should remain fixed.
+
+1052
+02:02:56.010 --> 02:02:59.530
+Coding Ninjas: So that's why I will fix B 2. So I will write dollar B.
+
+1053
+02:02:59.890 --> 02:03:00.960
+Coding Ninjas: Caller.
+
+1054
+02:03:01.220 --> 02:03:06.609
+Coding Ninjas: Okay, so B, 2 will now become fixed. Dollar B dollar, 2. So dollar symbol is used to make something fixed.
+
+1055
+02:03:06.610 --> 02:03:07.140
+Pankaj Sharma: It doesn't.
+
+1056
+02:03:07.140 --> 02:03:11.430
+Coding Ninjas: Okay. Dollar symbol is used to make Pankaj. Can you mute yourself.
+
+1057
+02:03:11.730 --> 02:03:12.330
+Pankaj Sharma: Yes, sir.
+
+1058
+02:03:14.380 --> 02:03:19.220
+Coding Ninjas: So, guys, if you are just, if you are speaking, then only unmute. Otherwise there will be a lot of background noise.
+
+1059
+02:03:19.660 --> 02:03:25.859
+Coding Ninjas: Oh, okay, so yeah, it will be dollar B dollar 2. So now what will happen? V, 2 will become fixed. Let us see
+
+1060
+02:03:26.130 --> 02:03:29.610
+Coding Ninjas: if I drag it down. Now let's see the formula. I have dragged it down.
+
+1061
+02:03:30.030 --> 02:03:32.080
+Coding Ninjas: See, here it is. C, 2 into C, 2.
+
+1062
+02:03:32.570 --> 02:03:34.219
+Coding Ninjas: Now see the formula below.
+
+1063
+02:03:34.720 --> 02:03:42.749
+Coding Ninjas: It is again B, 2 into C, 4, c, 3. Okay, so B, 2 is fixed. Now see B, 2 into c, 3, which means 40 into 4,
+
+1064
+02:03:43.130 --> 02:03:44.889
+Coding Ninjas: which is 1 60. So.
+
+1065
+02:03:44.890 --> 02:03:45.980
+Pankaj Sharma: Okay. Sir. Okay. Okay.
+
+1066
+02:03:45.980 --> 02:03:52.160
+Coding Ninjas: If you go down, it is become 40, multiplied by 6, so you can see 40 is not changing
+
+1067
+02:03:52.260 --> 02:03:52.810
+Coding Ninjas: 14.
+
+1068
+02:03:52.810 --> 02:03:54.589
+Pankaj Sharma: Yes, sir. Yes, okay.
+
+1069
+02:03:54.940 --> 02:04:01.019
+Coding Ninjas: Again, if you go down here also, 40 is not changing 40 into
+
+1070
+02:04:01.160 --> 02:04:06.500
+Coding Ninjas: okay. So whenever you want something to be fixed, just fix it. Okay? So there are 2 parts of v, 2. 1st
+
+1071
+02:04:06.500 --> 02:04:08.700
+Coding Ninjas: does be, second is to.
+
+1072
+02:04:09.730 --> 02:04:12.169
+Md Sultan: Sir, if you use only dollar B. 2, it won't.
+
+1073
+02:04:12.170 --> 02:04:13.810
+Md Shahnawaz: I have one more question.
+
+1074
+02:04:14.130 --> 02:04:18.340
+Coding Ninjas: Guys, can you please raise your audit? Because a lot of me so much? We'll take one by one, please.
+
+1075
+02:04:18.750 --> 02:04:20.099
+Coding Ninjas: So I'm asking.
+
+1076
+02:04:20.100 --> 02:04:23.619
+Md Sultan: If I use only dollar B 2 sign it won't work.
+
+1077
+02:04:25.110 --> 02:04:26.520
+Coding Ninjas: If you are using roller.
+
+1078
+02:04:27.340 --> 02:04:30.140
+Md Sultan: Only dollar, B, 2, not dollar b dollar, 2.
+
+1079
+02:04:30.354 --> 02:04:40.670
+Coding Ninjas: That will work. So yeah, we will run. You guys fix. Okay, you are dragging down right? So if you are dragging down the row number will change. So if you just fix the row, then also it will work because we won't change if you drag down.
+
+1080
+02:04:40.760 --> 02:05:06.600
+Coding Ninjas: So this will also work. So this is also a good point, guys, that if you want to fix everything you can do dollar $2. But actually there is no need of fixing. B. You just need to fix this, too, because here we are dragging down. So 2 will change anyways. B will not change right because we are not dragging it right. If we drag it right, then B will change. B will become CC will become D, but we are dragging down. So it's okay. Even if you fix only the 2 part.
+
+1081
+02:05:06.760 --> 02:05:10.359
+Coding Ninjas: Okay? Or else if you are confused, just click, save also, it's okay.
+
+1082
+02:05:13.250 --> 02:05:15.470
+Coding Ninjas: Yes, yes, Roland, you have to use it already.
+
+1083
+02:05:16.890 --> 02:05:19.720
+Coding Ninjas: Yes, someone was asking a question after one.
+
+1084
+02:05:19.870 --> 02:05:26.170
+Md Shahnawaz: Happy to price up unit per price. Same
+
+1085
+02:05:26.460 --> 02:05:45.450
+Md Shahnawaz: to it is who here possible same quantity, same quantity.
+
+1086
+02:05:45.710 --> 02:05:48.980
+Coding Ninjas: For quantity will actually yes, so that will be applied on Co. 2. Not on me.
+
+1087
+02:05:49.930 --> 02:05:50.419
+Coding Ninjas: Do you guys.
+
+1088
+02:05:50.610 --> 02:05:51.280
+Md Shahnawaz: T.
+
+1089
+02:05:51.700 --> 02:05:54.079
+Coding Ninjas: So Joe fixed Garner, or say, Fix garner.
+
+1090
+02:05:55.640 --> 02:06:06.849
+Coding Ninjas: clear guys, it's called. We will see some more examples here. But before that, before we see more examples. What I want you to do. Just it'na practice color. It'na clear color, relative
+
+1091
+02:06:07.410 --> 02:06:10.779
+Coding Ninjas: and absolute. Just the sheets Uskevan, if you are clear.
+
+1092
+02:06:10.980 --> 02:06:13.890
+Coding Ninjas: So it's for like sales recording.
+
+1093
+02:06:14.040 --> 02:06:17.719
+Coding Ninjas: Let's go. Remove further. Remove this commission and total. Set this. You have to get it
+
+1094
+02:06:17.920 --> 02:06:24.559
+Coding Ninjas: commission and total selling only and practice it on sales team. But I'll do it as an agent. We will do it.
+
+1095
+02:06:24.790 --> 02:06:35.700
+Coding Ninjas: Okay, this is important from formulas point of view, also very important. As well, take a clear address.
+
+1096
+02:06:35.900 --> 02:06:37.010
+Pankaj Sharma: Yes, sir.
+
+1097
+02:06:37.930 --> 02:06:40.130
+Coding Ninjas: Any doubt guys in today's session.
+
+1098
+02:06:40.130 --> 02:06:41.280
+Pankaj Sharma: No, sir.
+
+1099
+02:06:44.640 --> 02:06:47.400
+Coding Ninjas: Okay, anyone else in it all in this.
+
+1100
+02:06:48.580 --> 02:06:49.160
+Md Shahnawaz: No, sir.
+
+1101
+02:06:49.160 --> 02:06:52.210
+Coding Ninjas: He is on a morning.
+
+1102
+02:06:52.320 --> 02:06:53.160
+Coding Ninjas: Tell them.
+
+1103
+02:06:54.380 --> 02:06:57.730
+Anand sharma: Yes. So basically, I was asking like,
+
+1104
+02:07:00.010 --> 02:07:03.979
+Anand sharma: you, I guess I was asking like, Could you please
+
+1105
+02:07:05.290 --> 02:07:09.980
+Anand sharma: tell us about the next topic so that we can have a look on this, and then you.
+
+1106
+02:07:12.150 --> 02:07:14.449
+Coding Ninjas: You want to understand about next topic.
+
+1107
+02:07:14.710 --> 02:07:20.039
+Anand sharma: Yes, so so that I can have a look on this on the same by that by the
+
+1108
+02:07:20.200 --> 02:07:22.619
+Anand sharma: tomorrow evening, so that we can have a.
+
+1109
+02:07:22.620 --> 02:07:23.190
+Coding Ninjas: Yeah.
+
+1110
+02:07:23.310 --> 02:07:27.380
+Anand sharma: So after this, we would be starting with simple formulas in excel
+
+1111
+02:07:28.160 --> 02:07:29.729
+Coding Ninjas: Can you get formulas in itself.
+
+1112
+02:07:29.730 --> 02:07:30.380
+Anand sharma: Okay.
+
+1113
+02:07:30.940 --> 02:07:42.089
+Coding Ninjas: Like. If phobia, if else, then some, if phobia count, if all the formulas of it.
+
+1114
+02:07:42.090 --> 02:07:42.910
+Anand sharma: Dun dunno.
+
+1115
+02:07:54.910 --> 02:07:56.369
+Coding Ninjas: Oh, it's generally weird.
+
+1116
+02:07:57.640 --> 02:08:04.119
+Coding Ninjas: generative. I in excel also power Bi, also python. So generate is something which is used everywhere
+
+1117
+02:08:06.920 --> 02:08:07.529
+Coding Ninjas: to you guys.
+
+1118
+02:08:08.480 --> 02:08:09.920
+Anand sharma: Yeah. Sure. Thanks.
+
+1119
+02:08:12.740 --> 02:08:14.339
+Coding Ninjas: Okay. Any other cloud works.
+
+1120
+02:08:15.560 --> 02:08:16.450
+Rudra Pratap Singh: No, sir.
+
+1121
+02:08:17.440 --> 02:08:43.390
+Coding Ninjas: When we are moving forward, I'll show you, how do I create the views? So basically in project, I will show you that that in my company. If I do any analysis. So India, Cpi, I'll tell you, how do I create views? How do I think? How do I use percentages? So in Project part I will explain you everything about how I, personally in my job role
+
+1122
+02:08:43.520 --> 02:08:57.180
+Coding Ninjas: approaches a project, what exact use, what I create and what exact percentages. Do I look at what? Exactly comparison, where I look at. So everything project must approach clear Ojayana from a job perspective.
+
+1123
+02:09:00.490 --> 02:09:01.080
+Md Shahnawaz: What is it?
+
+1124
+02:09:06.880 --> 02:09:08.650
+Md Shahnawaz: Wabi is starting at 9.
+
+1125
+02:09:09.010 --> 02:09:09.400
+Coding Ninjas: That's all.
+
+1126
+02:09:10.990 --> 02:09:12.000
+Md Shahnawaz: You can mess.
+
+1127
+02:09:12.000 --> 02:09:15.300
+Coding Ninjas: You have to talk with the Coordinator.
+
+1128
+02:09:18.270 --> 02:09:18.939
+Md Shahnawaz: That's all.
+
+1129
+02:09:18.940 --> 02:09:22.020
+Rudra Pratap Singh: The project is upon the air quality index.
+
+1130
+02:09:22.350 --> 02:09:29.329
+Coding Ninjas: Air quality we use for the time air quality index. That's how I guess it will be a weekly weekly.
+
+1131
+02:09:29.639 --> 02:09:30.569
+Coding Ninjas: Heard of that.
+
+1132
+02:09:30.950 --> 02:09:34.020
+Rudra Pratap Singh: Yeah, by 20th of April.
+
+1133
+02:09:34.350 --> 02:09:39.449
+Coding Ninjas: That will be weekly.
+
+1134
+02:09:39.580 --> 02:09:41.130
+Rudra Pratap Singh: Yo, yeah. No. Problem.
+
+1135
+02:09:41.130 --> 02:09:44.859
+Coding Ninjas: Look to it, using you to you. Good.
+
+1136
+02:09:46.220 --> 02:09:46.970
+Rounak Das: Hello!
+
+1137
+02:09:47.490 --> 02:09:48.390
+Coding Ninjas: Yes.
+
+1138
+02:09:49.610 --> 02:09:50.110
+Rounak Das: Sir,
+
+1139
+02:09:50.750 --> 02:10:17.309
+Rounak Das: you are using this small table. So it's easier to easier to see and easier to navigate. So when you have a huge amount of data. So how do you navigate very efficiently? Because when we are doing it, either I'm scrolling it too fast or too slow. I'm skipping the data. So how do you navigate properly so that you get to see everything in a proper way?
+
+1140
+02:10:17.680 --> 02:10:44.829
+Coding Ninjas: Let's say, I want to see con concept parental level of education. I'll click this. High school masters use pivot table to summarize it. So I mean, we will use the concept instead of.
+
+1141
+02:10:45.290 --> 02:10:52.459
+Rounak Das: Oh, so you use this concepts, and instead of going down the entire page or seeing.
+
+1142
+02:10:52.460 --> 02:10:53.050
+Coding Ninjas: Hmm.
+
+1143
+02:10:53.050 --> 02:10:54.610
+Rounak Das: But, sir, if oh, my goodness!
+
+1144
+02:10:54.610 --> 02:11:03.770
+Rounak Das: Formatting part! So when you are assigning colors to everything, so you have to go through the trends at that time. You're scrolling right.
+
+1145
+02:11:03.960 --> 02:11:08.419
+Coding Ninjas: Yeah, yeah, we don't have to apply conditional formatting in the table here table where we don't have to apply.
+
+1146
+02:11:08.600 --> 02:11:18.499
+Coding Ninjas: We have to apply something. So I showed you an example. Right? My job, let's say monthly trend. You. Summarize the view. You will apply data. May you won't apply.
+
+1147
+02:11:19.290 --> 02:11:19.750
+Rounak Das: Okay.
+
+1148
+02:11:19.750 --> 02:11:22.989
+Coding Ninjas: Okay? So in some view which you are creating after analysis.
+
+1149
+02:11:23.110 --> 02:11:33.020
+Coding Ninjas: So what the Chotas have, yoga? That won't be 10,000 or 1,000 right. Yoga maximum. 15 rows are column maximum there, so that there you have to go.
+
+1150
+02:11:33.410 --> 02:11:35.609
+Rounak Das: So it's a shorter spectrum.
+
+1151
+02:11:36.150 --> 02:11:38.289
+Coding Ninjas: Oh, yeah, for us. Better not the whole year.
+
+1152
+02:11:38.290 --> 02:11:38.920
+Rounak Das: Okay.
+
+1153
+02:11:39.180 --> 02:11:40.439
+Rounak Das: Okay. Okay.
+
+1154
+02:11:43.610 --> 02:11:46.350
+Md Shahnawaz: Project.
+
+1155
+02:11:47.290 --> 02:11:48.680
+Coding Ninjas: Many project would, I know.
+
+1156
+02:11:49.730 --> 02:11:53.699
+Md Shahnawaz: Next project, next next class.
+
+1157
+02:11:53.700 --> 02:12:02.369
+Coding Ninjas: Because it is confidential at the Company thing, so I will, whatever project they are assigning in my style
+
+1158
+02:12:03.230 --> 02:12:09.020
+Coding Ninjas: how I approach the project in my company who projects I cannot showcase, no matter.
+
+1159
+02:12:09.020 --> 02:12:12.030
+Md Shahnawaz: Yes, a good job to practice.
+
+1160
+02:12:13.580 --> 02:12:25.730
+Coding Ninjas: So I'll share you. The data sets a bit of time. I will share the data sets. 1st you do, then I will share you my files also.
+
+1161
+02:12:27.353 --> 02:12:28.140
+Md Shahnawaz: Take it.
+
+1162
+02:12:28.870 --> 02:12:30.840
+Coding Ninjas: So yes.
+
+1163
+02:12:30.840 --> 02:12:31.770
+Mayank Kashyap: Who do I?
+
+1164
+02:12:33.750 --> 02:12:37.670
+Mayank Kashyap: Air quality, indexual voca security, Sir.
+
+1165
+02:12:38.300 --> 02:12:41.700
+Coding Ninjas: You have to approach that you have to think
+
+1166
+02:12:43.020 --> 02:12:47.089
+Coding Ninjas: plasma concepts we have learned. Now you have to apply. You have to think, considering it calculate.
+
+1167
+02:12:47.390 --> 02:12:49.280
+Coding Ninjas: because it's all about thinking it's not about.
+
+1168
+02:12:49.280 --> 02:12:51.929
+Mayank Kashyap: Create a Google say, like a shortcursor.
+
+1169
+02:12:53.540 --> 02:12:54.390
+Coding Ninjas: Google's, it.
+
+1170
+02:12:56.960 --> 02:12:57.660
+Chinglensana Sarangthem: Thank you.
+
+1171
+02:12:57.660 --> 02:12:59.660
+Mayank Kashyap: Oh, yeah. Hey?
+
+1172
+02:13:06.390 --> 02:13:11.090
+Rounak Das: You just need to download it and access it on the excel, and then you have to move on.
+
+1173
+02:13:12.320 --> 02:13:12.650
+Mayank Kashyap: Okay.
+
+1174
+02:13:12.650 --> 02:13:16.510
+Coding Ninjas: Is not available. You have to use between.
+
+1175
+02:13:17.680 --> 02:13:18.700
+Shruthireddy: Okay, sir.
+
+1176
+02:13:21.110 --> 02:13:29.620
+Rohit Das: Say, or double dollar difference.
+
+1177
+02:13:30.280 --> 02:13:31.470
+Coding Ninjas: I was nearing. I was.
+
+1178
+02:13:32.480 --> 02:13:43.719
+Rohit Das: Double dollar sign use kaneme difference.
+
+1179
+02:13:43.720 --> 02:13:47.530
+Coding Ninjas: Next section we are currently, I mean, the topic is no full job
+
+1180
+02:13:47.700 --> 02:13:51.219
+Coding Ninjas: single that we will see next session. Okay, pudding.
+
+1181
+02:13:51.350 --> 02:13:55.519
+Rohit Das: No, no, no! The kind of palace.
+
+1182
+02:13:55.520 --> 02:14:03.769
+Coding Ninjas: I was just clearing the question of someone exactly will do it. So you will get that feature
+
+1183
+02:14:04.220 --> 02:14:10.850
+Coding Ninjas: 3 years, obviously relative versus absolute. If you dollars and kitana use, connect up egg, connect up Dugana, that you will understand.
+
+1184
+02:14:10.980 --> 02:14:13.900
+Coding Ninjas: I mean next session. We will take this amount, so don't worry.
+
+1185
+02:14:15.000 --> 02:14:15.850
+Coding Ninjas: Do you get?
+
+1186
+02:14:17.380 --> 02:14:21.859
+Coding Ninjas: Thank you guys. That's it. For today. I'll see you in the next session.
+
+1187
+02:14:22.170 --> 02:14:25.190
+pulla sai durga prasad: Sure. Sure. Thank you, sir. Bye, bye, have a good thank you. Guys that.
+
+1188
+02:14:25.190 --> 02:14:26.400
+Coding Ninjas: So, right, okay.
+
+1189
+02:14:28.080 --> 02:14:29.000
+Rohit Raj: Thank you.
+
+1190
+02:14:29.800 --> 02:14:30.270
+pulla sai durga prasad: Thank you.
+
+1191
+02:14:31.090 --> 02:14:31.710
+Rishabh kumar: Burn.
+
+1192
+02:14:32.043 --> 02:14:32.709
+Rishabh kumar: Thank you.
+
+1193
+02:14:32.710 --> 02:14:33.496
+Sarang Kantilal Joshi: Yes, sir.
+
+1194
+02:14:33.890 --> 02:14:34.230
+Coding Ninjas: Thank you.
+
+1195
+02:14:34.726 --> 02:14:35.720
+Sarang Kantilal Joshi: For me.
+
+1196
+02:14:35.720 --> 02:14:36.370
+Shruthireddy: You should.
+
+1197
+02:14:36.990 --> 02:14:37.390
+Coding Ninjas: Thank you.
+
+1198
+02:14:39.830 --> 02:14:41.440
+Ayush Bohra: Thank you, sir. Good night.
+
+1199
+02:14:41.900 --> 02:14:42.740
+Coding Ninjas: Thank you. Good night.
+
+1200
+02:14:46.410 --> 02:14:47.130
+Anand sharma: Exactly.
+
