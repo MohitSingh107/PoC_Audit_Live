@@ -459,6 +459,25 @@ with st.sidebar:
     }
     selected_model = _model_map[model_choice]
 
+    with st.expander("🔑 API Keys", expanded=False):
+        st.caption("Keys are resolved in order: input below → Streamlit Secrets → .env file")
+        _openai_env = os.getenv("OPENAI_API_KEY", "") or ""
+        _gemini_env = os.getenv("GEMINI_API_KEY", "") or ""
+        try:
+            _openai_env = _openai_env or st.secrets.get("OPENAI_API_KEY", "")
+            _gemini_env = _gemini_env or st.secrets.get("GEMINI_API_KEY", "")
+        except Exception:
+            pass
+        st.caption(f"OpenAI: {'✅ found in env/secrets' if _openai_env else '❌ not set'}")
+        st.caption(f"Gemini: {'✅ found in env/secrets' if _gemini_env else '❌ not set'}")
+        api_key_val = st.text_input(
+            "Paste API Key (overrides env/secrets)",
+            value="",
+            type="password",
+            placeholder="sk-... or AIza...",
+            help="Paste your OpenAI or Gemini key here. This takes priority over all other sources."
+        )
+
     st.markdown("### Session Name")
     session_name_val = st.text_area(
         "Session Name",
@@ -579,7 +598,8 @@ if run_btn:
                     messages, 
                     session_name_val, 
                     escalation_feedback=escalation_feedback_val, 
-                    model=selected_model
+                    model=selected_model,
+                    api_key=api_key_val,
                 )
                 st.session_state['audit_result'] = result
                 st.session_state['audit_meta'] = meta

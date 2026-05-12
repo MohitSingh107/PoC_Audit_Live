@@ -8,8 +8,23 @@ from dotenv import load_dotenv
 from parser import format_turns_for_prompt, format_chat_for_prompt, compute_doubt_windows
 from curriculum import CurriculumService
 
+import streamlit as st
+
 load_dotenv()
 curriculum = CurriculumService()
+
+
+def _resolve_key(env_var: str, ui_key: str = "") -> str:
+    """Return API key using priority: UI input → st.secrets → .env / os.getenv."""
+    if ui_key and ui_key.strip():
+        return ui_key.strip()
+    try:
+        secret = st.secrets.get(env_var, "")
+        if secret:
+            return secret
+    except Exception:
+        pass
+    return os.getenv(env_var, "")
 
 # ── Chat log path (same directory as this file) ───────────────────────────────
 _LOG_PATH = Path(__file__).parent / "chat.log"
@@ -133,7 +148,7 @@ def _compute_scores(result: dict) -> dict:
     result['overall_score'] = round(overall_sum / overall_count, 1)
     return result
 
-def analyze_session(turns, chat_messages, session_name, escalation_feedback="", model: str = "gpt-4.1-mini"):
+def analyze_session(turns, chat_messages, session_name, escalation_feedback="", model: str = "gpt-4.1-mini", api_key: str = ""):
     transcript_text  = format_turns_for_prompt(turns)
     chat_text        = format_chat_for_prompt(chat_messages)
     doubt_windows    = compute_doubt_windows(chat_messages, turns)
@@ -452,9 +467,9 @@ Take your time and think through every step - remember to check your result rigo
 
     # ── Route to the correct provider ────────────────────────────────────────
     if model in _GEMINI_MODELS or model.startswith("gemini"):
-        result = _call_gemini(model, SYSTEM_PROMPT)
+        result = _call_gemini(model, SYSTEM_PROMPT, api_key=api_key)
     else:
-        result = _call_openai(model, SYSTEM_PROMPT)
+        result = _call_openai(model, SYSTEM_PROMPT, api_key=api_key)
 
     # Compute scores from flags at code level
     result = _compute_scores(result)
@@ -469,9 +484,12 @@ Take your time and think through every step - remember to check your result rigo
 # Provider-specific helpers
 # ─────────────────────────────────────────────────────────────────────────────
 
-def _call_openai(model: str, prompt: str) -> dict:
+def _call_openai(model: str, prompt: str, api_key: str = "") -> dict:
     """Call OpenAI chat completions and return enriched result dict."""
-    client = OpenAI(api_key=os.getenv('OPENAI_API_KEY'))
+    key = _resolve_key("OPENAI_API_KEY", api_key)
+    if not key:
+        raise ValueError("OpenAI API key is not set. Provide it via the sidebar, st.secrets, or a .env file.")
+    client = OpenAI(api_key=key)
     response = client.chat.completions.create(
         model=model,
         temperature=0,
@@ -497,9 +515,12 @@ def _call_openai(model: str, prompt: str) -> dict:
     return result
 
 
-def _call_gemini(model: str, prompt: str) -> dict:
+def _call_gemini(model: str, prompt: str, api_key: str = "") -> dict:
     """Call Google Gemini (google-genai SDK) and return enriched result dict."""
-    client   = genai.Client(api_key=os.getenv('GEMINI_API_KEY'))
+    key = _resolve_key("GEMINI_API_KEY", api_key)
+    if not key:
+        raise ValueError("Gemini API key is not set. Provide it via the sidebar, st.secrets, or a .env file.")
+    client = genai.Client(api_key=key)
     response = client.models.generate_content(
         model=model,
         contents=prompt,
