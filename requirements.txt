@@ -2,3 +2,7 @@ streamlit>=1.31.0
 openai>=1.30.0
 python-dotenv>=1.0.0
 google-genai
+streamlit
+pandas
+gspread
+rapidfuzz

@@ -1,7 +1,9 @@
 import streamlit as st
 import json
 import os
+import io
 import textwrap
+import pandas as pd
 from parser import parse_vtt, parse_chat
 from analyzer import analyze_session
 from curriculum import CurriculumService
@@ -148,7 +150,7 @@ def score_bar(label, score, color="#FF9F0A"):
 
 def sub_check_row(label, status, detail):
     s = status.lower()
-    color = "pass" if s == "pass" else ("flagged" if s == "flagged" else "warn")
+    color = "pass" if s == "pass" else ("fail" if s == "fail" else "warn")
     detail_html = f'<div style="color:#8E8E93;font-size:12px;margin-top:4px">{detail}</div>' if detail else ""
     return textwrap.dedent(f"""
     <div style="display:flex;align-items:flex-start;justify-content:space-between;padding:10px 0;
@@ -197,25 +199,16 @@ def render_report(data, meta):
 
     bars_html = "".join(score_bar(l, s, bar_color(s)) for l, s in scoreable)
 
-    # ── Header card
     header = textwrap.dedent(f"""
     <div class="report-card animate-in" style="background: linear-gradient(135deg, #1C1C1E 0%, #111113 100%); border-color: rgba(255,255,255,0.12)">
       <h2 style="color:#fff;margin:0 0 18px;font-size:18px;font-weight:700;letter-spacing:-0.5px">
-        {meta.get('session_title','Session Audit Report')}
+        {meta.get('session_title','Audit Report')}
       </h2>
-      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px">
+      <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px">
         <div><div style="color:#8E8E93;font-size:10px;text-transform:uppercase;letter-spacing:1px;margin-bottom:4px">Date</div>
              <div style="color:#fff;font-size:14px;font-weight:500">{meta.get('date','—')}</div></div>
-        <div><div style="color:#8E8E93;font-size:10px;text-transform:uppercase;letter-spacing:1px;margin-bottom:4px">Time</div>
-             <div style="color:#fff;font-size:14px;font-weight:500">{meta.get('time','—')}</div></div>
-        <div><div style="color:#8E8E93;font-size:10px;text-transform:uppercase;letter-spacing:1px;margin-bottom:4px">Duration</div>
-             <div style="color:#fff;font-size:14px;font-weight:500">{meta.get('duration','—')}</div></div>
-        <div><div style="color:#8E8E93;font-size:10px;text-transform:uppercase;letter-spacing:1px;margin-bottom:4px">Instructor</div>
-             <div style="color:#fff;font-size:14px;font-weight:500">{meta.get('instructor','—')}</div></div>
-        <div><div style="color:#8E8E93;font-size:10px;text-transform:uppercase;letter-spacing:1px;margin-bottom:4px">Learners</div>
-             <div style="color:#fff;font-size:14px;font-weight:500">{meta.get('learners','—')}</div></div>
-        <div><div style="color:#8E8E93;font-size:10px;text-transform:uppercase;letter-spacing:1px;margin-bottom:4px">Audit Type</div>
-             <div style="color:#fff;font-size:14px;font-weight:500">{meta.get('audit_type','General')}</div></div>
+        <div><div style="color:#8E8E93;font-size:10px;text-transform:uppercase;letter-spacing:1px;margin-bottom:4px">Session Name</div>
+             <div style="color:#fff;font-size:14px;font-weight:500">{meta.get('session_name','—')}</div></div>
       </div>
     </div>""").strip()
 
@@ -265,7 +258,7 @@ def render_report(data, meta):
         "abusive_language": "Abusive language",
         "vague_conversation": "Vague / incoherent conversation",
         "long_break": "Long / unannounced break",
-        "idle": "Idle at session start",
+        "idle": "On time start",
         "forcing_ratings": "Forcing ratings",
         "stretching_session": "Stretching session (waiting for joins)",
     }
@@ -298,7 +291,7 @@ def render_report(data, meta):
     de_addressed = de.get("addressed_count", 0)
     de_total = de.get("total_student_questions", 0)
     de_detail = f"Addressed {de_addressed} of {de_total} student question{'s' if de_total != 1 else ''}" if de_total > 0 else ""
-    eng_subs_html = sub_check_row("Doubts engagement", de.get("status", "pass"), de_detail)
+    eng_subs_html = sub_check_row("Doubts engagement", de.get("status", "pass"), de.get("detail", ""))
 
     # ── Missed doubts list (nested under doubts_engagement)
     eng_missed = de.get("missed_doubts", [])
@@ -311,7 +304,6 @@ def render_report(data, meta):
               <div style="display:flex;align-items:center;gap:8px;margin-bottom:4px">
                 {source_tag(md.get('source','chat'))}
                 <span style="color:#FF9F0A;font-size:12px;font-weight:600">{md.get('timestamp','')}</span>
-                <span style="color:#E5E5EA;font-size:12px;font-weight:600">{md.get('student','')}</span>
               </div>
               <div style="color:#E5E5EA;font-size:13px;margin-bottom:4px">"{md.get('question','')}"</div>
               <div style="color:#8E8E93;font-size:12px">{md.get('reason','')}</div>
@@ -453,26 +445,17 @@ with st.sidebar:
     use_demo = st.checkbox("Use demo session files", value=True,
                             help="Uses the Recording.transcript.vtt and Chat.txt from this folder")
 
-    st.markdown("### Session Details")
-    session_title = st.text_input("Session Title", value="Session Audit Report")
-    date_val = st.text_input("Date", value="21 Apr 2026")
-    time_val = st.text_input("Time", value="7:00 PM – 9:15 PM")
-    duration_val = st.text_input("Duration", value="2h 15min")
-    instructor_val = st.text_input("Instructor", value="Coding Ninjas")
-    learners_val = st.text_input("Learners", value="38")
-    audit_type_val = st.selectbox("Audit Type", ["General", "Escalation"])
 
     st.markdown("### Model Configuration")
     model_choice = st.selectbox(
         "LLM Model",
-        ["GPT-4.1 mini", "Gemini 3.1 Flash","Gemini 3.1 Pro"],
+        ["GPT-4.1 mini", "Gemini 3.1 Flash"],
         index=0,
         help="Select the model to perform the audit analysis."
     )
     _model_map = {
         "GPT-4.1 mini": "gpt-4.1-mini",
         "Gemini 3.1 Flash": "gemini-3.1-flash-lite-preview",
-        "Gemini 3.1 Pro": "gemini-3.1-pro-preview"
     }
     selected_model = _model_map[model_choice]
 
@@ -484,12 +467,55 @@ with st.sidebar:
     )
 
     st.markdown("### Escalation Feedback")
-    escalation_feedback_val = st.text_area(
-        "Low Rating Feedback (Optional)",
-        value="",
-        height=100,
-        help="Paste any low rating subjective feedback from students here."
+
+    _sample_csv = "S.No,User Id,Feedback,Rating\n1,23123,Teaching is not good,2\n2,31242,Abusing !!,1\n"
+    st.download_button(
+        label="⬇ Download Sample CSV",
+        data=_sample_csv,
+        file_name="escalation_feedback_sample.csv",
+        mime="text/csv",
+        use_container_width=True,
     )
+
+    escalation_file = st.file_uploader(
+        "Low Rating Feedback (CSV / Excel)",
+        type=["csv", "xlsx"],
+        help="Upload a CSV or Excel file with columns: S.No, User Id, Feedback, Rating"
+    )
+
+    escalation_feedback_val = ""
+    if escalation_file is not None:
+        try:
+            if escalation_file.name.endswith(".xlsx"):
+                df_esc = pd.read_excel(io.BytesIO(escalation_file.read()))
+            else:
+                df_esc = pd.read_csv(io.StringIO(escalation_file.read().decode("utf-8")))
+
+            # Normalize column names: strip whitespace, lowercase
+            df_esc.columns = [c.strip() for c in df_esc.columns]
+
+            # Resolve "User Id" column flexibly
+            uid_col = next(
+                (c for c in df_esc.columns if c.lower().replace(" ", "") in ["userid", "uid", "id"]),
+                None
+            )
+            fb_col = next(
+                (c for c in df_esc.columns if c.lower() in ["feedback", "feedack", "comment", "comments"]),
+                None
+            )
+
+            if uid_col and fb_col:
+                lines = [
+                    f"{str(row[uid_col]).strip()}: {str(row[fb_col]).strip()}"
+                    for _, row in df_esc.iterrows()
+                    if str(row[fb_col]).strip() and str(row[fb_col]).strip().lower() != "nan"
+                ]
+                escalation_feedback_val = "\n".join(lines)
+                st.success(f"✅ {len(lines)} feedback row{'s' if len(lines) != 1 else ''} loaded.")
+            else:
+                st.error("❌ Could not find 'User Id' or 'Feedback' columns in the uploaded file.")
+        except Exception as e:
+            st.error(f"❌ Failed to parse escalation file: {e}")
 
     run_btn = st.button("🚀 Run Audit")
 
@@ -541,14 +567,11 @@ if run_btn:
         st.markdown("---")
 
         with st.spinner(f"🤖 Analyzing session with {model_choice}..."):
+            from datetime import date as _date
             meta = {
-                "session_title": session_title,
-                "date": date_val,
-                "time": time_val,
-                "duration": duration_val,
-                "instructor": instructor_val,
-                "learners": learners_val,
-                "audit_type": audit_type_val,
+                "session_title": "Audit Report",
+                "date": _date.today().strftime("%d %b %Y"),
+                "session_name": session_name_val or "—",
             }
             try:
                 result = analyze_session(

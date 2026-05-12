@@ -56,7 +56,7 @@ def _compute_scores(result: dict) -> dict:
                 ib_score += pts
             elif st == 'warn':
                 ib_score += pts / 2.0
-            elif st == 'flagged':
+            elif st == 'fail':
                 ib_flags += 1
     ib['score'] = round(ib_score, 1)
     ib['flag_count'] = ib_flags
@@ -76,7 +76,7 @@ def _compute_scores(result: dict) -> dict:
                 eng_score += pts
             elif st == 'warn':
                 eng_score += pts / 2.0
-            elif st == 'flagged':
+            elif st == 'fail':
                 eng_flags += 1
     eng['score'] = round(eng_score, 1)
     eng['flag_count'] = eng_flags
@@ -101,17 +101,20 @@ def _compute_scores(result: dict) -> dict:
     # 4. Session Quality
     sq = params.get('session_quality', {})
     # camera, audio_video, screen_sharing
-    sq_total = sum(1 for k in sq.keys() if k != 'score')
+    _SQ_KEYS = ['camera', 'audio_video', 'screen_sharing']
+    sq_total = sum(1 for k in _SQ_KEYS if k in sq)
     sq_score = 0.0
     if sq_total > 0:
         pts = 10.0 / sq_total
-        for k, v in sq.items():
-            if k == 'score': continue
+        for k in _SQ_KEYS:
+            v = sq.get(k, {})
+            if not v:
+                continue
             st = v.get('status', '').lower()
             if st in ['pass', 'no_input']:
                 sq_score += pts
             elif st in ['warn', 'unverifiable', 'needs_video']:
-                sq_score += pts / 2.0
+              sq_score += pts / 2.0
     sq['score'] = round(sq_score, 1)
     overall_sum += sq['score']
     
@@ -156,7 +159,7 @@ Only terminate your turn when you are sure that the audit is completed. Go throu
 
 1. Think step by step and then carefully analyze the transcript and chat.
 2. Identify all relevant events (flags, doubts, coverage) based on different Evaluation Rules.
-3. Compute status (pass/warn/flag) strictly using your analysis and rules provided.
+3. Compute status (pass/warn/fail) strictly using your analysis and rules provided.
 4. ONLY THEN generate final JSON.
 
 Refer to the detailed sections below for more information on each step.
@@ -169,8 +172,8 @@ Refer to the detailed sections below for more information on each step.
 ### Vague Conversation:
 - A conversation is vague if it's unrelated to the session or tools being taught and was never initiated by the student.
 Examples:
-  - Self Promotion: Instructor promoting their own course, YouTube channel, or personal website
-  - Personal anecdotes: Instructor sharing personal anecdotes with no connection to the lesson
+  - Self Promotion: Instructor promoting their own course, YouTube channel, or personal website → fail
+  - Personal anecdotes: Instructor sharing personal anecdotes with no connection to the lesson → warn
 CRITICAL: Even if semantic analysis shows low probability, you must still use your own judgement to determine if the conversation is vague or not.
 
 ### Stretching Session:
@@ -188,7 +191,7 @@ CRITICAL: Even if semantic analysis shows low probability, you must still use yo
 - If break duration is:
   - Equal to 10 minutes (pass)
   - Greater than 10 and less than or equal to 15 minutes (warn)
-  - Greater than 15 minutes (flag)
+  - Greater than 15 minutes (fail)
 
 ### Forcing Ratings:
 - Any attempt to influence students to give high ratings.
@@ -203,19 +206,18 @@ A message is a genuine doubt ONLY IF:
 - OR asks for explanation/repetition/clarification
 - OR asks "how/why" related to content
 
-DO NOT include:
-- confirmations ("clear", "yes sir")
+NOT A Doubt:
+- reactions, emoji, confirmations ("clear", "yes sir")
 - technical issues ("network issue", "screen stuck")
-- peer responses
+- peer-to-peer messages
 - greetings or casual chat
 
 A doubt is considered MISSED ONLY IF:
-- It exists in doubt_windows
-- AND no conceptually relevant explanation appears later in instructor turns
+1. It exists in doubt_windows
+2. It doesn't lie under NOT A Doubt category
+3. AND no conceptually relevant explanation appears later in instructor turns
 
-Messages not in doubt_windows are already addressed.
-
-Note: ALWAYS anlayze the full transcript & chat before marking any doubt missed (Instructors may conduct doubt session at the end of the session).
+Note: ALWAYS anlayze the full transcript & chat before making any decision regarding any doubt being missed (instructors may conduct doubt session at the end of the session).
 
 ### b. In-class Engagement:
 - Analysing the chat and transcript, answer the following:
@@ -233,40 +235,49 @@ Note: ALWAYS anlayze the full transcript & chat before marking any doubt missed 
 
 ### a. Teaching Methodology
 
-Evaluate teaching methodology on these 3 factors ONLY:
+Evaluate teaching methodology on these 5 factors ONLY:
 
-i. Clarity
-- Concepts explained step-by-step
+i. Agenda and Recap
+- Does the session start with a brief agenda or recap of the previous session?
+
+ii. Clarity
+- Concepts explained step-by-step with simple and easy to understand examples.
 - No skipping reasoning
 
-ii. Structure
-- Follows: Concept → Example → Explanation
+iii. Structure
+- Follows: Concept → Example → Explanation → Doubt Clarification → Next Class Expectations
 - No random topic jumps
 
-iii. Examples
-- Uses relevant examples to explain concepts
+iv. Examples
+- Uses relevant examples to explain concepts (if applicable to the topic)
 - Not just demo or theory
+
+v. Session Summary or Next Class Expectations
+- Check if instructor has given session summary or next class expectations at the end of the session.
+- A formal or informal mention of the next topic qualifies as next class expectations.
+- Only flag as a gap if there is NO mention of either summary or next topic anywhere near the end of the session.
+
+Note: If any of the teaching methodology factors are missing (i.e. there is no evidence of it in the transcript and chat), then its clearly a gap.
 
 ### b. Content Coverage
 
-- Carefully analyse the transcript w.r.t. syllabus to determine if the instructor has covered all the topics.
-- If a topic was not covered or skipped, then flag it.
-- If no topics are assigned from syllabus, then determine which topics were covered and list them down.
+- Carefully analyse the transcript with respect to the syllabus and determine if the instructor has covered all the topics.
+- If a topic was not covered or skipped, then flag it warn or fail based on number of topics not covered.
+- If syllabus is empty then determine which topics were covered in the session and list them down.
 
----------
+--------- 
 
 ## 4. Session Quality Evaluation Rules
 
 ### a. Camera ON/OFF
 - Reading the transcript and chat try to identify if the instructor has turned on their camera. 
-- Flag if there is ANY mention of the camera being OFF by students (e.g., "camera is OFF", "turn ON camera"), even if it was just for a short duration.
-- If detected then flag with your reasoning.  
+- Flag warn with your reasoning if there is ANY mention of the camera being OFF by students (e.g., "camera is OFF", "turn ON camera"), even if it was just for a short duration.
 
 ### b. Audio/Video Quality
-- Any kind of audio/video/connection issue reported by students.  
-- Flag if there is ANY mention of voice breaking, not audible, or network issues, even if it didn't ruin the entire class.
-- E.g: "voice is not good or audible", "Network issues", "voice broke".
-- If detected then flag with your reasoning.
+- Any audio, video, or connectivity issue explicitly reported by students related to the instructor.
+- Flag warn with your reasoning if there is ANY mention of instructor voice breaking, instructor not audible, or instructor related network issues, even if it didn't ruin the entire class.
+- E.g: "sir your voice is not good", "sir your voice broke", "sir you are not audible".
+- DO NOT flag if the complaint is about the student's own network ("my network is not stable", "my internet is slow").
 
 ### c. Screen Sharing Internal Document
 - By analysing the transcript and chat try to identify if any kind of internal document is being utilized by the instructor for the teaching purpose. 
@@ -290,14 +301,14 @@ iii. Examples
 ## 6. Final Verification
 - Go through each detailed sections again and verify each evaluation rule category against the transcript & chat. (This will take time but believe me this is necessary and well within our context range)
  - If something seems wrong, correct it and continue.
-- Review each sub_check and if status is flagged, warn or pass, double check if the evidence attribute is present for it.
+- Review each sub_check and if status is fail, warn or pass, double check if the evidence attribute is present for it.
  - In case its missing re-evaluate and add the appropriate evidence to the proper sub_check.
 - Only once you are done with the review process and extremely confident with your audit, then only proceed to generate the final JSON.
 
 ---------
 
 # Evidence Verification
-- Make sure each status with flagged or warn issue has timestamp-based evidence (use the timestamp of the speaker block if the exact sentence doesn't have one). Do not hallucinate timestamps.
+- Make sure each status with fail or warn issue has timestamp-based evidence (use the timestamp of the speaker block if the exact sentence doesn't have one). Do not hallucinate timestamps.
 - If no issue → use "None detected"
 
 ---------
@@ -309,27 +320,27 @@ iii. Examples
       "summary": "<2-3 sentences>",
       "sub_checks": {{
         "abusive_language": {{
-          "status": "pass|flagged|warn",
+          "status": "pass|fail|warn",
            "detail": "<quote or 'None detected'>"
         }},
         "vague_conversation": {{
-          "status": "pass|flagged|warn",
+          "status": "pass|fail|warn",
            "detail": "<finding or 'None detected'>"
         }},
         "long_break": {{
-          "status": "pass|flagged|warn",
+          "status": "pass|fail|warn",
            "detail": "<timestamp/duration or 'None detected'>"
         }},
         "idle": {{
-          "status": "pass|flagged|warn",
+          "status": "pass|fail|warn",
            "detail": "<timestamp or 'None detected'>"
         }},
         "forcing_ratings": {{
-          "status": "pass|flagged|warn",
+          "status": "pass|fail|warn",
            "detail": "<quote or 'None detected'>"
         }},
         "stretching_session": {{
-          "status": "pass|flagged|warn",
+          "status": "pass|fail|warn",
            "detail": "<finding or 'None detected'>"
         }}
       }},
@@ -341,13 +352,11 @@ iii. Examples
       "summary": "<2-3 sentences>",
       "sub_checks": {{
         "doubts_engagement": {{
-          "status": "pass|flagged|warn",
-          "addressed_count": <int>,
-          "total_student_questions": <int>,
+          "detail": "<quote or 'None detected'>",
+          "status": "pass|fail|warn",
           "missed_doubts": [
             {{
-              "student": "<name>",
-              "question": "<question>",
+              "question": "<their message text>",
               "timestamp": "HH:MM:SS",
               "source": "chat|transcript",
               "reason": "<why genuinely missed>"
@@ -355,11 +364,11 @@ iii. Examples
           ]
         }},
         "in_class_engagement": {{
-          "status": "pass|flagged|warn",
+          "status": "pass|fail|warn",
           "detail": "<finding or 'None detected'>"
         }},
         "class_elongation": {{
-          "status": "pass|flagged|warn",
+          "status": "pass|fail|warn",
           "detail": "<finding or 'None detected'>"
         }}
       }},
@@ -369,7 +378,7 @@ iii. Examples
     }},
     "content_evaluation": {{
       "teaching_methodology": {{
-        "status": "pass|warn|flagged",
+        "status": "pass|warn|fail",
         "summary": "<2-3 sentences>",
         "strengths": ["<strength>"],
         "gaps": ["<gap>"],
@@ -378,9 +387,8 @@ iii. Examples
         ]
       }},
       "content_coverage": {{
-        "status": "pass|warn|flagged",
+        "status": "pass|warn|fail",
         "topics_covered": ["<topic>"],
-        "topics_brief": ["<topic>"],
         "topics_skipped": ["<topic>"],
         "summary": "<2-3 sentences>",
         "evidence": [
@@ -404,11 +412,11 @@ iii. Examples
     }},
     "session_quality": {{
       "camera": {{
-        "status": "pass|flagged|needs_video",
+        "status": "pass|fail|needs_video",
         "note": "<finding with timestamp, or 'No camera issue detected from chat/transcript'>"
       }},
       "audio_video": {{
-        "status": "pass|flagged|warn",
+        "status": "pass|fail|warn",
         "note": "<finding with timestamp, or 'No clear audio/video issue detected'>"
       }},
       "screen_sharing": {{
