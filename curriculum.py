@@ -1,14 +1,34 @@
 # curriculum.py
 import gspread
 import pandas as pd
+import streamlit as st
 from rapidfuzz import process
 from typing import Optional
 
 SPREADSHEET_ID = "1TUK9kxOcT3tg5nT7MVc3v8gJ9oi83nzI2_aVN6nFAOo"
 
+
+def _resolve_gspread_client(credentials_dict: dict = None, credentials_path: str = "service_account.json"):
+    """
+    Build and return an authenticated gspread client.
+    Priority: credentials_dict (UI upload) → st.secrets["gcp_service_account"] → local file.
+    """
+    if credentials_dict:
+        return gspread.service_account_from_dict(credentials_dict)
+
+    try:
+        secret = st.secrets.get("gcp_service_account", None)
+        if secret:
+            return gspread.service_account_from_dict(dict(secret))
+    except Exception:
+        pass
+
+    return gspread.service_account(filename=credentials_path)
+
+
 class CurriculumService:
-    def __init__(self, credentials_path: str = "service_account.json"):
-        gc = gspread.service_account(filename=credentials_path)
+    def __init__(self, credentials_dict: dict = None, credentials_path: str = "service_account.json"):
+        gc = _resolve_gspread_client(credentials_dict=credentials_dict, credentials_path=credentials_path)
         sh = gc.open_by_key(SPREADSHEET_ID)
 
         frames = []

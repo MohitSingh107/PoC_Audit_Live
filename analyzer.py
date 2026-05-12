@@ -11,7 +11,17 @@ from curriculum import CurriculumService
 import streamlit as st
 
 load_dotenv()
-curriculum = CurriculumService()
+
+# Lazy curriculum — initialized on first use so missing service_account.json
+# at import time doesn't crash the app on deployment.
+_curriculum_cache: dict = {}
+
+def _get_curriculum(credentials_dict: dict = None) -> CurriculumService:
+    """Return a CurriculumService, re-using a cached instance unless credentials changed."""
+    cache_key = id(credentials_dict) if credentials_dict else "default"
+    if cache_key not in _curriculum_cache:
+        _curriculum_cache[cache_key] = CurriculumService(credentials_dict=credentials_dict)
+    return _curriculum_cache[cache_key]
 
 
 def _resolve_key(env_var: str, ui_key: str = "") -> str:
@@ -148,7 +158,7 @@ def _compute_scores(result: dict) -> dict:
     result['overall_score'] = round(overall_sum / overall_count, 1)
     return result
 
-def analyze_session(turns, chat_messages, session_name, escalation_feedback="", model: str = "gpt-4.1-mini", api_key: str = ""):
+def analyze_session(turns, chat_messages, session_name, escalation_feedback="", model: str = "gpt-4.1-mini", api_key: str = "", credentials_dict: dict = None):
     transcript_text  = format_turns_for_prompt(turns)
     chat_text        = format_chat_for_prompt(chat_messages)
     doubt_windows    = compute_doubt_windows(chat_messages, turns)
@@ -156,7 +166,7 @@ def analyze_session(turns, chat_messages, session_name, escalation_feedback="", 
     # Compact JSON (no indent) eliminates whitespace tokens with zero semantic value.
     unresponded   = [d for d in doubt_windows if not d['instructor_responded']]
     doubt_context = json.dumps(unresponded, separators=(',', ':'))
-    syllabus = curriculum.get_syllabus(session_name)
+    syllabus = _get_curriculum(credentials_dict).get_syllabus(session_name)
 
     SYSTEM_PROMPT = f"""
 

@@ -459,17 +459,20 @@ with st.sidebar:
     }
     selected_model = _model_map[model_choice]
 
-    with st.expander("🔑 API Keys", expanded=False):
+    with st.expander("🔑 API Keys & Credentials", expanded=False):
         st.caption("Keys are resolved in order: input below → Streamlit Secrets → .env file")
         _openai_env = os.getenv("OPENAI_API_KEY", "") or ""
         _gemini_env = os.getenv("GEMINI_API_KEY", "") or ""
+        _sa_local   = os.path.exists(os.path.join(os.path.dirname(os.path.abspath(__file__)), "service_account.json"))
         try:
             _openai_env = _openai_env or st.secrets.get("OPENAI_API_KEY", "")
             _gemini_env = _gemini_env or st.secrets.get("GEMINI_API_KEY", "")
+            _sa_secrets = bool(st.secrets.get("gcp_service_account", None))
         except Exception:
-            pass
+            _sa_secrets = False
         st.caption(f"OpenAI: {'✅ found in env/secrets' if _openai_env else '❌ not set'}")
         st.caption(f"Gemini: {'✅ found in env/secrets' if _gemini_env else '❌ not set'}")
+        st.caption(f"Service Account: {'✅ found in secrets' if _sa_secrets else ('✅ local file found' if _sa_local else '❌ not set — upload below')}")
         api_key_val = st.text_input(
             "Paste API Key (overrides env/secrets)",
             value="",
@@ -477,6 +480,23 @@ with st.sidebar:
             placeholder="sk-... or AIza...",
             help="Paste your OpenAI or Gemini key here. This takes priority over all other sources."
         )
+
+        st.markdown("**Service Account JSON**")
+        sa_file = st.file_uploader(
+            "Upload service_account.json",
+            type=["json"],
+            help="Upload your Google Cloud service account JSON. Required for curriculum/syllabus lookup."
+        )
+        if sa_file is not None:
+            try:
+                st.session_state['credentials_dict'] = json.loads(sa_file.read().decode("utf-8"))
+                st.success("✅ Service account loaded.")
+            except Exception as e:
+                st.error(f"❌ Failed to parse service account file: {e}")
+
+        if 'credentials_dict' in st.session_state:
+            st.caption("✅ Service account active from this session.")
+
 
     st.markdown("### Session Name")
     session_name_val = st.text_area(
@@ -594,12 +614,13 @@ if run_btn:
             }
             try:
                 result = analyze_session(
-                    turns, 
-                    messages, 
-                    session_name_val, 
-                    escalation_feedback=escalation_feedback_val, 
+                    turns,
+                    messages,
+                    session_name_val,
+                    escalation_feedback=escalation_feedback_val,
                     model=selected_model,
                     api_key=api_key_val,
+                    credentials_dict=st.session_state.get('credentials_dict'),
                 )
                 st.session_state['audit_result'] = result
                 st.session_state['audit_meta'] = meta
