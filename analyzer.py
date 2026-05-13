@@ -206,15 +206,16 @@ CRITICAL: Even if semantic analysis shows low probability, you must still use yo
 - OR delaying progression without adding value for extra money
 - Do NOT flag recap or clarification.
 
-### Idle:
+### On time Start:
+- session start within 10 mins of scheduled time (pass)
+- session start >10 mins of scheduled time (warn)
 - Time from session start to first actual teaching concept.
-- No instructor speech for >5 minutes
 - Ignore greetings/introduction.
-- Flag if >5 minutes.
 
 ### Long Break:
+- We need to identify the total instructor break duration and check if it is within acceptable limits.
 - If break duration is:
-  - Equal to 10 minutes (pass)
+  - Within 10 minutes (pass)
   - Greater than 10 and less than or equal to 15 minutes (warn)
   - Greater than 15 minutes (fail)
 
@@ -242,6 +243,10 @@ A doubt is considered MISSED ONLY IF:
 2. It doesn't lie under NOT A Doubt category
 3. AND no conceptually relevant explanation appears later in instructor turns
 
+CRITICAL FOR PARKED DOUBTS: 
+- If an instructor acknowledges a doubt and promises to answer it later (e.g., "I will answer this at the end of the class"), this acknowledgment is NOT a conceptually relevant explanation. 
+- You MUST cross-reference the rest of the transcript. If the session ends without the instructor actually providing the promised explanation, the doubt MUST be flagged as MISSED.
+
 Note: ALWAYS anlayze the full transcript & chat before making any decision regarding any doubt being missed (instructors may conduct doubt session at the end of the session).
 
 ### b. In-class Engagement:
@@ -263,7 +268,7 @@ Note: ALWAYS anlayze the full transcript & chat before making any decision regar
 Evaluate teaching methodology on these 5 factors ONLY:
 
 i. Agenda and Recap
-- Does the session start with a brief agenda or recap of the previous session?
+- Does the instructor provide a brief agenda or recap of the previous session early in the class (usually in the first 20 minutes)?
 
 ii. Clarity
 - Concepts explained step-by-step with simple and easy to understand examples.
@@ -278,17 +283,15 @@ iv. Examples
 - Not just demo or theory
 
 v. Session Summary or Next Class Expectations
-- Check if instructor has given session summary or next class expectations at the end of the session.
-- A formal or informal mention of the next topic qualifies as next class expectations.
-- Only flag as a gap if there is NO mention of either summary or next topic anywhere near the end of the session.
+- Check if instructor has given either a session summary or next class expectations in the final 20 minutes of the session (even if doubt-clearing happens afterwards).
 
 Note: If any of the teaching methodology factors are missing (i.e. there is no evidence of it in the transcript and chat), then its clearly a gap.
 
 ### b. Content Coverage
-
-- Carefully analyse the transcript with respect to the syllabus and determine if the instructor has covered all the topics.
-- If a topic was not covered or skipped, then flag it warn or fail based on number of topics not covered.
-- If syllabus is empty then determine which topics were covered in the session and list them down.
+- If syllabus is not provided, then determine which topics were covered in the session and list them down.
+- If syllabus is provided, carefully analyse the transcript with respect to the syllabus and determine if the instructor has covered all the topics.
+ - If a topic was not covered or skipped or postponed, then flag it warn or fail based on number of topics not covered.
+- CRITICAL FOR POSTPONED TOPICS: If the instructor explicitly postpones a syllabus topic to a future session (e.g., "We will cover AI tools in the next class due to lack of time"), that topic MUST be placed in `topics_skipped` and the coverage status MUST be flagged as `warn` or `fail`. Mentioning a topic for the future does NOT count as covering it in the current session.
 
 --------- 
 
@@ -356,7 +359,7 @@ Note: If any of the teaching methodology factors are missing (i.e. there is no e
           "status": "pass|fail|warn",
            "detail": "<timestamp/duration or 'None detected'>"
         }},
-        "idle": {{
+        "on_time_start": {{
           "status": "pass|fail|warn",
            "detail": "<timestamp or 'None detected'>"
         }},
@@ -405,16 +408,16 @@ Note: If any of the teaching methodology factors are missing (i.e. there is no e
       "teaching_methodology": {{
         "status": "pass|warn|fail",
         "summary": "<2-3 sentences>",
-        "strengths": ["<strength>"],
-        "gaps": ["<gap>"],
+        "strengths": ["<covered teaching methodology>"],
+        "gaps": ["<missing teaching methodology>"],
         "evidence": [
           {{"source": "transcript", "timestamp": "HH:MM:SS", "detail": "<what this shows>"}}
         ]
       }},
       "content_coverage": {{
         "status": "pass|warn|fail",
-        "topics_covered": ["<topic>"],
-        "topics_skipped": ["<topic>"],
+        "topics_covered": ["<covered topic from syllabus>"],
+        "topics_skipped": ["<skipped topic from syllabus>"],
         "summary": "<2-3 sentences>",
         "evidence": [
           {{"source": "transcript", "timestamp": "HH:MM:SS", "detail": "<topic evidence>"}}
@@ -427,7 +430,6 @@ Note: If any of the teaching methodology factors are missing (i.e. there is no e
         "note": "<overall summary or 'No low rating feedback provided for this audit.'>",
         "claims": [
           {{
-            "rating": <int 1-5>,
             "feedback": "<exact student feedback text>",
             "verdict": "valid|invalid",
             "reasoning": "<why this feedback is valid/invalid based on transcript/chat>"
@@ -508,9 +510,16 @@ def _call_openai(model: str, prompt: str, api_key: str = "") -> dict:
     )
 
     usage = response.usage
-    # gpt-4.1-mini pricing: $0.40/1M input, $0.10/1M cached input, $1.60/1M output
-    input_cost  = (usage.prompt_tokens) * 0.00000040
-    output_cost = usage.completion_tokens * 0.00000160
+    # Pricing based on model
+    if model == "gpt-4.1":
+        # gpt-4.1 pricing: $2.00/1M input, $0.50/1M cached input, $8.00/1M output
+        input_cost  = (usage.prompt_tokens) * 0.00000200
+        output_cost = usage.completion_tokens * 0.00000800
+    else:
+        # gpt-4.1-mini pricing: $0.40/1M input, $0.10/1M cached input, $1.60/1M output
+        input_cost  = (usage.prompt_tokens) * 0.00000040
+        output_cost = usage.completion_tokens * 0.00000160
+
     cost_usd    = input_cost + output_cost
     cost_inr    = cost_usd * 95.09
     

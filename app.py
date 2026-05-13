@@ -258,7 +258,7 @@ def render_report(data, meta):
         "abusive_language": "Abusive language",
         "vague_conversation": "Vague / incoherent conversation",
         "long_break": "Long / unannounced break",
-        "idle": "On time start",
+        "on_time_start": "On time start",
         "forcing_ratings": "Forcing ratings",
         "stretching_session": "Stretching session (waiting for joins)",
     }
@@ -449,13 +449,14 @@ with st.sidebar:
     st.markdown("### Model Configuration")
     model_choice = st.selectbox(
         "LLM Model",
-        ["GPT-4.1 mini", "Gemini 3.1 Flash"],
+        ["GPT-4.1 mini", "Gemini 3.1 Flash","GPT-4.1"],
         index=0,
         help="Select the model to perform the audit analysis."
     )
     _model_map = {
         "GPT-4.1 mini": "gpt-4.1-mini",
         "Gemini 3.1 Flash": "gemini-3.1-flash-lite-preview",
+        "GPT-4.1": "gpt-4.1",
     }
     selected_model = _model_map[model_choice]
 
