@@ -442,9 +442,6 @@ with st.sidebar:
     vtt_file = st.file_uploader("Transcript (.vtt)", type=["vtt"])
     chat_file = st.file_uploader("Chat (.txt)", type=["txt"])
 
-    use_demo = st.checkbox("Use demo session files", value=True,
-                            help="Uses the Recording.transcript.vtt and Chat.txt from this folder")
-
 
     st.markdown("### Model Configuration")
     model_choice = st.selectbox(
@@ -574,21 +571,10 @@ if run_btn:
 
     base_dir = os.path.dirname(os.path.abspath(__file__))
 
-    if use_demo:
-        vtt_path = os.path.join(base_dir, "Recording.transcript.vtt")
-        chat_path = os.path.join(base_dir, "Chat.txt")
-        if os.path.exists(vtt_path) and os.path.exists(chat_path):
-            with open(vtt_path, 'r', encoding='utf-8') as f:
-                vtt_content = f.read()
-            with open(chat_path, 'r', encoding='utf-8') as f:
-                chat_content = f.read()
-        else:
-            st.error("Demo files not found. Please upload files manually.")
-    else:
-        if vtt_file:
-            vtt_content = vtt_file.read().decode('utf-8')
-        if chat_file:
-            chat_content = chat_file.read().decode('utf-8')
+    if vtt_file:
+        vtt_content = vtt_file.read().decode('utf-8')
+    if chat_file:
+        chat_content = chat_file.read().decode('utf-8')
 
     if not vtt_content or not chat_content:
         st.error("Please provide both the VTT transcript and Chat file.")
