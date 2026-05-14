@@ -1,0 +1,48 @@
+Advanced Concepts in Joins
+Advanced Power Query-I
+Advanced Power Query-II
+Aggregate Functions
+Basic Database Operations-I
+Basic Database Operations-II
+CRUD Operations
+Case Statements
+Central Limit Theorem and Sampling Distributions and their properties
+Conclusion to Data Analytics
+Confidence Intervals
+Data Analysis- II
+Data Analysis-I
+Data Analysis-III
+Data Analysis-IV
+Data Changing Operations
+Data Cleaning in Excel-I
+(Handling Missing Values)
+Data Cleaning in Excel-II
+(Handling Outliers)
+Date Manipulation 
+Descriptive Statistics: Measures of Dispersion
+Hypothesis Testing - 1
+Hypothesis Testing - 2
+Introduction to Data Analytics
+Introduction to Joins
+Introduction to MS Excel-I
+Introduction to MS Excel-II
+Introduction to MS Excel-III
+Introduction to Power Query
+Introduction to Probability in Statistics
+Introduction to SQL
+Introduction to Statistics
+Introduction to a Business Problem
+LOOKUPs in Excel
+Life Cycle of Data Analysis
+Probability Distributions 
+Sampling Techniques & Measures of Central Tendency
+Statistical Tests
+Stored Procedures and Triggers
+String Operations
+Subqueries
+TCL and DCL Commands
+Types of Data and Data Collection
+Using Statistical Tests for bivariate analysis
+Views, Indexes and Data Partitioning
+Window Functions-I
+Window Functions-II

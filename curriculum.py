@@ -46,6 +46,13 @@ class CurriculumService:
             df = pd.DataFrame(rows, columns=headers)
             df.columns = [c.strip() for c in df.columns]
 
+            # Standardize column names
+            rename_map = {
+                "Class Name/Topic": "Session Name",
+                "Class #": "Session #",
+            }
+            df.rename(columns=rename_map, inplace=True)
+
             # Drop columns with empty names (blank columns in sheet)
             df = df.loc[:, df.columns != ""]
 
