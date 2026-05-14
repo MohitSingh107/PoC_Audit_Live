@@ -11,11 +11,7 @@ with open("Chat.txt", "r", encoding="utf-8") as f:
 turns = parse_vtt(vtt_text)
 messages = parse_chat(chat_text)
 
-syllabus = """Find and Replace
-Paste Options (Normal / Values / Formulas / Formatting / Transpose)
-Remove Duplicates
-Conditional Formatting (Highlight Cell Rules, Top/Bottom Rules, Data Bars, Color Scales, Icon Sets)
-Cell Referencing (Relative, Absolute)"""
+syllabus = ""
 
 print("Running audit...")
 res = analyze_session(turns, messages, syllabus, escalation_feedback="He literally abused !!!", model="gpt-4.1-mini")
